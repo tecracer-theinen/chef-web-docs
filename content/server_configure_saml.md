@@ -1,5 +1,5 @@
 +++
-title = "Configuring for SAML Authentication"
+title = "Configuring Chef Manage for SAML Authentication"
 draft = false
 gh_repo = "chef-web-docs"
 robots = "noindex"
@@ -8,8 +8,8 @@ product = []
 
 [menu]
   [menu.legacy]
-    title = "Configure SAML"
-    identifier = "legacy/manage/server_configure_saml.md Configure SAML"
+    title = "Configure Chef Manage SAML"
+    identifier = "legacy/manage/server_configure_saml.md Configure Chef Manage SAML"
     parent = "legacy/manage"
 +++
 {{% chef_automate_mark %}}
