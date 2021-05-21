@@ -182,7 +182,7 @@ Use the [chef generate repo command](/ctl_chef/#chef-generate-repo)
 to create your chef-repo directory along with the base folder structure.
 This command uses the `chef` command-line tool that is packaged as part
 of Chef Workstation to create a chef-repo.
-
+     
 ```bash
 chef generate repo REPO_NAME
 ```
@@ -194,3 +194,4 @@ configured for Policyfiles. To create a repository setup for Roles and
 Environments instead use the `--roles` flag when running the command.
 
 {{< /note >}}
+     
