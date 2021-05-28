@@ -14,6 +14,16 @@ gh_repo = "chef-web-docs"
 
 We recommend that you use the conventions described in this guide when contributing to the Chef reference documentation.
 
+## Battle Dictionaries
+
+We use the American Heritage Dictionary of the English Language (5th edition) to resolve general disputes over the meaning and usage of common words.
+
+For disagreements on the meaning and usage of technical terms, we accept:
+
+1. UNIX and Linux System Administration Handbook (5th Edition)
+1. Microsoft Documentation for [Windows](https://docs.microsoft.com/windows/)
+1. The most compelling argument from experts (citations preferred)
+
 ## Official Names
 
 For Chef applications and components, use:
@@ -34,11 +44,7 @@ docs.
 ### Tautologies
 
 A tautology, when used as a description for a component, setting,
-method, etc. should be avoided. If a string is a tautology, some effort
-should be made to make it not so. An example of a tautology is something
-like "Create a new user" (by its very nature, a user created **is** a
-new user) or (for a setting named `cidr_block`) "The CIDR block for the
-VPC."
+method, etc. should be avoided. If a string is a tautology, some effort should be made to make it not so. An example of a tautology is something like "Create a new user" (by its very nature, a user created **is** a new user) or (for a setting named `cidr_block`) "The CIDR block for the VPC."
 
 ## Examples
 
@@ -64,7 +70,7 @@ Don't reveal personal information in examples, such as the names of real people,
 
 Don't use the names of bands, musicians, or characters from works that are under copyright.
 
-When writing about security, follow the accepted convention and use "Alice" and "Bob". Following this convention helps readers see that they are reading a topic about security and integrate the Chef information with their existing knowledge.
+When writing about security, follow the accepted convention and use "Alice" and "Bob". Following this convention helps readers understand that it is a security topic and integrate new information with their existing knowledge.
 
 Here is a list of some example names for you to use (the last names are translations of "Chef"):
 
