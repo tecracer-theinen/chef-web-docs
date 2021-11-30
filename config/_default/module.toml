@@ -146,6 +146,34 @@
   source = "content"
   target = "content"
 
+## InSpec Azure and AWS Cloud Resources
+
+[[imports]]
+  disable = false
+  ignoreConfig = false
+  path = "github.com/ianmadd/inspec-aws/docs-chef-io"
+
+[[imports.mounts]]
+  source = "content"
+  target = "content"
+
+[[imports.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[imports]]
+  disable = false
+  ignoreConfig = false
+  path = "github.com/ianmadd/inspec-azure/docs-chef-io"
+
+[[imports.mounts]]
+  source = "content"
+  target = "content"
+
+[[imports.mounts]]
+  source = "layouts"
+  target = "layouts"
+
 ## Module mounts for packages added with NPM
 
 [[mounts]]
