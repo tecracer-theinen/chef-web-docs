@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_oidc_providers Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_oidc_providers.md">aws_iam_oidc_providers.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_oidc_providers.md">aws_iam_oidc_providers.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_oidc_providers` InSpec audit resource to test properties of a set of AWS IAM OpenID Connect (OIDC) providers.
 
 This resource retrieves information about all OIDC providers.

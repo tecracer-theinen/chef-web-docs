@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_migrate_project_solution Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_migrate_project_solution.md">azure_migrate_project_solution.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_migrate_project_solution.md">azure_migrate_project_solution.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_migrate_project_solution` InSpec audit resource to test the properties related to an Azure Migrate Project Solution.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -40,11 +50,14 @@ end
 
 ## Parameters
 
-| Name           | Description                                                                      |
-|----------------|----------------------------------------------------------------------------------|
-| name           | Name of the Azure Migrate project solution to test.                              |
-| resource_group | Azure resource group that the targeted resource resides in.                      |
-| project_name   | Azure Migrate project.                                                           |
+`name`
+: Name of the Azure Migrate project solution to test.
+
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`project_name`
+: Azure Migrate project.
 
 The parameter set should be provided for a valid query:
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_config_delivery_channel Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_config_delivery_channel.md">aws_config_delivery_channel.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_config_delivery_channel.md">aws_config_delivery_channel.md</a></p>
+</div>
+</div>
+
+
+
 The AWS Config service can monitor and record changes to your AWS resource configurations. A Delivery Channel can record the changes
 to an S3 Bucket, an SNS or both.
 
@@ -49,8 +59,8 @@ end
 
 `channel_name` _(optional)_
 
-This resource accepts a single parameter, the channel name.
-This can be passed either as a string or as a `channel_name: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the channel name.
+  This can be passed either as a string or as a `channel_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

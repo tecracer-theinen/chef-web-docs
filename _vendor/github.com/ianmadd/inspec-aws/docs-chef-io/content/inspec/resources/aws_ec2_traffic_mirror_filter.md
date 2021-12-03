@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_traffic_mirror_filter Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_traffic_mirror_filter.md">aws_ec2_traffic_mirror_filter.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_traffic_mirror_filter.md">aws_ec2_traffic_mirror_filter.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_traffic_mirror_filter` InSpec audit resource to test properties of a single AWS traffic mirror filter.
 
 ## Installation
@@ -36,8 +46,8 @@ end
 
 `traffic_mirror_filter_id` _(required)_
 
-The ID of the EC2 traffic mirror. This is in the format of `tmf-` followed by 8 or 17 hexadecimal characters.
-This can be passed either as a string or as an `aws_ec2_traffic_mirror_filter_id: 'value'` key-value entry in a hash.
+: The ID of the EC2 traffic mirror. This is in the format of `tmf-` followed by 8 or 17 hexadecimal characters.
+  This can be passed either as a string or as an `aws_ec2_traffic_mirror_filter_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

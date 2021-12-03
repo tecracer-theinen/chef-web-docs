@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_elasticache_replication_groups Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_elasticache_replication_groups.md">aws_elasticache_replication_groups.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_elasticache_replication_groups.md">aws_elasticache_replication_groups.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_elasticache_replication_groups` InSpec audit resource to test the properties of all Amazon ElastiCache replication groups. To audit a single ElastiCache replication group, use `aws_elasticache_replication_group` (singular).
 
 ## Installation

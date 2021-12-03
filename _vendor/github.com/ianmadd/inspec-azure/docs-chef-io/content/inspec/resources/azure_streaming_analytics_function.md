@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_streaming_analytics_function Resource
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_streaming_analytics_function.md">azure_streaming_analytics_function.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_streaming_analytics_function.md">azure_streaming_analytics_function.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_streaming_analytics_function` InSpec audit resource to test properties and configuration of an Azure streaming analytics function.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -32,11 +42,14 @@ end
 
 ## Parameters
 
-| Name                                  | Description                                                                       |
-|---------------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                        | Azure resource group that the targeted resource resides in.                       |
-| job_name                              | Name of the job.                                                                  |
-| function_name                         | Name of the function made in the job mentioned.                                   |
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`job_name`
+: Name of the job.
+
+`function_name`
+: Name of the function made in the job mentioned.
 
 All three parameters are required for a valid query.
 

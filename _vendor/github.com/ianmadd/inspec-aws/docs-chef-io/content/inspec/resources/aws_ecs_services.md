@@ -9,6 +9,16 @@ title = "aws_ecs_services"
 identifier = "inspec/resources/aws/aws_ecs_services Resource"
 parent = "inspec/resources/aws"
 +++
+
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ecs_services.md">aws_ecs_services.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ecs_services.md">aws_ecs_services.md</a></p>
+</div>
+</div>
+
+
 Use the `aws_ecs_services` InSpec audit resource to test properties of multiple AWS ECS Services.
 
 The AWS ECS Service resource creates an Amazon Elastic Container Service (Amazon ECS) service that runs and maintains the requested number of tasks and associated load balancers.
@@ -33,7 +43,7 @@ end
 
 `cluster` _(required)_
 
-The short name or full Amazon Resource Name (ARN) of the cluster on which your service is running.
+: The short name or full Amazon Resource Name (ARN) of the cluster on which your service is running.
 
 ## Properties
 

@@ -9,6 +9,16 @@ title = "aws_dhcp_options"
 identifier = "inspec/resources/aws/aws_dhcp_options Resource"
 parent = "inspec/resources/aws"
 +++
+
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_dhcp_options.md">aws_dhcp_options.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_dhcp_options.md">aws_dhcp_options.md</a></p>
+</div>
+</div>
+
+
 **DEPRECATION NOTICE**
 
 The **aws_dhcp_options** InSpec audit resource is deprecated and replaced by the `aws_ec2_dhcp_option` and `aws_ec2_dhcp_options` resources.
@@ -39,10 +49,10 @@ end
 
 ## Parameters
 
-#### dhcp_options_id _(required)_
+`dhcp_options_id` _(required)_
 
-This resource accepts a single parameter, the DHCP Options ID which uniquely identifies the DHCP Options.
-This can be passed either as a string or as a `dhcp_options_id: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the DHCP Options ID which uniquely identifies the DHCP Options.
+  This can be passed either as a string or as a `dhcp_options_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

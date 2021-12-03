@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_amis Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_amis.md">aws_amis.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_amis.md">aws_amis.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_amis` InSpec audit resource to test properties of some or all AWS AMIs.
 
 ## Installation
@@ -38,48 +48,48 @@ end
 
 This resource must be provided with the parameter 'all_amis' (returns ALL AMIs available to you) OR a combination of the following.
 
-### all_amis _(optional)_
+`all_amis` _(optional)_
 
-_OR_
+: _OR_
 
-### architecture _(optional)_
+`architecture` _(optional)_
 
-##### creation_date _(optional)_
-##### image_id _(optional)_
-##### image_type _(optional)_
-##### is_public _(optional)_
-##### kernel_id _(optional)_
-##### owner_id _(optional)_
-### owners _(optional)_
+`creation_date` _(optional)_
+`image_id` _(optional)_
+`image_type` _(optional)_
+`is_public` _(optional)_
+`kernel_id` _(optional)_
+`owner_id` _(optional)_
+`owners` _(optional)_
 
-    - Scopes the results to images with the specified owners. You can specify a combination of AWS account IDs, `self`, `amazon`, and `aws-marketplace`. 
-```ruby
-If you omit this parameter, the results include all images for which you have launch permissions, regardless of ownership.
-```
-##### owner_alias _(optional)_
-### platform _(optional)_
+:     - Scopes the results to images with the specified owners. You can specify a combination of AWS account IDs, `self`, `amazon`, and `aws-marketplace`. 
+  ```ruby
+  If you omit this parameter, the results include all images for which you have launch permissions, regardless of ownership.
+  ```
+`owner_alias` _(optional)_
+`platform` _(optional)_
 
-##### product_code _(optional)_
-##### platform_details _(optional)_
-##### usage_operation _(optional)_
-##### ramdisk_id _(optional)_
-### state _(optional)_
+`product_code` _(optional)_
+`platform_details` _(optional)_
+`usage_operation` _(optional)_
+`ramdisk_id` _(optional)_
+`state` _(optional)_
 
-##### state_reason_code _(optional)_
-##### state_reason_message _(optional)_
-### description _(optional)_
+`state_reason_code` _(optional)_
+`state_reason_message` _(optional)_
+`description` _(optional)_
 
-##### ena_support _(optional)_
-### hypervisor _(optional)_
+`ena_support` _(optional)_
+`hypervisor` _(optional)_
 
-### name _(optional)_
+`name` _(optional)_
 
-##### root_device_name _(optional)_
-##### root_device_type _(optional)_
-##### sriov_net_support _(optional)_
-##### virtualization_type _(optional)_
+`root_device_name` _(optional)_
+`root_device_type` _(optional)_
+`sriov_net_support` _(optional)_
+`virtualization_type` _(optional)_
 
-This can be passed either as a string or as a `all_amis: 'value'` key-value entry in a hash.
+: This can be passed either as a string or as a `all_amis: 'value'` key-value entry in a hash.
 
 ## Properties
 

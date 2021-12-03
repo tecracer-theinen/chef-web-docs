@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatch_composite_alarm Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_composite_alarm.md">aws_cloudwatch_composite_alarm.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_composite_alarm.md">aws_cloudwatch_composite_alarm.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatch_composite_alarm` InSpec audit resource to test properties of a single specific AWS CloudWatch composite alarm.
 
 The `AWS::CloudWatch::CompositeAlarm` resource type creates or updates a composite alarm. When you create a composite alarm, you specify a rule expression for the alarm that takes into account the alarm states of other alarms that you have created. The composite alarm goes into ALARM state only if all conditions of the rule are met.
@@ -34,7 +44,7 @@ end
 
 `alarm_name` _(required)_
 
-The name of the alarm.
+: The name of the alarm.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_virtual_wan Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_virtual_wan.md">azure_virtual_wan.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_virtual_wan.md">azure_virtual_wan.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_virtual_wan` InSpec audit resource to test the properties related to a Azure Virtual WAN in a given resource group.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -39,10 +49,11 @@ end
 
 ## Parameters
 
-| Name           | Description                                                                      |
-|----------------|----------------------------------------------------------------------------------|
-| name           | Name of the Azure Virtual WAN to test.                                            |
-| resource_group | The resource group name of the VirtualWan.                                       |
+`name`
+: Name of the Azure Virtual WAN to test.
+
+`resource_group`
+: The resource group name of the VirtualWan.
 
 ## Properties
 

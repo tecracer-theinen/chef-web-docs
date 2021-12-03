@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_route53_record_sets Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route53_record_sets.md">aws_route53_record_sets.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route53_record_sets.md">aws_route53_record_sets.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_route53_record_sets` InSpec audit resource to test properties of multiple AWS Route53 record sets.
 
 The `AWS::Route53::RecordSet` resource specifies information about the record that you want to create.

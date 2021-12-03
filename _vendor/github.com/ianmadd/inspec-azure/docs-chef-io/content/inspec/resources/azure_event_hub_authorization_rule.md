@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_event_hub_authorization_rule Resource
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_event_hub_authorization_rule.md">azure_event_hub_authorization_rule.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_event_hub_authorization_rule.md">azure_event_hub_authorization_rule.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_event_hub_authorization_rule` InSpec audit resource to test properties and configuration of an Azure Event Hub Authorization Rule within a Resource Group.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -36,14 +46,23 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `resource-group-name` |
-| namespace_name                 | The unique name of the Event Hub Namespace.                                       |
-| event_hub_endpoint             | The unique name of the Event Hub Name.                                            |
-| name                           | The unique name of the targeted resource. `resource-name`                         |
-| authorization_rule             | Alias for the `name` parameter.                                                   |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/authorizationRules/{authorizationRuleName}` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `resource-group-name`.
+
+`namespace_name`
+: The unique name of the Event Hub Namespace.
+
+`event_hub_endpoint`
+: The unique name of the Event Hub Name.
+
+`name`
+: The unique name of the targeted resource. `resource-name`.
+
+`authorization_rule`
+: Alias for the `name` parameter.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.EventHub/namespaces/{namespaceName}/eventhubs/{eventHubName}/authorizationRules/{authorizationRuleName}`.
 
 Either one of the parameter sets can be provided for a valid query:
 - `resource_id`

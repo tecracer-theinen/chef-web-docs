@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_config_recorder Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_config_recorder.md">aws_config_recorder.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_config_recorder.md">aws_config_recorder.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_config_recorder` InSpec audit resource to test properties of your AWS Config service.
 
 The AWS Config service can monitor and record changes to your AWS resource configurations.  The AWS Config recorder is used to detect changes in resource configurations and capture these changes as configuration items.
@@ -50,10 +60,10 @@ end
 
 ## Parameters
 
-### recorder_name _(optional)_
+`recorder_name` _(optional)_
 
-This resource accepts a single parameter, the Configuration recorder name.
-This can be passed either as a string or as a `recorder_name: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the Configuration recorder name.
+  This can be passed either as a string or as a `recorder_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

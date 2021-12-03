@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_route53resolver_resolver_rule Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route53resolver_resolver_rule.md">aws_route53resolver_resolver_rule.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route53resolver_resolver_rule.md">aws_route53resolver_resolver_rule.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_route53resolver_resolver_rule` InSpec audit resource to test properties of a single AWS Route53 Resolver rule.
 
 The AWS Route53 Resolver Rule resource specifies which Resolver endpoint the queries pass through, one domain name that you want to forward to your network, and the IP addresses of the DNS resolvers in your network.
@@ -34,7 +44,7 @@ end
 
 `resolver_rule_id` _(required)_
 
-The ID of the Resolver rule.
+: The ID of the Resolver rule.
 
 ## Properties
 

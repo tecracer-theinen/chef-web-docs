@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_eip Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_eip.md">aws_ec2_eip.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_eip.md">aws_ec2_eip.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_eip` InSpec audit resource to test properties of a single specific Elastic IP (EIP).
 
 An Elastic IP (EIP) is uniquely identified by the public IPv4 address, for example `192.0.2.0`.

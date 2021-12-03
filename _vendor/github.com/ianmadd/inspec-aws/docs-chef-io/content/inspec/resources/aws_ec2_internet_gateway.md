@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_internet_gateway Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_internet_gateway.md">aws_ec2_internet_gateway.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_internet_gateway.md">aws_ec2_internet_gateway.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_internet_gateway` InSpec audit resource to test properties of a single specific AWS EC2 internet gateway.
 
 The `AWS::EC2::InternetGateway` resource allocates an internet gateway for use with a VPC. After creating the internet gateway, you then attach it to a VPC.
@@ -34,7 +44,7 @@ end
 
 `internet_gateway_id` _(required)_
 
-The ID of the internet gateway.
+: The ID of the internet gateway.
 
 ## Properties
 

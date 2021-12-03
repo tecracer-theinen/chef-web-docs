@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatch_metric_stream Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_metric_stream.md">aws_cloudwatch_metric_stream.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_metric_stream.md">aws_cloudwatch_metric_stream.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatch_metric_stream` InSpec audit resource to test properties of a single AWS CloudWatch metric stream.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS CloudWatch metric stream.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-metricstream.html).

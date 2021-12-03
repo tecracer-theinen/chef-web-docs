@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_logs_metric_filter Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_logs_metric_filter.md">aws_logs_metric_filter.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_logs_metric_filter.md">aws_logs_metric_filter.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_logs_metric_filter` InSpec audit resource to test properties of a single specific AWS CloudWatch logs metric filter.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS Logs MetricFilter](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html).
@@ -32,7 +42,7 @@ end
 
 `filter_name` _(required)_
 
-The name of the metric filter.
+: The name of the metric filter.
 
 ## Properties
 

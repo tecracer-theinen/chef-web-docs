@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_management_group Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_management_group.md">azure_management_group.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_management_group.md">azure_management_group.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_management_group` InSpec audit resource to test properties of an Azure management group.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -36,14 +46,23 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| name         | Management group name. `20000000-0001-0000-0000-000000000000` |
-| group_id     | Alias for the `name` parameter. |
-| resource_id  | The unique resource ID. `/providers/Microsoft.Management/managementGroups/{groupId}` |
-| expand       | Optional. The `expand: 'children'` includes children in the response. `expand: 'path'` includes the path from the root group to the current group. |
-| recurse      | Optional. The `recurse: true` includes the entire hierarchy in the response. Note that `expand: 'children'` will be set if `recurse` is set to `true`. |
-| filter       | Optional. A filter which allows the exclusion of subscriptions from results (i.e. `filter: 'children.childType ne Subscription'`) |
+`name`
+: Management group name. `20000000-0001-0000-0000-000000000000`.
+
+`group_id`
+: Alias for the `name` parameter.
+
+`resource_id`
+: The unique resource ID. `/providers/Microsoft.Management/managementGroups/{groupId}`.
+
+`expand`
+: Optional. The `expand: 'children'` includes children in the response. `expand: 'path'` includes the path from the root group to the current group.
+
+`recurse`
+: Optional. The `recurse: true` includes the entire hierarchy in the response. Note that `expand: 'children'` will be set if `recurse` is set to `true`.
+
+`filter`
+: Optional. A filter which allows the exclusion of subscriptions from results (i.e. `filter: 'children.childType ne Subscription'`).
 
 Either one of the parameter sets can be provided for a valid query along with the optional parameters:
 - `resource_id`

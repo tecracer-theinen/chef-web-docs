@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_virtual_network_peering Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_virtual_network_peering.md">azure_virtual_network_peering.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_virtual_network_peering.md">azure_virtual_network_peering.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_virtual_network_peering` InSpec audit resource to test properties related to a peering for a virtual network.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -36,12 +46,17 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                                                      |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`                                    |
-| vnet                           | Name of the Azure virtual network that the virtual network peering is created in. `MyVNetName`                   |
-| name                           | Name of the Azure virtual network peering to test. `MyVirtualNetworkPeeringName`                                 |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Network/virtualNetworks/{vnName}/virtualNetworkPeerings/{virtualNetworkPeeringName}` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`vnet`
+: Name of the Azure virtual network that the virtual network peering is created in. `MyVNetName`.
+
+`name`
+: Name of the Azure virtual network peering to test. `MyVirtualNetworkPeeringName`.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Network/virtualNetworks/{vnName}/virtualNetworkPeerings/{virtualNetworkPeeringName}`.
 
 Either one of the parameter sets can be provided for a valid query:
 - `resource_id`

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_network_insights_paths Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_network_insights_paths.md">aws_ec2_network_insights_paths.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_network_insights_paths.md">aws_ec2_network_insights_paths.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_network_insights_paths` InSpec audit resource to test properties of multiple AWS EC2 paths to analyze for reachability.
 
 The `AWS::EC2::NetworkInsightsPath` resource specifies a path to analyze for reachability.

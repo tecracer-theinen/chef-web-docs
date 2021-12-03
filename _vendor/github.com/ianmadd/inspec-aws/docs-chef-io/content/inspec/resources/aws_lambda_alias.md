@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_lambda_alias Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambda_alias.md">aws_lambda_alias.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambda_alias.md">aws_lambda_alias.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_lambda_alias` InSpec audit resource to test properties of a single AWS Lambda alias.
 
 The `AWS::Lambda::Alias` resource creates an alias for a Lambda function version. Use aliases to provide clients with a function identifier that you can update to invoke a different version.
@@ -34,11 +44,11 @@ end
 
 `function_name` _(required)_
 
-The name of the lambda function.
+: The name of the lambda function.
 
 `function_alias_name` _(required)_
 
-Name of the alias for which you want to retrieve information.
+: Name of the alias for which you want to retrieve information.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_rds_instance Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_rds_instance.md">aws_rds_instance.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_rds_instance.md">aws_rds_instance.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_rds_instance` InSpec audit resource to test detailed properties of an individual RDS instance.
 
 RDS gives you access to the capabilities of a MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, Oracle, or Amazon Aurora database server.
@@ -39,10 +49,10 @@ end
 
 ## Parameters
 
-##### db_instance_identifier _(required)_
+`db_instance_identifier` _(required)_
 
-This resource accepts a single parameter, the user-supplied instance identifier. This parameter isn't case-sensitive.
-This can be passed either as a string or as a `db_instance_identifier: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the user-supplied instance identifier. This parameter isn't case-sensitive.
+  This can be passed either as a string or as a `db_instance_identifier: 'value'` key-value entry in a hash.
 
 ## Properties
 

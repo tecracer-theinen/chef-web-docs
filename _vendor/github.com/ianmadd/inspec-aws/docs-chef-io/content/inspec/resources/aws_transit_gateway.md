@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_transit_gateway Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway.md">aws_transit_gateway.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway.md">aws_transit_gateway.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_transit_gateway` InSpec audit resource to test properties of a transit gateway.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Transit Gateways](https://docs.aws.amazon.com/vpc/latest/tgw/).
@@ -30,10 +40,10 @@ end
 
 ## Parameters
 
-### transit_gateway_id _(required)_
+`transit_gateway_id` _(required)_
 
-This resource accepts a single parameter, the Transit Gateway ID.
-This can be passed either as a string or as a `transit_gateway_id: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the Transit Gateway ID.
+  This can be passed either as a string or as a `transit_gateway_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

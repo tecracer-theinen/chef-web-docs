@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_dms_replication_subnet_groups Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_dms_replication_subnet_groups.md">aws_dms_replication_subnet_groups.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_dms_replication_subnet_groups.md">aws_dms_replication_subnet_groups.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_dms_replication_subnet_groups` InSpec audit resource to test properties of multiple DMS replication instance subnet groups.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on DMS Replication Subnet Group](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html).

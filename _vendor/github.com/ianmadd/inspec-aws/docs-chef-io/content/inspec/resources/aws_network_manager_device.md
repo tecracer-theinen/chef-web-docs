@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_network_manager_device Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_network_manager_device.md">aws_network_manager_device.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_network_manager_device.md">aws_network_manager_device.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_network_manager_device` InSpec audit resource to test properties of a single specific AWS Network Manager device.
 
 The `AWS::NetworkManager::Device` resource gets information about one or more of your devices in a global network.
@@ -34,11 +44,11 @@ end
 
 `device_id` _(required)_
 
-The ID of the device.
+: The ID of the device.
 
 `global_network_id` _(required)_
 
-The ID of the global network.
+: The ID of the global network.
 
 ## Properties
 

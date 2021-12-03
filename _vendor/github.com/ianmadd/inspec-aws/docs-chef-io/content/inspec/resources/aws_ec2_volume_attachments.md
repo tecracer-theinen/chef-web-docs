@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_volume_attachments Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_volume_attachments.md">aws_ec2_volume_attachments.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_volume_attachments.md">aws_ec2_volume_attachments.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_volume_attachments` InSpec audit resource to test properties of multiple AWS EC2 volume attachments.
 
 The `AWS::EC2::VolumeAttachment` resource attaches an Amazon EBS volume to a running instance and exposes it to the instance with the specified device name.

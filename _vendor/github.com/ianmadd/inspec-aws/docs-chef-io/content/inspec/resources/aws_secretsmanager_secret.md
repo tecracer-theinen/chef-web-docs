@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_secretsmanager_secret Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_secretsmanager_secret.md">aws_secretsmanager_secret.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_secretsmanager_secret.md">aws_secretsmanager_secret.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_secretsmanager_secret` InSpec audit resource to test properties of a single AWS Secret Manager secret.
 
 The `AWS::SecretsManager::Secret` resource creates a secret and stores it in Secrets Manager.

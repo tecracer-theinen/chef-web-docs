@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_express_route_circuit Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_express_route_circuit.md">azure_express_route_circuit.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_express_route_circuit.md">azure_express_route_circuit.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_express_route_circuit` InSpec audit resource to test properties of an Azure ExpressRoute circuit resource.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -40,11 +50,14 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                      |
-|--------------------------------|----------------------------------------------------------------------------------|
-| resource_group                 | The Azure resource group that the targeted resource resides in.                  |
-| circuit_name                   | The name of the ExpressRoute circuit.                                            |
-| resource_id                    | The resource ID of the ExpressRoute circuit.                                     |
+`resource_group`
+: The Azure resource group that the targeted resource resides in.
+
+`circuit_name`
+: The name of the ExpressRoute circuit.
+
+`resource_id`
+: The resource ID of the ExpressRoute circuit.
 
 Provide the `resource_group` and `name` parameters, or the `resource_id` for a valid query.
 

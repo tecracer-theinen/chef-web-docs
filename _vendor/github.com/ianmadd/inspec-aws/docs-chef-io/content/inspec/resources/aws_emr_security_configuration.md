@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_emr_security_configuration Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_emr_security_configuration.md">aws_emr_security_configuration.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_emr_security_configuration.md">aws_emr_security_configuration.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_emr_security_configuration` InSpec audit resource to test properties of the singular resource of AWS EMR security configuration.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS EMR security configuration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html).
@@ -38,8 +48,8 @@ end
 
 `security_configuration_name` _(required)_
 
-This resource requires a single parameter, the EMR security configuration name.
-This can be passed either as a string or as a `security_configuration_name: 'value'` key-value entry in a hash.
+: This resource requires a single parameter, the EMR security configuration name.
+  This can be passed either as a string or as a `security_configuration_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

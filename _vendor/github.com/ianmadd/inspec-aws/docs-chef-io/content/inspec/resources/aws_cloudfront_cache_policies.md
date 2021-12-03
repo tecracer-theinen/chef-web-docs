@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudfront_cache_policies Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_cache_policies.md">aws_cloudfront_cache_policies.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_cache_policies.md">aws_cloudfront_cache_policies.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudfront_cache_policies` InSpec audit resource to test properties of multiple AWS CloudFront cache policies.
 
 The `AWS::CloudFront::CachePolicy` resource describes the CloudFront cache policy.

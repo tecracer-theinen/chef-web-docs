@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ecr Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ecr.md">aws_ecr.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ecr.md">aws_ecr.md</a></p>
+</div>
+</div>
+
+
+
 > WARNING: **This resource is deprecated. Please use one of the following resources instead.** 
 
 - `aws_ecr_image`
@@ -38,10 +48,10 @@ end
 
 The ECR repository_name must be provided.
 
-### repository_name _(required)_
+`repository_name` _(required)_
 
-The name of the repository
-This can be passed either as a string or as an `repository_name: 'value'` key-value entry in a hash.
+: The name of the repository
+  This can be passed either as a string or as an `repository_name: 'value'` key-value entry in a hash.
 
 
 ## Properties

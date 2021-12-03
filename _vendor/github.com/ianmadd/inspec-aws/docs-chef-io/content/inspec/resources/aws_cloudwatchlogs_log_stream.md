@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatchlogs_log_stream Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatchlogs_log_stream.md">aws_cloudwatchlogs_log_stream.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatchlogs_log_stream.md">aws_cloudwatchlogs_log_stream.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatchlogs_log_stream` InSpec audit resource to test properties of the singular resource of AWS Logs log stream.
 
 The AWS::Logs::LogStream resource specifies an Amazon CloudWatch Logs log stream in a specific log group. A log stream represents the sequence of events coming from an application instance or resource you are monitoring.
@@ -34,10 +44,11 @@ end
 
 `log_group_name` and `log_stream_name_prefix` _(required)_
 
-| Property               | Description                                                |
-| :--------------------: | :--------------------------------------------------------: |
-| log_group_name         | The name of the log group where the log stream is created. |
-| log_stream_name_prefix | The name of the log stream.                                |
+`log_group_name`
+: The name of the log group where the log stream is created.
+
+`log_stream_name_prefix`
+: The name of the log stream.
 
 ## Properties
 

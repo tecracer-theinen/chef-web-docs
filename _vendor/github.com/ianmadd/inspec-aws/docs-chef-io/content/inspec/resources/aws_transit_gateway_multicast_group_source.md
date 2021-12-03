@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_transit_gateway_multicast_group_source Re
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway_multicast_group_source.md">aws_transit_gateway_multicast_group_source.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway_multicast_group_source.md">aws_transit_gateway_multicast_group_source.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_transit_gateway_multicast_group_source` InSpec audit resource to test properties of a single source (network interface) of an AWS EC2 transit gateway multicast domain group.
 
 The `AWS::EC2::TransitGatewayMulticastGroupSource` resource registers sources (network interfaces) with the specified transit gateway multicast domain.
@@ -34,7 +44,7 @@ end
 
 `transit_gateway_multicast_domain_id` _(required)_
 
-The ID of the transit gateway multicast domain.
+: The ID of the transit gateway multicast domain.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_server_certificate Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_server_certificate.md">aws_iam_server_certificate.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_server_certificate.md">aws_iam_server_certificate.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_server_certificate` InSpec audit resource to test the properties of a single IAM server certificate.
 
 This resource retrieves information about the specified server certificate, including the server certificate's path, GUID, ARN, and role.

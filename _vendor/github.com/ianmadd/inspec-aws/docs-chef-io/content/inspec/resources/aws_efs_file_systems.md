@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_efs_file_systems Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_efs_file_systems.md">aws_efs_file_systems.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_efs_file_systems.md">aws_efs_file_systems.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_efs_file_systems` InSpec audit resource to test the properties of some or all AWS EFS file systems. To audit a single EFS file system, use `aws_efs_file_ststem` (singular). 
 
 This resource is added to InSpec AWS resource pack in version **[1.10.0](https://github.com/inspec/inspec-aws/releases/tag/v1.10.0)** and it is available with InSpec **[4.18.108](https://github.com/inspec/inspec/releases/tag/v4.18.108)** and later versions.

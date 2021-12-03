@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_alb Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_alb.md">aws_alb.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_alb.md">aws_alb.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_alb` InSpec audit resource to test properties of a single AWS Application Load Balancer (ALB).
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference).
@@ -36,10 +46,10 @@ end
 
 ## Parameters
 
-### load_balancer_arn _(required)_
+`load_balancer_arn` _(required)_
 
-This resource accepts a single parameter, the ALB Arn which uniquely identifies the ALB.
-This can be passed either as a string or as a `load_balancer_arn: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the ALB Arn which uniquely identifies the ALB.
+  This can be passed either as a string or as a `load_balancer_arn: 'value'` key-value entry in a hash.
 
 ## Properties
 

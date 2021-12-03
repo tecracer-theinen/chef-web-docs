@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ses_template Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ses_template.md">aws_ses_template.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ses_template.md">aws_ses_template.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ses_template` InSpec audit resource to test properties of a single AWS Simple Email Service (SES) template.
 
 The `AWS::SES::Template` resource specifies an email template.
@@ -34,7 +44,7 @@ end
 
 `template_name` _(required)_
 
-The name of the template.
+: The name of the template.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_region Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_region.md">aws_region.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_region.md">aws_region.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_region` InSpec audit resource to test properties of a single AWS region.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Regions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html).
@@ -36,10 +46,10 @@ end
 
 ## Parameters
 
-##### region_name _(optional)_
+`region_name` _(optional)_
 
-This resource accepts a single parameter, the region_name. 
-This can be passed either as a string or as a `region_name: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the region_name. 
+  This can be passed either as a string or as a `region_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

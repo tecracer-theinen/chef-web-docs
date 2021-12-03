@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_signer_signing_profile Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_signer_signing_profile.md">aws_signer_signing_profile.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_signer_signing_profile.md">aws_signer_signing_profile.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_signer_signing_profile` InSpec audit resource to test properties of a single specific AWS Signer signing profile.
 
 A signing profile is a code signing template that can be used to carry out a pre-defined signing job.
@@ -34,7 +44,7 @@ end
 
 `profile_name` _(required)_
 
-The name of the target signing profile.
+: The name of the target signing profile.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_network_security_groups Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_network_security_groups.md">azure_network_security_groups.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_network_security_groups.md">azure_network_security_groups.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_network_security_groups` InSpec audit resource to enumerate Network Security Groups.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters

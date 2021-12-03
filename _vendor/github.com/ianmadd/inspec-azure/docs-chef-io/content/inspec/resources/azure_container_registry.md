@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_container_registry Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_container_registry.md">azure_container_registry.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_container_registry.md">azure_container_registry.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_container_registry` InSpec audit resource to test properties and configuration of an Azure Container Registry.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -38,12 +48,17 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`     |
-| name                           | The unique name of the targeted resource. `registryName`                          |
-| container_registry_name        | Alias for the `name` parameter.                                                   |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.ContainerRegistry/registries/{registryName}` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`name`
+: The unique name of the targeted resource. `registryName`.
+
+`container_registry_name`
+: Alias for the `name` parameter.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.ContainerRegistry/registries/{registryName}`.
 
 Either one of the parameter sets can be provided for a valid query:
 

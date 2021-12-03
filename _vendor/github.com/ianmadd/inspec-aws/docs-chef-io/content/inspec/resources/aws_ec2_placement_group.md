@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_placement_group Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_placement_group.md">aws_ec2_placement_group.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_placement_group.md">aws_ec2_placement_group.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_placement_group` InSpec audit resource to test properties of a single specific AWS EC2 placement group.
 
 The `AWS::EC2::PlacementGroup` resource type specifies a placement group in which to launch instances.
@@ -34,7 +44,7 @@ end
 
 `placement_group_name` _(required)_
 
-The name of the placement group.
+: The name of the placement group.
 
 ## Properties
 

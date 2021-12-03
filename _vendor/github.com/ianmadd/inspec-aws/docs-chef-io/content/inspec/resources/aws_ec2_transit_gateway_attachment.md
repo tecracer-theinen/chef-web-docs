@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_transit_gateway_attachment Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_transit_gateway_attachment.md">aws_ec2_transit_gateway_attachment.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_transit_gateway_attachment.md">aws_ec2_transit_gateway_attachment.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_transit_gateway_attachment` InSpec audit resource to test properties of a single specific Transit Gateway attachment.
 
 A Transit Gateway attachment attaches a VPC to a Transit Gateway.

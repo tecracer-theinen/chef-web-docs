@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudfront_realtime_log_config Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_realtime_log_config.md">aws_cloudfront_realtime_log_config.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_realtime_log_config.md">aws_cloudfront_realtime_log_config.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudfront_realtime_log_config` InSpec audit resource to test properties of a single specific AWS CloudFront real-time log configuration.
 
 The `AWS::CloudFront::RealtimeLogConfig` resource creates a real-time log configuration.
@@ -34,7 +44,7 @@ end
 
 `name` _(required)_
 
-The unique name of this real-time log configuration.
+: The unique name of this real-time log configuration.
 
 ## Properties
 

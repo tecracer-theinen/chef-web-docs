@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_redshift_clusters Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_redshift_clusters.md">aws_redshift_clusters.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_redshift_clusters.md">aws_redshift_clusters.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_redshift_clusters` InSpec audit resource to test properties of a collection of Amazon Redshift clusters.
 
 Redshift gives you access to the capabilities of a MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, Oracle, or Amazon Aurora database server.

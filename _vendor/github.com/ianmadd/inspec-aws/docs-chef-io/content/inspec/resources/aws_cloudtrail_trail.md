@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudtrail_trail Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudtrail_trail.md">aws_cloudtrail_trail.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudtrail_trail.md">aws_cloudtrail_trail.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudtrail_trail` InSpec audit resource to test properties of a single AWS CloudTrail.
 
 ## Installation
@@ -36,9 +46,9 @@ end
 
 ## Parameters
 
-##### trail_name _(required)_
-This resource expects a single parameter, the CloudTrail Name which uniquely identifies it. 
-This can be passed either as a string or as a `trail_name: 'value'` key-value entry in a hash.
+`trail_name` _(required)_
+: This resource expects a single parameter, the CloudTrail Name which uniquely identifies it. 
+  This can be passed either as a string or as a `trail_name: 'value'` key-value entry in a hash.
 
 See also the [AWS documentation on CloudTrail](https://docs.aws.amazon.com/cloudtrail/index.html#lang/en_us).
 

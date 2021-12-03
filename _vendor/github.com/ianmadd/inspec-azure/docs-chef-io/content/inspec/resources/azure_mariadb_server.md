@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_mariadb_server Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_mariadb_server.md">azure_mariadb_server.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_mariadb_server.md">azure_mariadb_server.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_mariadb_server` InSpec audit resource to test properties and configuration of an Azure MariaDB Server.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -36,13 +46,20 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`     |
-| name                           | Name of the MariaDB server to test. `MyServer`                                    |
-| server_name                    | Alias for the `name` parameter.                                                   |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.DBforMariaDB/servers/{serverName}` |
-| firewall_rules_api_version     | The endpoint api version for the `firewall_rules` property. The latest version will be used unless provided. |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`name`
+: Name of the MariaDB server to test. `MyServer`.
+
+`server_name`
+: Alias for the `name` parameter.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.DBforMariaDB/servers/{serverName}`.
+
+`firewall_rules_api_version`
+: The endpoint api version for the `firewall_rules` property. The latest version will be used unless provided.
 
 Either one of the parameter sets can be provided for a valid query:
 - `resource_id`

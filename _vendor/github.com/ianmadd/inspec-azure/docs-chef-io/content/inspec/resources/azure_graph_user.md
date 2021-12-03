@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_graph_user Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_graph_user.md">azure_graph_user.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_graph_user.md">azure_graph_user.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_graph_user` InSpec audit resource to test properties of an Azure Active Directory user within a Tenant.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -32,12 +42,20 @@ end
 
 Either one of the following parameters is mandatory.
 
-| Name               | Description | Example |
-|--------------------|-------------|---------|
-| user_principal_name | The user principal name. | `jdoe@contoso.com` |
-| id                  | Globally unique identifier. | `abcd-1234-efabc-5678` |
-| user_id             | Globally unique identifier. (For backward compatibility.) | `abcd-1234-efabc-5678` |  
+`user_principal_name`
+: The user principal name.
 
+: **Field**: `jdoe@contoso.com`
+
+`id`
+: Globally unique identifier.
+
+: **Field**: `abcd-1234-efabc-5678`
+
+`user_id`
+: Globally unique identifier. (For backward compatibility.).
+
+: **Field**: `abcd-1234-efabc-5678`
 ## Properties
 
 `id`

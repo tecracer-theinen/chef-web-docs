@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_web_app_function Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_web_app_function.md">azure_web_app_function.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_web_app_function.md">azure_web_app_function.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_web_app_function` InSpec audit resource to test properties related to a Azure function .
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -40,13 +50,20 @@ end
 
 ## Parameters
 
-| Name                            | Description                                                                      |
-|---------------------------------|----------------------------------------------------------------------------------|
-| resource_group                  | Azure resource group that the targeted resource resides in. `MyResourceGroup`    |
-| name                            | Name of the Azure Function App to test. `FunctionApp`                        |
-| site_name                       | Name of the Azure Function App to test (for backward compatibility). `FunctionApp` |
-| function_name                   | Name of the Azure Function to test `Function`                      |
-| resource_id                     | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Web/sites/{siteName}/functions/{functionName}` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`name`
+: Name of the Azure Function App to test. `FunctionApp`.
+
+`site_name`
+: Name of the Azure Function App to test (for backward compatibility). `FunctionApp`.
+
+`function_name`
+: Name of the Azure Function to test `Function`.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Web/sites/{siteName}/functions/{functionName}`.
 
 Either one of the parameter sets can be provided for a valid query:
 - `resource_id`

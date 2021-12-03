@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_vpc_endpoint_service Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc_endpoint_service.md">aws_vpc_endpoint_service.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc_endpoint_service.md">aws_vpc_endpoint_service.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_vpc_endpoint_service` InSpec audit resource to test the properties of a single AWS VPC endpoint service.
 
 ## Installation
@@ -28,12 +38,12 @@ end
 
 ## Parameters
 
-#### service_name _(required)_
+`service_name` _(required)_
 
-The name of the AWS VPC endpoint service.
+: The name of the AWS VPC endpoint service.
 
-The AWS VPC endpoint service name is required.
-It should be passed as a `service_name: 'value'` key-value entry in a hash.
+: The AWS VPC endpoint service name is required.
+  It should be passed as a `service_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

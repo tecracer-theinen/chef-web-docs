@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_emr_cluster Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_emr_cluster.md">aws_emr_cluster.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_emr_cluster.md">aws_emr_cluster.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_emr_cluster` InSpec audit resource to test properties of the singular resource of AWS EMR cluster.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS EMR clusters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html).
@@ -38,8 +48,8 @@ end
 
 `cluster_id` _(required)_
 
-This resource requires a single parameter, the EMR cluster ID.
-This can be passed either as a string or as a `cluster_id: 'value'` key-value entry in a hash.
+: This resource requires a single parameter, the EMR cluster ID.
+  This can be passed either as a string or as a `cluster_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ssm_resource_compliance_summary Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ssm_resource_compliance_summary.md">aws_ssm_resource_compliance_summary.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ssm_resource_compliance_summary.md">aws_ssm_resource_compliance_summary.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ssm_resource_compliance_summary` InSpec audit resource to test properties of a ssm resource compliance summary.
 
 ## Installation
@@ -29,22 +39,22 @@ end
 
 ## Parameters
 
-### resource_id _(required)_
+`resource_id` _(required)_
 
-This resource requires the SSM Resource ID parameter.
-This can be passed either as a string or as a `resource_id: 'value'` key-value entry in a hash.
+: This resource requires the SSM Resource ID parameter.
+  This can be passed either as a string or as a `resource_id: 'value'` key-value entry in a hash.
 
-### compliance_type _(optional)_
+`compliance_type` _(optional)_
 
-This optional parameter allows you to filter based on resource_id and compliance type together. This must be passed as a string `compliance_type: 'value'`.
+: This optional parameter allows you to filter based on resource_id and compliance type together. This must be passed as a string `compliance_type: 'value'`.
 
-### overall_severity _(optional)_
+`overall_severity` _(optional)_
 
-This optional parameter allows you to filter based on resource_id and overall severity together. This must be passed as a string `overall_severity: 'value'`.
+: This optional parameter allows you to filter based on resource_id and overall severity together. This must be passed as a string `overall_severity: 'value'`.
 
-### status _(optional)_
+`status` _(optional)_
 
-This optional parameter allows you to filter based on resource_id and status together. This must be passed as a string `status: 'value'`.
+: This optional parameter allows you to filter based on resource_id and status together. This must be passed as a string `status: 'value'`.
 
 See also the [AWS documentation on SSM Resource Compliance Summary](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-compliance-about.html#compliance-view-results).
 

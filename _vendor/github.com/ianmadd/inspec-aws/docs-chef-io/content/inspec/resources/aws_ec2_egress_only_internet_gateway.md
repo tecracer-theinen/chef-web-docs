@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_egress_only_internet_gateway Resource
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_egress_only_internet_gateway.md">aws_ec2_egress_only_internet_gateway.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_egress_only_internet_gateway.md">aws_ec2_egress_only_internet_gateway.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_egress_only_internet_gateway` InSpec audit resource to test properties of a single specific AWS EC2 egress-only internet gateway.
 
 The `AWS::EC2::EgressOnlyInternetGateway` specifies an egress-only internet gateway for your VPC.
@@ -32,9 +42,9 @@ end
 
 `egress_only_internet_gateway_id` _(required)_
 
-The ID of the egress-only internet gateway.
+: The ID of the egress-only internet gateway.
 
-For additional information, see the [AWS documentation on AWS EC2 egress-only internet gateway.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-egressonlyinternetgateway.html).
+: For additional information, see the [AWS documentation on AWS EC2 egress-only internet gateway.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-egressonlyinternetgateway.html).
 
 ## Properties
 

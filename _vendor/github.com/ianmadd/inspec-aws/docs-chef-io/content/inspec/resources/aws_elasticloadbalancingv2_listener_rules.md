@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_elasticloadbalancingv2_listener_rules Res
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_elasticloadbalancingv2_listener_rules.md">aws_elasticloadbalancingv2_listener_rules.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_elasticloadbalancingv2_listener_rules.md">aws_elasticloadbalancingv2_listener_rules.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_elasticloadbalancingv2_listener_rules` InSpec audit resource to test properties of multiple listener rules associated with an Application Load Balancer.
 
 Each rule consists of a priority, one or more actions, and one or more conditions.
@@ -34,7 +44,7 @@ end
 
 `listener_arn`  _(required)_
 
-The ARN of the listener.
+: The ARN of the listener.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_access_key Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_access_key.md">aws_iam_access_key.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_access_key.md">aws_iam_access_key.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_access_key` InSpec audit resource to test properties of a single AWS IAM Access Key.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on IAM Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
@@ -32,15 +42,15 @@ end
 
 This resources requires either an `access_key_id` or the IAM `username` associated with the Access Key.
 
-##### access_key_id _(required if `username` not provided.)_
+`access_key_id` _(required if `username` not provided.)_
 
-The Access Key ID which uniquely identifies the Key. Begins with the characters "AKIA". 
-This can be passed either as a string or as a `access_key_id: 'value'` key-value entry in a hash.
+: The Access Key ID which uniquely identifies the Key. Begins with the characters "AKIA". 
+  This can be passed either as a string or as a `access_key_id: 'value'` key-value entry in a hash.
 
-##### username _(required if `access_key_id` not provided.)_
+`username` _(required if `access_key_id` not provided.)_
 
-The IAM Username which is associated with the Access Key.
-This can be passed either as a string or as a `username: 'value'` key-value entry in a hash.
+: The IAM Username which is associated with the Access Key.
+  This can be passed either as a string or as a `username: 'value'` key-value entry in a hash.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_network_acls Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_network_acls.md">aws_network_acls.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_network_acls.md">aws_network_acls.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_network_acls` InSpec audit resource to test the properties of all Amazon network ACLs.
 To audit a single network ACL, use the `aws_network_acl` (singular) resource.
 

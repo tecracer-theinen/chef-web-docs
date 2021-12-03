@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatch_alarm Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_alarm.md">aws_cloudwatch_alarm.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_alarm.md">aws_cloudwatch_alarm.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatch_alarm` InSpec audit resource to test properties of a single CloudWatch Alarm.
 
 **If more than one Alarm matches, an error will be raised.**
@@ -30,17 +40,17 @@ end
 
 ## Parameters
 
-##### metric_name _(required)_
+`metric_name` _(required)_
 
-The metric name used by this alarm. This must be passed as a `metric_name: 'value'` key-value entry in a hash.
+: The metric name used by this alarm. This must be passed as a `metric_name: 'value'` key-value entry in a hash.
 
-##### metric_namespace _(required)_
+`metric_namespace` _(required)_
 
-The metric namespace used by this alarm. This must be passed as a `metric_namespace: 'value'` key-value entry in a hash.
+: The metric namespace used by this alarm. This must be passed as a `metric_namespace: 'value'` key-value entry in a hash.
 
-### dimensions _(optional)_
+`dimensions` _(optional)_
 
-The dimensions associated with this alarm. This must be passed as an array of hashes `dimensions: [{key:'value'}]` .
+: The dimensions associated with this alarm. This must be passed as an array of hashes `dimensions: [{key:'value'}]` .
 
 ## Properties
 

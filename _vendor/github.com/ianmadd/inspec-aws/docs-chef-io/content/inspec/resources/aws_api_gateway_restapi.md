@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_api_gateway_restapi Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_api_gateway_restapi.md">aws_api_gateway_restapi.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_api_gateway_restapi.md">aws_api_gateway_restapi.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_api_gateway_restapi` InSpec audit resource to test properties of a single AWS API Gateway REST API.
 
 The AWS::ApiGateway::RestApi resource creates a REST API.

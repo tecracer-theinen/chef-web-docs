@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_network_interface Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_network_interface.md">azure_network_interface.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_network_interface.md">azure_network_interface.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_network_interface` InSpec audit resource to test properties and configuration of Azure Network Interface.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -36,11 +46,14 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`     |
-| name                           | Name of the AKS cluster to test. `networkInterfaceName`                                      |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkInterfaces/{networkInterfaceName}` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`name`
+: Name of the AKS cluster to test. `networkInterfaceName`.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkInterfaces/{networkInterfaceName}`.
 
 Either one of the parameter sets can be provided for a valid query:
 - `resource_id`

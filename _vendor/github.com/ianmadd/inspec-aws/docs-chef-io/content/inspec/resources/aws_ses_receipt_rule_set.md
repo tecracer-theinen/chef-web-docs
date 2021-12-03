@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ses_receipt_rule_set Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ses_receipt_rule_set.md">aws_ses_receipt_rule_set.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ses_receipt_rule_set.md">aws_ses_receipt_rule_set.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ses_receipt_rule_set` InSpec audit resource to test properties of a single AWS Simple Email Service (SES) receipt rule set.
 
 The `AWS::SES::ReceiptRuleSet` resource specifies a receipt rule set.
@@ -34,7 +44,7 @@ end
 
 `rule_set_name` _(required)_
 
-The name of the receipt rule set to describe.
+: The name of the receipt rule set to describe.
 
 ## Properties
 

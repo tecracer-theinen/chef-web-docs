@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_subscription Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_subscription.md">azure_subscription.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_subscription.md">azure_subscription.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_subscription` InSpec audit resource to test properties of the current subscription.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -43,11 +53,14 @@ end
 
 ## Parameters
 
-| Name                                  | Description |
-|---------------------------------------|-------------|
-| id                                    | The ID of the target subscription. `2e0b423p-aaaa-bbbb-1111-ee558463aabbd` |
-| resource_id                           | The fully qualified ID for the subscription. `/subscriptions/2e0b423p-aaaa-bbbb-1111-ee558463aabbd` |
-| locations_api_version                 | The endpoint api version for the `locations` property. Optional. The latest version will be used unless provided. |
+`id`
+: The ID of the target subscription. `2e0b423p-aaaa-bbbb-1111-ee558463aabbd`.
+
+`resource_id`
+: The fully qualified ID for the subscription. `/subscriptions/2e0b423p-aaaa-bbbb-1111-ee558463aabbd`.
+
+`locations_api_version`
+: The endpoint api version for the `locations` property. Optional. The latest version will be used unless provided.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_transfer_user Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transfer_user.md">aws_transfer_user.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transfer_user.md">aws_transfer_user.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_transfer_user` InSpec audit resource to test properties of a single Transfer user.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Transfer user](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html).
@@ -32,11 +42,11 @@ end
 
 `server_id` _(required)_
 
-The system-assigned unique identifier for a server that this user has been assigned to.
+: The system-assigned unique identifier for a server that this user has been assigned to.
 
 `user_name` _(required)_
 
-The name of the user assigned to one or more servers.
+: The name of the user assigned to one or more servers.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_securityhub_hub Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_securityhub_hub.md">aws_securityhub_hub.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_securityhub_hub.md">aws_securityhub_hub.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_securityhub_hub` InSpec audit resource to test properties of a single AWS Security Hub.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS Security Hub](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeHub.html).
@@ -32,7 +42,7 @@ end
 
 `hub_arn` _(required)_
 
-The ARN of the Hub resource that was retrieved.
+: The ARN of the Hub resource that was retrieved.
 
 ## Properties
 

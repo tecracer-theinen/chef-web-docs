@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_rds_db_cluster_snapshots Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_rds_db_cluster_snapshots.md">aws_rds_db_cluster_snapshots.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_rds_db_cluster_snapshots.md">aws_rds_db_cluster_snapshots.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_rds_db_cluster_snapshots` InSpec audit resource to test the properties of a single specific AWS RDS Cluster snapshot.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS RDS Cluster Snapshot.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_RDS.html).

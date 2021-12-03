@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_apigateway_authorizer Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_apigateway_authorizer.md">aws_apigateway_authorizer.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_apigateway_authorizer.md">aws_apigateway_authorizer.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_apigateway_authorizer` InSpec audit resource to test properties of a single specific AWS API Gateway authorizer.
 
 The `AWS::ApiGateway::Authorizer` resource creates an authorization layer that API Gateway activates for methods that have authorization enabled. API Gateway activates the authorizer when a client calls those methods.
@@ -34,11 +44,11 @@ end
 
 `rest_api_id` _(required)_
 
-The string identifier of the associated REST API.
+: The string identifier of the associated REST API.
 
 `authorizer_id` _(required)_
 
-The identifier of the authorizer resource.
+: The identifier of the authorizer resource.
 
 ## Properties
 

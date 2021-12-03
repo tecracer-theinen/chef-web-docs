@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_vpc_endpoint_service_permission Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc_endpoint_service_permission.md">aws_vpc_endpoint_service_permission.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc_endpoint_service_permission.md">aws_vpc_endpoint_service_permission.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_vpc_endpoint_service_permission` InSpec audit resource to test the properties of a single AWS VPC endpoint service permission.
 
 ## Installation
@@ -30,22 +40,22 @@ end
 
 The AWS VPC endpoint service ID is required.
 
-#### service_id _(required)_
+`service_id` _(required)_
 
-The ID of the VPC endpoint service:
+: The ID of the VPC endpoint service:
 
-- must contain between 1 and 50 alphanumeric characters or hyphens
-- should start with `vpce-svc-`
-- cannot end with a hyphen or contain two consecutive hyphens
+: - must contain between 1 and 50 alphanumeric characters or hyphens
+  - should start with `vpce-svc-`
+  - cannot end with a hyphen or contain two consecutive hyphens
 
-For example, `vpce-svc-04deb776dc2b8e67f`.
+: For example, `vpce-svc-04deb776dc2b8e67f`.
 
-It can be passed as a `service_id: 'value'` key-value entry in a hash.
+: It can be passed as a `service_id: 'value'` key-value entry in a hash.
 
-### principal _(required)_
+`principal` _(required)_
 
-The ARN of the principal.
-It can be passed as a `principal: 'value'` key-value entry in a hash.
+: The ARN of the principal.
+  It can be passed as a `principal: 'value'` key-value entry in a hash.
 
 ## Properties
 

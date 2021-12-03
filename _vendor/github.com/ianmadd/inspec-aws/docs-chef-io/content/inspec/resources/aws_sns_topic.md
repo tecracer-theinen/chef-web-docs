@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_sns_topic Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_sns_topic.md">aws_sns_topic.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_sns_topic.md">aws_sns_topic.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_sns_topic` InSpec audit resource to test properties of a single AWS Simple Notification Service Topic.  SNS topics are channels for related events. AWS resources place events in the Simple Notification Service (SNS) topic, while other AWS resources subscribe to receive notifications when new events occur.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html).
@@ -35,10 +45,10 @@ end
 
 ## Parameters
 
-### arn _(required)_
+`arn` _(required)_
 
-This resource accepts a single parameter, the ARN of the SNS Topic. 
-This can be passed either as a string or as a `arn: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the ARN of the SNS Topic. 
+  This can be passed either as a string or as a `arn: 'value'` key-value entry in a hash.
 
 ## Properties
 

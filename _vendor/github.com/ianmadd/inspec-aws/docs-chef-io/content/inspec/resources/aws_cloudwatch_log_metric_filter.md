@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatch_log_metric_filter Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_log_metric_filter.md">aws_cloudwatch_log_metric_filter.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_log_metric_filter.md">aws_cloudwatch_log_metric_filter.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatch_log_metric_filter` InSpec audit resource to search for and test properties of individual AWS Cloudwatch Log Metric Filters.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on CloudWatch](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncloudwatch.html).
@@ -36,17 +46,17 @@ end
 
 **Note**: _While all parameters are optional, at least one must be provided. In practice, the more parameters you provide the narrower a result you will return._
 
-### filter_name _(optional)_
+`filter_name` _(optional)_
 
-The name of the Log Metric Filter. Expected in a hash as `filter_name: 'value'`.
+: The name of the Log Metric Filter. Expected in a hash as `filter_name: 'value'`.
 
-### log_group_name _(optional)_
+`log_group_name` _(optional)_
 
-The log group of the filter. Expected in a hash as `log_group_name: 'value'`.
+: The log group of the filter. Expected in a hash as `log_group_name: 'value'`.
 
-### pattern _(optional)_
+`pattern` _(optional)_
 
-A pattern by which to narrow down the result-set, if you expect multiple results. Expected in a hash as `pattern: 'value'`.
+: A pattern by which to narrow down the result-set, if you expect multiple results. Expected in a hash as `pattern: 'value'`.
 
 ## Properties
 

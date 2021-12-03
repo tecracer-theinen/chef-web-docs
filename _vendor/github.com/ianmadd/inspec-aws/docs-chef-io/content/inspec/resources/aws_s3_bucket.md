@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_s3_bucket Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_s3_bucket.md">aws_s3_bucket.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_s3_bucket.md">aws_s3_bucket.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_s3_bucket` InSpec audit resource to test properties of a single AWS bucket.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html).
@@ -37,10 +47,10 @@ end
 
 ## Parameters
 
-##### bucket_name _(required)_
+`bucket_name` _(required)_
 
-This resource accepts a single parameter, the S3 Bucket Name which uniquely identifies the bucket. 
-This can be passed either as a string or as a `bucket_name: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the S3 Bucket Name which uniquely identifies the bucket. 
+  This can be passed either as a string or as a `bucket_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

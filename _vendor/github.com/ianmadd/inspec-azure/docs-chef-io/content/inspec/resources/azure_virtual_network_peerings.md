@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_virtual_network_peerings Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_virtual_network_peerings.md">azure_virtual_network_peerings.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_virtual_network_peerings.md">azure_virtual_network_peerings.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_virtual_network_peerings` InSpec audit resource to test properties related to virtual network peerings of a virtual network.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -31,10 +41,11 @@ end
 
 ## Parameters
 
-|Name               | Description        |
-|-------------------|--------------------|
-| resource_group    | Azure resource group that the targeted resource resides in. `MyResourceGroup`    |
-| vnet              | The virtual network that the network peering that you wish to test is a part of. |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`vnet`
+: The virtual network that the network peering that you wish to test is a part of.
 
 ## Properties
 

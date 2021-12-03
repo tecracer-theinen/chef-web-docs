@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudformation_stack Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudformation_stack.md">aws_cloudformation_stack.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudformation_stack.md">aws_cloudformation_stack.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudformation_stack ` InSpec audit resource to test properties of a single AWS Cloud Formation Stack.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Cloud Formation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/Welcome.html).
@@ -36,10 +46,10 @@ end
 
 ## Parameters
 
-##### stack_name _(required)_
+`stack_name` _(required)_
 
-This resource accepts a single parameter, the CloudFormation Stack name which uniquely identifies the stack. 
-This can be passed either as a string or as a `stack_name: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the CloudFormation Stack name which uniquely identifies the stack. 
+  This can be passed either as a string or as a `stack_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

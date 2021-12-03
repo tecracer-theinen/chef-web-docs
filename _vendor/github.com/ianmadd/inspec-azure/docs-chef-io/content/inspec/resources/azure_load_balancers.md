@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_load_balancers Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_load_balancers.md">azure_load_balancers.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_load_balancers.md">azure_load_balancers.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_load_balancers` InSpec audit resource to test properties and configuration of Azure Load Balancers.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters

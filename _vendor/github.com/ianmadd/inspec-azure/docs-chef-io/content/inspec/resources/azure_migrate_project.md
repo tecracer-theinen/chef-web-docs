@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_migrate_project Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_migrate_project.md">azure_migrate_project.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_migrate_project.md">azure_migrate_project.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_migrate_project` InSpec audit resource to test properties related to an Azure Migrate Project.
 
 ## Azure Rest API Version, Endpoint, and HTTP Client Parameters
@@ -20,7 +30,7 @@ If not provided, the latest version will be used.
 For more information, refer to [`azure_generic_resource`]({{< relref "azure_generic_resource.md" >}}).
 
 Unless defined, `azure_cloud` global endpoint, and default values for the HTTP client will be used.
-For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/master/README.md).
+For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/main/README.md).
 
 ### Availability
 
@@ -48,10 +58,11 @@ end
 
 ## Parameters
 
-| Name           | Description                                                                      |
-|----------------|----------------------------------------------------------------------------------|
-| name           | Name of the Azure migrate projectto test.                                   |
-| resource_group | Azure resource group that the targeted resource resides in.    |
+`name`
+: Name of the Azure migrate projectto test.
+
+`resource_group`
+: Azure resource group that the targeted resource resides in.
 
 The parameter set should be provided for a valid query:
 - `resource_group` and `name`

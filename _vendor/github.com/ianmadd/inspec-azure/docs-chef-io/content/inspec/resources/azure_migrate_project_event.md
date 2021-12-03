@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_migrate_project_event Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_migrate_project_event.md">azure_migrate_project_event.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_migrate_project_event.md">azure_migrate_project_event.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_migrate_project_event` InSpec audit resource to test the properties related to an Azure Migrate project event.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -39,11 +49,14 @@ end
 
 ## Parameters
 
-| Name           | Description                                                                      |
-|----------------|----------------------------------------------------------------------------------|
-| name           | Name of the Azure Migrate project event to test.                                 |
-| resource_group | Azure resource group that the targeted resource resides in.                      |
-| project_name   | Azure Migrate assessment project name.                                                |
+`name`
+: Name of the Azure Migrate project event to test.
+
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`project_name`
+: Azure Migrate assessment project name.
 
 The parameter set should be provided for a valid query:
 

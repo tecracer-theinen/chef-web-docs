@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_network_watcher Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_network_watcher.md">azure_network_watcher.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_network_watcher.md">azure_network_watcher.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_network_watcher` InSpec audit resource to test properties of an Azure network watcher.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -36,15 +46,26 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the network watcher resides in. `resourceGroupName`   |
-| name                           | Name of the network watcher to test. `networkWatcherName`                             |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkWatchers/{networkWatcherName}` |
-| flow_logs_api_version          | The flow log status endpoint api version used for creating `flow_logs` property. The latest version will be used unless provided. A network security group within the same region can be targeted for getting the flow log statuses. For more, see [here](https://docs.microsoft.com/en-us/rest/api/network-watcher/networkwatchers/getflowlogstatus).|
-| nsg_resource_id                | The unique resource ID of the network security group being targeted to get the flow log statuses. `/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkSecurityGroups/{networkSecurityGroupName}` |
-| nsg_resource_group             | The resource group of the network security group being targeted to get the flow log statuses. This requires `nsg_name` to be provided. |
-| nsg_name                       | The name of the network security group being targeted to get the flow log statuses. This requires `nsg_resource_group` to be provided.|
+`resource_group`
+: Azure resource group that the network watcher resides in. `resourceGroupName`.
+
+`name`
+: Name of the network watcher to test. `networkWatcherName`.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkWatchers/{networkWatcherName}`.
+
+`flow_logs_api_version`
+: The flow log status endpoint api version used for creating `flow_logs` property. The latest version will be used unless provided. A network security group within the same region can be targeted for getting the flow log statuses. For more, see [here](https://docs.microsoft.com/en-us/rest/api/network-watcher/networkwatchers/getflowlogstatus).
+
+`nsg_resource_id`
+: The unique resource ID of the network security group being targeted to get the flow log statuses. `/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/networkSecurityGroups/{networkSecurityGroupName}`.
+
+`nsg_resource_group`
+: The resource group of the network security group being targeted to get the flow log statuses. This requires `nsg_name` to be provided.
+
+`nsg_name`
+: The name of the network security group being targeted to get the flow log statuses. This requires `nsg_resource_group` to be provided.
 
 
 Either one of the parameter sets can be provided for a valid query:

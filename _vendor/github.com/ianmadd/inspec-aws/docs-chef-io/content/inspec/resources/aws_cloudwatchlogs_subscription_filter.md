@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatchlogs_subscription_filter Resour
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatchlogs_subscription_filter.md">aws_cloudwatchlogs_subscription_filter.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatchlogs_subscription_filter.md">aws_cloudwatchlogs_subscription_filter.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatchlogs_subscription_filter` InSpec audit resource to test properties of a single specific AWS Logs Subscription Filter.
 
 The AWS::Logs::SubscriptionFilter specifies a subscription filter and associates it with the specified log group.
@@ -34,10 +44,11 @@ end
 
 `log_group_name` and `filter_name_prefix` _(required)_
 
-| Property           | Description                              |
-| :----------------: | :--------------------------------------: |
-| log_group_name     | The name of the log group to associate with the subscription filter. All log events that are uploaded to this log group are filtered and delivered to the specified AWS resource if the filter pattern matches the log events. |
-| filter_name_prefix | The name of the subscription filter.     |
+`log_group_name`
+: The name of the log group to associate with the subscription filter. All log events that are uploaded to this log group are filtered and delivered to the specified AWS resource if the filter pattern matches the log events.
+
+`filter_name_prefix`
+: The name of the subscription filter.
 
 ## Properties
 

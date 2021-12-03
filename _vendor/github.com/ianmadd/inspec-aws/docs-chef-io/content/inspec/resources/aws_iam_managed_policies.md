@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_managed_policies Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_managed_policies.md">aws_iam_managed_policies.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_managed_policies.md">aws_iam_managed_policies.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_managed_policies` InSpec audit resource to test the properties of a collection of AWS IAM managed policies.
 
 ## Installation
@@ -62,9 +72,9 @@ See the [AWS documentation on IAM Managed Policy](https://docs.aws.amazon.com/AW
 - `Local` returns customer-managed policies.
 - `ALL` returns all policies.
 
-Specify a scope by passing a key-value entry in a hash: `scope: 'VALUE'`.
+: Specify a scope by passing a key-value entry in a hash: `scope: 'VALUE'`.
 
-If ommitted, all policies are returned.
+: If ommitted, all policies are returned.
 
 ## Properties
 

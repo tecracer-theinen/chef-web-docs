@@ -1,3 +1,4 @@
+This resource is available in the [Chef InSpec AWS resource pack](https://github.com/inspec/inspec-aws).
 
 ### Setting up AWS credentials for Chef InSpec
 

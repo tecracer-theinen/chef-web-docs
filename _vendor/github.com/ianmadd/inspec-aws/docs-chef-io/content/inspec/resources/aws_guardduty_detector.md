@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_guardduty_detector Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_guardduty_detector.md">aws_guardduty_detector.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_guardduty_detector.md">aws_guardduty_detector.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_guardduty_detector` InSpec audit resource to test properties of a single AWS GuardDuty Detector.
 
 For additional information, including details on parameters and properties, see the [Actions, Resources, and Condition Keys for Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetDetector.html).
@@ -36,10 +46,10 @@ end
 
 ## Parameters
 
-##### detector_id _(required)_
+`detector_id` _(required)_
 
-This resource accepts a single parameter, the GuardDuty Detector ID.
-This can be passed either as a string or as a `detector_id: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the GuardDuty Detector ID.
+  This can be passed either as a string or as a `detector_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

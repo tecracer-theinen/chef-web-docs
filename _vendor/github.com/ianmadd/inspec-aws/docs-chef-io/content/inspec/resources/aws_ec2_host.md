@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_host Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_host.md">aws_ec2_host.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_host.md">aws_ec2_host.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_host` InSpec audit resource to test properties of a single AWS EC2 host resource.
 
 The `AWS::EC2::host` allocates a fully dedicated physical server for launching EC2 instances.
@@ -34,7 +44,7 @@ end
 
 `host_id` _(required)_
 
-The ID of the dedicated host.
+: The ID of the dedicated host.
 
 ## Properties
 

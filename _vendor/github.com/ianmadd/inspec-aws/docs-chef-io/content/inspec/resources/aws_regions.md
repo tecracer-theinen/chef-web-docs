@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_regions Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_regions.md">aws_regions.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_regions.md">aws_regions.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_regions` InSpec audit resource to test properties of some or all AWS regions in bulk.  
 
 Note that this resource lists all AWS regions that are currently available to the caller.
@@ -32,9 +42,9 @@ end
 
 ## Parameters
 
-### name _(required)_
+`name` _(required)_
 
-This resource does not expect any parameters.
+: This resource does not expect any parameters.
 
 ## Properties
 

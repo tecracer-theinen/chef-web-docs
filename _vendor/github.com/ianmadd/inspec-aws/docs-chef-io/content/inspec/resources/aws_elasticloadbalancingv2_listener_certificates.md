@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_elasticloadbalancingv2_listener_certifica
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_elasticloadbalancingv2_listener_certificates.md">aws_elasticloadbalancingv2_listener_certificates.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_elasticloadbalancingv2_listener_certificates.md">aws_elasticloadbalancingv2_listener_certificates.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_elasticloadbalancingv2_listener_certificates` InSpec audit resource to test properties of multiple TLS or HTTPS listener certificates.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on ElasticLoadBalancingV2 Listener Certificate](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html).
@@ -30,9 +40,9 @@ end
 
 ## Parameters
 
-### listener_arn _(required)_
+`listener_arn` _(required)_
 
-The Amazon Resource Name (ARN) of the listener certificate.
+: The Amazon Resource Name (ARN) of the listener certificate.
 
 ## Properties
 

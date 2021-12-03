@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_lambda_event_invoke_configs Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambda_event_invoke_configs.md">aws_lambda_event_invoke_configs.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambda_event_invoke_configs.md">aws_lambda_event_invoke_configs.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_lambda_event_invoke_configs` InSpec audit resource to test properties of the plural resource of AWS Lambda EventInvokeConfig.
 
 The AWS::Lambda::EventInvokeConfig resource configures options for asynchronous invocation on a version or an alias.
@@ -34,7 +44,7 @@ end
 
 `function_name` _(required)_
 
-The name of the function.
+: The name of the function.
 
 ## Properties
 

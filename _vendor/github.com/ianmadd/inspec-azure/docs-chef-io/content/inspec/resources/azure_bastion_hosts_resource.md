@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_bastion_hosts_resource Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_bastion_hosts_resource.md">azure_bastion_hosts_resource.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_bastion_hosts_resource.md">azure_bastion_hosts_resource.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_bastion_hosts_resource` InSpec audit resource to test properties related to a bastion hosts resource.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -31,10 +41,11 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                      |
-|--------------------------------|----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`     |
-| name                           | Name of the virtual network to test. `MyVNetwork`                                 |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`name`
+: Name of the virtual network to test. `MyVNetwork`.
 
 Both of the parameter sets should be provided for a valid query:
 - `resource_group` and `name`

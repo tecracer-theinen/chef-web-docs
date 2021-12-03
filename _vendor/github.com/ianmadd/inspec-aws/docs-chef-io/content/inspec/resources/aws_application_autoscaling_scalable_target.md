@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_application_autoscaling_scalable_target R
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_application_autoscaling_scalable_target.md">aws_application_autoscaling_scalable_target.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_application_autoscaling_scalable_target.md">aws_application_autoscaling_scalable_target.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_application_autoscaling_scalable_target` InSpec audit resource to test properties of a resource that Application Auto Scaling can scale.
 
 For additional information, including details on parameters and properties, see the [AWS ApplicationAutoScaling ScalableTarget documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html).
@@ -30,7 +40,7 @@ end
 
 `service_namespace` _(required)_
 
-The namespace of the AWS service that provides the resource.
+: The namespace of the AWS service that provides the resource.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_dynamodb_table Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_dynamodb_table.md">aws_dynamodb_table.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_dynamodb_table.md">aws_dynamodb_table.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_dynamodb_table` InSpec audit resource to test properties of a single DynamoDb Table.
 
 ## Installation
@@ -28,9 +38,9 @@ end
 
 ## Parameters
 
-##### table_name _(required)_
+`table_name` _(required)_
 
-The table name used by this DynamoDb Table. This must be passed as a `table_name: 'value'` key-value entry in a hash.
+: The table name used by this DynamoDb Table. This must be passed as a `table_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_resource_health_events Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_resource_health_events.md">azure_resource_health_events.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_resource_health_events.md">azure_resource_health_events.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_resource_health_events` InSpec audit resource to test properties related to all Azure Resource Health events for the subscription.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -46,11 +56,14 @@ To list all service health events in a subscription, do not provide any paramete
 To list events for a particular resource, pass in all three parameters listed below.
 If one or more parameters are missing then all events in a subscription will be returned.
 
-| Name                           | Description                                                                          |
-|--------------------------------|--------------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in.                          |
-| resource_type                  | The name of the resource type.                                                       |
-| resource_id                    | The unique identifier of the resource.                                               |
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`resource_type`
+: The name of the resource type.
+
+`resource_id`
+: The unique identifier of the resource.
 
 ## Properties
 

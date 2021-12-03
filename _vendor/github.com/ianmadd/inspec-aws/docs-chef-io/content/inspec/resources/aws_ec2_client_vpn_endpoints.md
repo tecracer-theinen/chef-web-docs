@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_client_vpn_endpoints Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_client_vpn_endpoints.md">aws_ec2_client_vpn_endpoints.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_client_vpn_endpoints.md">aws_ec2_client_vpn_endpoints.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_client_vpn_endpoints` InSpec audit resource to test properties of multiple AWS EC2 Client VPN endpoint.
 
 The `AWS::EC2::ClientVpnEndpoint` specifies a Client VPN endpoint.

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ecrpublic_repository Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ecrpublic_repository.md">aws_ecrpublic_repository.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ecrpublic_repository.md">aws_ecrpublic_repository.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ecrpublic_repository` InSpec audit resource to test the properties of a single AWS Elastic Container Registry (ECR) public repository.
 
 ## Installation
@@ -38,18 +48,18 @@ end
 
 The repository name must be provided. The registry id is optional.
 
-#### repository_name _(required)_
+`repository_name` _(required)_
 
-The name of the ECR repository must satisfy the following constraints:
+: The name of the ECR repository must satisfy the following constraints:
 
-- It must match the following regular expression: `(?:[a-z0-9]+(?:[._-][a-z0-9]+)*/)*[a-z0-9]+(?:[._-][a-z0-9]+)*`.
-- It must be between 2 and 256 characters long.
+: - It must match the following regular expression: `(?:[a-z0-9]+(?:[._-][a-z0-9]+)*/)*[a-z0-9]+(?:[._-][a-z0-9]+)*`.
+  - It must be between 2 and 256 characters long.
 
-The `repository_name` can be passed as a string or as a `repository_name: 'value'` key-value entry in a hash.
+: The `repository_name` can be passed as a string or as a `repository_name: 'value'` key-value entry in a hash.
 
-#### registry_id _(optional)_
+`registry_id` _(optional)_
 
-The 12-digit ID of the AWS Elastic Container Registry. If not provided, this resource will use the [default public registry](https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_DescribeRepositories.html).
+: The 12-digit ID of the AWS Elastic Container Registry. If not provided, this resource will use the [default public registry](https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_DescribeRepositories.html).
 
 ## Properties
 

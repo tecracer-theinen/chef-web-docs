@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_lambda_permission Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambda_permission.md">aws_lambda_permission.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambda_permission.md">aws_lambda_permission.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_lambda_permission` InSpec audit resource to test properties of a single AWS Lambda permission.
 
 The `AWS::Lambda::Permission` resource grants an AWS service or another account permission to use a function. You can apply the policy at the function level, or specify a qualifier to restrict access to a single version or alias. If you use a qualifier, the invoker must use the full Amazon Resource Name (ARN) of that version or alias to invoke the function.
@@ -34,11 +44,11 @@ end
 
 `function_name` _(required)_
 
-The name of the Lambda function.
+: The name of the Lambda function.
 
 `Sid` _(required)_
 
-The statement ID of the function.
+: The statement ID of the function.
 
 ## Properties
 

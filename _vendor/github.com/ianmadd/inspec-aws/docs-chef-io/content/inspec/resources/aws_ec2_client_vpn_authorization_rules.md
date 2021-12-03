@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_client_vpn_authorization_rules Resour
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_client_vpn_authorization_rules.md">aws_ec2_client_vpn_authorization_rules.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_client_vpn_authorization_rules.md">aws_ec2_client_vpn_authorization_rules.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_client_vpn_authorization_rules` InSpec audit resource to test properties of a single specific AWS EC2 Client VPN authorization rule.
 
 The AWS::EC2::ClientVpnAuthorizationRule specifies an ingress authorization rule to add to a Client VPN endpoint.
@@ -34,7 +44,7 @@ end
 
 `client_vpn_endpoint_id` _(required)_
 
-The ID of the Client VPN endpoint.
+: The ID of the Client VPN endpoint.
 
 ## Properties
 

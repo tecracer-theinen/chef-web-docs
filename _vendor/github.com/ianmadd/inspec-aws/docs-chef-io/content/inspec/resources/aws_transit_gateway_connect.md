@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_transit_gateway_connect Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway_connect.md">aws_transit_gateway_connect.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway_connect.md">aws_transit_gateway_connect.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_transit_gateway_connect` InSpec audit resource to test properties of a single AWS EC2 Transit Gateway Connect.
 
 The `AWS::EC2::TransitGatewayConnect` resource creates a Connect attachment from a specified transit gateway attachment.
@@ -34,7 +44,7 @@ end
 
 `transit_gateway_attachment_id` _(required)_
 
-The ID of the transit gateway Connect attachment.
+: The ID of the transit gateway Connect attachment.
 
 ## Properties
 

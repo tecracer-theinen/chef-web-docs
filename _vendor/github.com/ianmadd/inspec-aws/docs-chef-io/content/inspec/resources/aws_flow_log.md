@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_flow_log Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_flow_log.md">aws_flow_log.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_flow_log.md">aws_flow_log.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_flow_log` InSpec audit resource to test properties of a single Flow Log.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html).
@@ -30,20 +40,20 @@ end
 
 This resource requires at least one of the following parameters to be provided: `flow_log_id`, `subnet_id`, `vpc_id`.
 
-##### flow_log_id _(required if no other parameters provided)_
+`flow_log_id` _(required if no other parameters provided)_
 
-The Flow Log ID which uniquely identifies the Flow Log. 
-This can be passed either as a string or as a `flow_log_id: 'value'` key-value entry in a hash.
+: The Flow Log ID which uniquely identifies the Flow Log. 
+  This can be passed either as a string or as a `flow_log_id: 'value'` key-value entry in a hash.
 
-##### subnet_id _(required if no other parameters provided)_
+`subnet_id` _(required if no other parameters provided)_
 
-The subnet associated with the Flow Log, if applicable. 
-This must be passed as a `subnet_id: 'value'` key-value entry in a hash.
+: The subnet associated with the Flow Log, if applicable. 
+  This must be passed as a `subnet_id: 'value'` key-value entry in a hash.
 
-##### vpc_id _(required if no other parameters provided)_
+`vpc_id` _(required if no other parameters provided)_
 
-The VPC associated with the Flow Log, if applicable. 
-This must be passed as a `vpc_id: 'value'` key-value entry in a hash.
+: The VPC associated with the Flow Log, if applicable. 
+  This must be passed as a `vpc_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_capacity_reservation Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_capacity_reservation.md">aws_ec2_capacity_reservation.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_capacity_reservation.md">aws_ec2_capacity_reservation.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_capacity_reservation` InSpec audit resource to test properties of the singular resource of AWS EC2 Capacity Reservation.
 
 The `AWS::EC2::CapacityReservation` resource type creates a new Capacity Reservation with the specified attributes.
@@ -34,7 +44,7 @@ end
 
 `capacity_reservation_id` _(required)_
 
-The ID of the Capacity Reservation.
+: The ID of the Capacity Reservation.
 
 ## Properties
 

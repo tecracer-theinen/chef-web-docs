@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_data_factory_pipelines Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_data_factory_pipelines.md">azure_data_factory_pipelines.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_data_factory_pipelines.md">azure_data_factory_pipelines.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_data_factory_pipelines` InSpec audit resource to test properties related to pipeline for a resource group or the entire subscription.
 
 ## Azure Rest API Version, Endpoint, And HTTP Client Parameters
@@ -20,7 +30,7 @@ If not provided, the latest version will be used.
 For more information, refer to [`azure_generic_resource`]({{< relref "azure_generic_resource.md" >}}).
 
 Unless defined, `azure_cloud` global endpoint, and default values for the HTTP client will be used.
-For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/master/README.md).
+For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/main/README.md).
 For api related info : [`Azure pipeline Docs`](https://docs.microsoft.com/en-us/rest/api/datafactory/pipelines/list-by-factory).
 
 ### Availability
@@ -43,10 +53,11 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
- |--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in.    |
-| factory_name | Azure Factory Name for which pipeline are being retrived.|
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`factory_name`
+: Azure Factory Name for which pipeline are being retrived.
 
 ## Properties
 

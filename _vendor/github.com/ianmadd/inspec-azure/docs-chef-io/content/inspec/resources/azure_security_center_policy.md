@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_security_center_policy Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_security_center_policy.md">azure_security_center_policy.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_security_center_policy.md">azure_security_center_policy.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_security_center_policy` InSpec audit resource to test properties and configuration of an Azure security policy.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -43,13 +53,20 @@ end
 
 ## Parameters
 
-| Name                                    | Description                                                                       |
-|-----------------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                          | Azure resource group that the targeted resource resides in. `MyResourceGroup`     |
-| name                                    | Name of the security policy to test. `policy-name`                                        |
-| resource_id                             | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/microsoft.Security/policies/{policy-name}` |
-| default_policy_api_version<superscript>*</superscript>              | The endpoint api version for the `default_policy` property. The latest version will be used unless provided. |
-| auto_provisioning_settings_api_version<superscript>*</superscript>  | The endpoint api version for the `auto_provisioning_settings` property. The latest version will be used unless provided. |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`name`
+: Name of the security policy to test. `policy-name`.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/microsoft.Security/policies/{policy-name}`.
+
+`default_policy_api_version<superscript>*</superscript>`
+: The endpoint api version for the `default_policy` property. The latest version will be used unless provided.
+
+`auto_provisioning_settings_api_version<superscript>*</superscript>`
+: The endpoint api version for the `auto_provisioning_settings` property. The latest version will be used unless provided.
 
 <superscript>*</superscript> It will be ignored unless the default policy is tested.
 

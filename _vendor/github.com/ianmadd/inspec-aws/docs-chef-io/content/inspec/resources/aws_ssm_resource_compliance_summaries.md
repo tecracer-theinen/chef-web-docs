@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ssm_resource_compliance_summaries Resourc
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ssm_resource_compliance_summaries.md">aws_ssm_resource_compliance_summaries.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ssm_resource_compliance_summaries.md">aws_ssm_resource_compliance_summaries.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ssm_resource_compliance_summaries` InSpec audit resource to test properties of a collection of AWS SSM compliance summaries.
 
 ## Installation
@@ -28,13 +38,13 @@ end
 
 ## Parameters
 
-### compliance_type _(optional)_
+`compliance_type` _(optional)_
 
-This optional parameter allows you to filter based on compliance type. This must be passed as a string `compliance_type: 'value'`.
+: This optional parameter allows you to filter based on compliance type. This must be passed as a string `compliance_type: 'value'`.
 
-### overall_severity _(optional)_
+`overall_severity` _(optional)_
 
-This optional parameter allows you to filter based on overall severity. This must be passed as a string `overall_severity: 'value'`.
+: This optional parameter allows you to filter based on overall severity. This must be passed as a string `overall_severity: 'value'`.
 
 See also the [AWS documentation on SSM](https://docs.aws.amazon.com/systems-manager/?id=docs_gateway).
 

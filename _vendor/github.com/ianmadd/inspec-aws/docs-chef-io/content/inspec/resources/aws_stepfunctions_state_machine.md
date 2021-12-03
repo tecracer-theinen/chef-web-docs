@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_stepfunctions_state_machine Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_stepfunctions_state_machine.md">aws_stepfunctions_state_machine.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_stepfunctions_state_machine.md">aws_stepfunctions_state_machine.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_stepfunctions_state_machine` InSpec audit resource to test properties of a single specific Step Functions state machine.
 
 A state machine consists of a collection of states that can do work (Task states), determine which states to transition next (Choice states), stop an execution with an error (Fail states), and so on.
@@ -34,7 +44,7 @@ end
 
 `state_machine_arn` _(required)_
 
-The ARN of the state machine.
+: The ARN of the state machine.
 
 ## Properties
 

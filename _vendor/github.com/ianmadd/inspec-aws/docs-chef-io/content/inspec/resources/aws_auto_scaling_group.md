@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_auto_scaling_group Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_auto_scaling_group.md">aws_auto_scaling_group.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_auto_scaling_group.md">aws_auto_scaling_group.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_auto_scaling_group` InSpec audit resource to test properties of a single AWS Auto Scaling group.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html).
@@ -40,10 +50,10 @@ end
 
 ## Parameters
 
-### name _(required)_
+`name` _(required)_
 
-This resource accepts a single parameter, the Auto Scaling Group Name which uniquely identifies the auto scaling group. 
-This can be passed either as a string or as a `name: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the Auto Scaling Group Name which uniquely identifies the auto scaling group. 
+  This can be passed either as a string or as a `name: 'value'` key-value entry in a hash.
 
 ## Properties
 

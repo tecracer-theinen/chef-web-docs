@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatch_anomaly_detector Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_anomaly_detector.md">aws_cloudwatch_anomaly_detector.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_anomaly_detector.md">aws_cloudwatch_anomaly_detector.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatch_anomaly_detector` InSpec audit resource to test properties of a single specific AWS CloudWatch anomaly detector.
 
 The `AWS::CloudWatch::AnomalyDetector` type specifies an anomaly detection band for a certain metric and statistic. The band represents the expected "normal" range for the metric values. Anomaly detection bands can be used for visualization of a metric's expected values, and for alarms.
@@ -34,7 +44,7 @@ end
 
 `metric_name` _(required)_
 
-The name of the metric associated with the anomaly detection model.
+: The name of the metric associated with the anomaly detection model.
 
 ## Properties
 

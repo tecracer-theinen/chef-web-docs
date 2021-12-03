@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudfront_distribution Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_distribution.md">aws_cloudfront_distribution.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_distribution.md">aws_cloudfront_distribution.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudfront_distribution` InSpec audit resource to test the properties of a single AWS CloudFront distribution.
 
 For additional information, including details on parameters and properties, see the [AWS API reference for CloudFront distributions](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_distribution.html) documentation. For available SSL/TLS version identifiers, see [OriginSslProtocols](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_OriginSslProtocols.html) and [AWS::CloudFront::distribution ViewerCertificate](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html) documentation.
@@ -36,26 +46,26 @@ end
 
 ## Parameters
 
-### distribution_id _(required)_
+`distribution_id` _(required)_
 
-The CloudFront distribution ID, which can be passed either as a string or as a `name: 'value'` key-value entry in a hash.
+: The CloudFront distribution ID, which can be passed either as a string or as a `name: 'value'` key-value entry in a hash.
 
-### disallowed_ssl_protocols _(optional)_
+`disallowed_ssl_protocols` _(optional)_
 
-If provided, this parameter is expected to be an array of strings identifying SSL/TLS protocols that you wish not to allow.
+: If provided, this parameter is expected to be an array of strings identifying SSL/TLS protocols that you wish not to allow.
 
-Included in the array should be the union of disallowed identifiers for:
+: Included in the array should be the union of disallowed identifiers for:
 
-- custom origin SSL/TLS protocols (currently SSLv3 | TLSv1 | TLSv1.1 | TLSv1.2)
-- identifiers for the minimum SSL/TLS protocol in the Viewer Certificate that CloudFront can use to communicate with viewers (currently SSLv3 | TLSv1 | TLSv1_1026 | TLSv1.1_2016 | TLSv1.2_2018 | TLSv1.2_2019 | TLSv1.2_2021).
+: - custom origin SSL/TLS protocols (currently SSLv3 | TLSv1 | TLSv1.1 | TLSv1.2)
+  - identifiers for the minimum SSL/TLS protocol in the Viewer Certificate that CloudFront can use to communicate with viewers (currently SSLv3 | TLSv1 | TLSv1_1026 | TLSv1.1_2016 | TLSv1.2_2018 | TLSv1.2_2019 | TLSv1.2_2021).
 
-Newer protocol identification strings (when available) may be provided in the set, as validity is not checked. The default value for disallowed_ssl_protocols is `%w{SSLv3 TLSv1 TLSv1_2016}`.
+: Newer protocol identification strings (when available) may be provided in the set, as validity is not checked. The default value for disallowed_ssl_protocols is `%w{SSLv3 TLSv1 TLSv1_2016}`.
 
-### origin_domain_name _(optional)_
+`origin_domain_name` _(optional)_
 
-The domain name for the origin.
+: The domain name for the origin.
 
-Provide the `origin_domain_name` if you want to validate the `s3_origin_path` property.
+: Provide the `origin_domain_name` if you want to validate the `s3_origin_path` property.
 
 ## Properties
 

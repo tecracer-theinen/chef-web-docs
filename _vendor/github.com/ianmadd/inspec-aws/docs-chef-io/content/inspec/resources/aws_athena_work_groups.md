@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_athena_work_groups Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_athena_work_groups.md">aws_athena_work_groups.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_athena_work_groups.md">aws_athena_work_groups.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_athena_work_groups` InSpec audit resource to test properties of multiple Amazon Athena workgroups.
 
 For additional information, including details on parameters and properties, see the [AWS Athena workgroup documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-workgroup.html).

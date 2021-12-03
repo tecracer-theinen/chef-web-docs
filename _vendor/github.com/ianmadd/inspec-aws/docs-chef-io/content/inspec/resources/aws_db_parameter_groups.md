@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_db_parameter_groups Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_db_parameter_groups.md">aws_db_parameter_groups.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_db_parameter_groups.md">aws_db_parameter_groups.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_db_parameter_groups` InSpec audit resource to test properties of a collection of AWS DB parameter groups.
 
 This resource does not expect any parameters.

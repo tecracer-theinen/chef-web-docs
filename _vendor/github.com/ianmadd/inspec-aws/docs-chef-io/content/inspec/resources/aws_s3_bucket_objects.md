@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_s3_bucket_objects Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_s3_bucket_objects.md">aws_s3_bucket_objects.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_s3_bucket_objects.md">aws_s3_bucket_objects.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_s3_bucket_objects` InSpec audit resource to test properties of multiple AWS S3 bucket objects.
 
 Amazon S3 is an object store that uses unique key-values to store as many objects as you want.
@@ -38,7 +48,7 @@ end
 
 `bucket_name` _(required)_
 
-The bucket name.
+: The bucket name.
 
 ## Properties
 

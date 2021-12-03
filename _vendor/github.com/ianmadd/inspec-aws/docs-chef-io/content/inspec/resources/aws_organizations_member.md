@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_organizations_member Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_organizations_member.md">aws_organizations_member.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_organizations_member.md">aws_organizations_member.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_organizations_member` InSpec audit resource to test the current AWS Account being used within an organization.
 
 ## Installation

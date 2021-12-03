@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_launch_template Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_launch_template.md">aws_ec2_launch_template.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_launch_template.md">aws_ec2_launch_template.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_launch_template` InSpec audit resource to test properties of a single AWS Launch Template.
 
 ## Installation
@@ -36,10 +46,10 @@ end
 
 One of either the launch_template_name or launch_template_id must be be provided.
 
-##### launch_template_id
+`launch_template_id`
 
-The ID of the EC2 launch_template. This is in the format of `lt-` followed by 8 or 17 hexadecimal characters.
-This can be passed either as a string or as an `launch_template_id: 'value'` key-value entry in a hash.
+: The ID of the EC2 launch_template. This is in the format of `lt-` followed by 8 or 17 hexadecimal characters.
+  This can be passed either as a string or as an `launch_template_id: 'value'` key-value entry in a hash.
 
 
 

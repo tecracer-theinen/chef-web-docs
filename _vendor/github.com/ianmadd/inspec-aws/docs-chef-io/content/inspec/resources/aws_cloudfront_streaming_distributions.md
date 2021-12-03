@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudfront_streaming_distributions Resour
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_streaming_distributions.md">aws_cloudfront_streaming_distributions.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_streaming_distributions.md">aws_cloudfront_streaming_distributions.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudfront_streaming_distributions` InSpec audit resource to test plural properties of AWS CloudFront streaming distribution.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS CloudFront streaming distribution.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html).

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_vpn_gateway_route_propagation Resourc
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_vpn_gateway_route_propagation.md">aws_ec2_vpn_gateway_route_propagation.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_vpn_gateway_route_propagation.md">aws_ec2_vpn_gateway_route_propagation.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_vpn_gateway_route_propagation` InSpec audit resource to test if a virtual private gateway can propagate routes to a single AWS EC2 route table.
 
 The `AWS::EC2::TransitGatewayRouteTablePropagation` resource enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.
@@ -34,7 +44,7 @@ end
 
 `transit_gateway_route_table_id` _(required)_
 
-The ID of the route table.
+: The ID of the route table.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_elb Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_elb.md">aws_elb.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_elb.md">aws_elb.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_elb` InSpec audit resource to test properties of a single AWS Elastic Load Balancer (ELB).
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference).
@@ -36,10 +46,10 @@ end
 
 ## Parameters
 
-##### load_balancer_name _(required)_
+`load_balancer_name` _(required)_
 
-This resource accepts a single parameter, the ELB Name which uniquely identifies the ELB. 
-This can be passed either as a string or as a `load_balancer_name: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the ELB Name which uniquely identifies the ELB. 
+  This can be passed either as a string or as a `load_balancer_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

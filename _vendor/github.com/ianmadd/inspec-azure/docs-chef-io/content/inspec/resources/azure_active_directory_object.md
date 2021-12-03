@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_active_directory_object Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_active_directory_object.md">azure_active_directory_object.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_active_directory_object.md">azure_active_directory_object.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_active_directory_object` InSpec audit resource to test properties of an Azure Active Directory object.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -32,9 +42,10 @@ end
 
 parameter `id` is mandatory.
 
-| Name               | Description                      | Example |
-|--------------------|----------------------------------|---------|
-| id                 | The Active Directory object ID.  | `0bf29229-50d7-433c-b08e-2a5d8b293cb5` |
+`id`
+: The Active Directory object ID.
+
+: **Field**: `0bf29229-50d7-433c-b08e-2a5d8b293cb5`
 
 ## Properties
 

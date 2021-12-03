@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_network_firewall_rule_group Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_network_firewall_rule_group.md">aws_network_firewall_rule_group.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_network_firewall_rule_group.md">aws_network_firewall_rule_group.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_network_firewall_rule_group` InSpec audit resource to test properties of a single specific AWS Network Firewall rule group.
 
 The `AWS::NetworkFirewall::RuleGroup` resource defines a reusable collection of stateless or stateful network traffic filtering rules.
@@ -34,7 +44,7 @@ end
 
 `rule_group_name` _(required)_
 
-The descriptive name of the rule group.
+: The descriptive name of the rule group.
 
 ## Properties
 

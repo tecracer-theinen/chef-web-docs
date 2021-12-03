@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ssm_parameter Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ssm_parameter.md">aws_ssm_parameter.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ssm_parameter.md">aws_ssm_parameter.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ssm_parameter` InSpec audit resource to test properties of a ssm parameter.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on SSM Parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/integration-ps-secretsmanager.html).
@@ -31,14 +41,14 @@ end
 
 ## Parameters
 
-### name _(required)_
+`name` _(required)_
 
-This resource accepts a single parameter, the SSM Parameter Name.
-This can be passed either as a string or as a `aws_ssm_parameter: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the SSM Parameter Name.
+  This can be passed either as a string or as a `aws_ssm_parameter: 'value'` key-value entry in a hash.
 
-### with_decryption _(optional)_
+`with_decryption` _(optional)_
 
-This decrypts the value associated with the ssm parameter. This must be passed as a string `with_decryption: "true"`.
+: This decrypts the value associated with the ssm parameter. This must be passed as a string `with_decryption: "true"`.
 
 ## Properties
 

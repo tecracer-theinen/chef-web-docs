@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudfront_origin_access_identities Resou
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_origin_access_identities.md">aws_cloudfront_origin_access_identities.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_origin_access_identities.md">aws_cloudfront_origin_access_identities.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudfront_origin_access_identities` InSpec audit resource to test properties of multiple AWS CloudFront origin access identities.
 
 An origin access identity is a special CloudFront user that you can associate with Amazon S3 origins, so that you can secure all or just some of your Amazon S3 content.

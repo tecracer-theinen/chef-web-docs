@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_route_table Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route_table.md">aws_route_table.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route_table.md">aws_route_table.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_route_table` InSpec audit resource to test the properties of a single route or route table. A route table contains a set of rules, called routes, that are used to determine where network traffic is directed.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on route tables](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html) and the [AWS documentation on routes](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationcidrblock).
@@ -36,10 +46,10 @@ end
 
 ## Parameters
 
-#### route_table_id _(required)_
+`route_table_id` _(required)_
 
-This resource accepts a single parameter, the `route_table_id`.
-This can be passed either as a string or as a `route_table_id: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the `route_table_id`.
+  This can be passed either as a string or as a `route_table_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

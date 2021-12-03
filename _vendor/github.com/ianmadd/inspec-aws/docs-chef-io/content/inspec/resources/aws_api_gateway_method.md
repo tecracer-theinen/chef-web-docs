@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_api_gateway_method Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_api_gateway_method.md">aws_api_gateway_method.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_api_gateway_method.md">aws_api_gateway_method.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_api_gateway_method` InSpec audit resource to test properties of a single API Gateway method.
 
 The AWS::ApiGateway::Method resource creates API Gateway methods that define the parameters and body that clients must send in their requests.
@@ -34,15 +44,15 @@ end
 
 `rest_api_id` _(required)_
 
-The ID of the RestApi resource in which API Gateway creates the method.
+: The ID of the RestApi resource in which API Gateway creates the method.
 
 `resource_id` _(required)_
 
-The ID of an API Gateway resource. For root resource methods, specify the RestApi root resource ID, such as `{ "Fn::GetAtt": ["MyRestApi", "RootResourceId"] }`.
+: The ID of an API Gateway resource. For root resource methods, specify the RestApi root resource ID, such as `{ "Fn::GetAtt": ["MyRestApi", "RootResourceId"] }`.
 
 `http_method` _(required)_
 
-The HTTP method that clients use to call this method.
+: The HTTP method that clients use to call this method.
 
 ## Properties
 

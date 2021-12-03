@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_efs_mount_targets Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_efs_mount_targets.md">aws_efs_mount_targets.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_efs_mount_targets.md">aws_efs_mount_targets.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_efs_mount_targets` InSpec audit resource to test properties of a plural EFS Mount Targets.
 
 The AWS::EFS::MountTarget resource is an Amazon EFS resource that creates a mount target for an EFS file system. You can then mount the file system on Amazon EC2 instances or other resources by using the mount target.

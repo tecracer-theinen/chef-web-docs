@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_nat_gateway Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_nat_gateway.md">aws_nat_gateway.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_nat_gateway.md">aws_nat_gateway.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_nat_gateway` InSpec audit resource to test the properties of a single AWS NAT gateway.
 
 ## Installation
@@ -49,26 +59,26 @@ At least one of the following parameters must be provided.
 - subnet_id
 - vpc_id
 
-### id
+`id`
 
-The value of the `nat_gateway_id` assigned by the AWS after the resource has been created.
-This should be in the format of `nat-` followed by 8 or 17 hexadecimal characters and passed as an `id: 'value'` key-value entry in a hash.
+: The value of the `nat_gateway_id` assigned by the AWS after the resource has been created.
+  This should be in the format of `nat-` followed by 8 or 17 hexadecimal characters and passed as an `id: 'value'` key-value entry in a hash.
 
-### name
+`name`
 
-If a `Name` tag is applied to the NAT gateway, this can be used to lookup the resource.
-This must be passed as a `name: 'value'` key-value entry in a hash.
-If there are multiple NAT gateways with the same name, this resource will raise an error.
+: If a `Name` tag is applied to the NAT gateway, this can be used to lookup the resource.
+  This must be passed as a `name: 'value'` key-value entry in a hash.
+  If there are multiple NAT gateways with the same name, this resource will raise an error.
 
-### subnet_id
+`subnet_id`
 
-The ID of the subnet in which the NAT gateway is placed.
-This should be in the format of `subnet-` followed by 8 or 17 hexadecimal characters and passed as an `subnet_id: 'value'` key-value entry in a hash.
+: The ID of the subnet in which the NAT gateway is placed.
+  This should be in the format of `subnet-` followed by 8 or 17 hexadecimal characters and passed as an `subnet_id: 'value'` key-value entry in a hash.
 
-### vpc_id
+`vpc_id`
 
-The ID of the VPC in which the NAT gateway is located.
-This should be in the format of `vpc-` followed by 8 or 17 hexadecimal characters and passed as an `vpc_id: 'value'` key-value entry in a hash.
+: The ID of the VPC in which the NAT gateway is located.
+  This should be in the format of `vpc-` followed by 8 or 17 hexadecimal characters and passed as an `vpc_id: 'value'` key-value entry in a hash.
 
 
 ## Properties

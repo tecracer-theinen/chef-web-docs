@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ami Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ami.md">aws_ami.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ami.md">aws_ami.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ami` InSpec audit resource to test properties of a single AWS AMI.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on EC2 Amazon Machine Images](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html).
@@ -30,10 +40,10 @@ end
 
 ## Parameters
 
-##### image_id _(required)_
+`image_id` _(required)_
 
-This resource accepts a single parameter, the AMI Image ID.
-This can be passed either as a string or as a `image_id: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the AMI Image ID.
+  This can be passed either as a string or as a `image_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

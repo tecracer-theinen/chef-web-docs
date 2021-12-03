@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_internet_gateway Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_internet_gateway.md">aws_internet_gateway.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_internet_gateway.md">aws_internet_gateway.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_internet_gateway` InSpec audit resource to test the properties of a single AWS internet gateway.
 
 ## Installation
@@ -36,16 +46,16 @@ end
 
 Either the id or the name must be provided.
 
-### id _(required if `name` not provided)_
+`id` _(required if `name` not provided)_
 
-The value of the `internet_gateway_id` assigned by the AWS after the resource has been created.
-This should be in the format of `igw-` followed by 8 or 17 hexadecimal characters and passed as an `id: 'value'` key-value entry in a hash.
+: The value of the `internet_gateway_id` assigned by the AWS after the resource has been created.
+  This should be in the format of `igw-` followed by 8 or 17 hexadecimal characters and passed as an `id: 'value'` key-value entry in a hash.
 
-### name _(required if `id` not provided)_
+`name` _(required if `id` not provided)_
 
-If a `Name` tag is applied to the internet gateway, this can be used to lookup the resource.
-This must be passed as a `name: 'value'` key-value entry in a hash.
-If there are multiple internet gateways with the same name, this resource will raise an error.
+: If a `Name` tag is applied to the internet gateway, this can be used to lookup the resource.
+  This must be passed as a `name: 'value'` key-value entry in a hash.
+  If there are multiple internet gateways with the same name, this resource will raise an error.
 
 ## Properties
 

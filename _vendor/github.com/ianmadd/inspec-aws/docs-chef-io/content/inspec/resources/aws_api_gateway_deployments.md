@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_api_gateway_deployments Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_api_gateway_deployments.md">aws_api_gateway_deployments.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_api_gateway_deployments.md">aws_api_gateway_deployments.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_api_gateway_deployments` InSpec audit resource to test properties of multiple AWS ApiGateway Deployments.
 
 The AWS::ApiGateway::Deployment resource deploys an API Gateway RestAPI resource to a stage so that clients can call the API over the internet. The stage acts as an environment.

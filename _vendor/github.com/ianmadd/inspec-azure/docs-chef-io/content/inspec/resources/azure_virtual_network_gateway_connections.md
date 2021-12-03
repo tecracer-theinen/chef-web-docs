@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_virtual_network_gateway_connections R
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_virtual_network_gateway_connections.md">azure_virtual_network_gateway_connections.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_virtual_network_gateway_connections.md">azure_virtual_network_gateway_connections.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_virtual_network_gateway_connections` InSpec audit resource to test the properties related to all Azure Virtual Network Gateway connections within a project.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -32,9 +42,8 @@ end
 
 ## Parameters
 
-| Name           | Description                                                    |
-|----------------|----------------------------------------------------------------|
-| resource_group | Azure resource group name where the targeted resource resides. |
+`resource_group`
+: Azure resource group name where the targeted resource resides.
 
 The parameter set should be provided for a valid query:
 

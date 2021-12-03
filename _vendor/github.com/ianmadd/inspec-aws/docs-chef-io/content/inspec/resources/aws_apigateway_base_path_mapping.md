@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_apigateway_base_path_mapping Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_apigateway_base_path_mapping.md">aws_apigateway_base_path_mapping.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_apigateway_base_path_mapping.md">aws_apigateway_base_path_mapping.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_apigateway_base_path_mapping` Chef InSpec audit resource to test properties of a single specific AWS API Gateway base path mapping.
 
 The `AWS::ApiGateway::BasePathMapping` resource creates a base path that clients who call your API must use in the invocation URL.
@@ -34,11 +44,11 @@ end
 
 `domain_name` _(required)_
 
-The domain name of the base path mapping resource to be described.
+: The domain name of the base path mapping resource to be described.
 
 `base_path` _(required)_
 
-The base path name that callers of the API must provide as part of the URL after the domain name.
+: The base path name that callers of the API must provide as part of the URL after the domain name.
 
 ## Properties
 

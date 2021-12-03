@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_transit_gateway_route Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway_route.md">aws_transit_gateway_route.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway_route.md">aws_transit_gateway_route.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_transit_gateway_route` InSpec audit resource to test the properties of a single AWS transit gateway route.
 
 ## Installation
@@ -30,19 +40,19 @@ end
 
 To set the parameters of the AWS transit gateway route table, **ID** and **CIDR** block is required.
 
-#### transit_gateway_route_table_id _(required)_
+`transit_gateway_route_table_id` _(required)_
 
-The **ID** of the AWS transit gateway route table:
+: The **ID** of the AWS transit gateway route table:
 
-- must contain alphanumeric characters between 1 to 50, or hyphens
-- should start with `tgw-rtb-`
-- cannot end with a hyphen or contain two consecutive hyphens
+: - must contain alphanumeric characters between 1 to 50, or hyphens
+  - should start with `tgw-rtb-`
+  - cannot end with a hyphen or contain two consecutive hyphens
 
-The ID of the AWS transit gateway route table should be passed as a `transit_gateway_route_table_id: 'value'` key-value entry in a hash.
+: The ID of the AWS transit gateway route table should be passed as a `transit_gateway_route_table_id: 'value'` key-value entry in a hash.
 
-#### cidr_block _(required)_
+`cidr_block` _(required)_
 
-The **CIDR** block range of the route is associated to the AWS transit gateway route table. It should be passed as a `cidr_block: 'value'` key-value entry in a hash.
+: The **CIDR** block range of the route is associated to the AWS transit gateway route table. It should be passed as a `cidr_block: 'value'` key-value entry in a hash.
 
 ## Properties
 

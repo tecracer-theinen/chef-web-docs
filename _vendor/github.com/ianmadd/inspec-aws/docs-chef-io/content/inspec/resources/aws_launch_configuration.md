@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_launch_configuration Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_launch_configuration.md">aws_launch_configuration.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_launch_configuration.md">aws_launch_configuration.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_launch_configuration` InSpec audit resource to test properties of a single AWS Launch Configuration.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Launch Configurations](https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchConfiguration.html).
@@ -37,10 +47,10 @@ end
 
 ## Parameters
 
-##### launch_configuration_name _(required)_
+`launch_configuration_name` _(required)_
 
 
-This resource expects a single parameter, the `launch_configuration_name` which uniquely identifies the of a Launch Configuration.
+: This resource expects a single parameter, the `launch_configuration_name` which uniquely identifies the of a Launch Configuration.
 
 ## Properties
 

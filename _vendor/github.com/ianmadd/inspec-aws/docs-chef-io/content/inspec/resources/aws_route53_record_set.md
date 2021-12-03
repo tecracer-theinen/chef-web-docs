@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_route53_record_set Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route53_record_set.md">aws_route53_record_set.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route53_record_set.md">aws_route53_record_set.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_route53_record_set` InSpec audit resource to test properties of a single specific AWS Route53 record set.
 
 The `AWS::Route53::RecordSet` resource specifies information about the record that you want to create.
@@ -34,11 +44,11 @@ end
 
 `hosted_zone_id` _(required)
 
-The ID of the hosted zone that contains the resource record sets that you want to list.
+: The ID of the hosted zone that contains the resource record sets that you want to list.
 
 `start_record_name` _(required)_
 
-The name of the record set.
+: The name of the record set.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_transit_gateway_route_table_associati
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_transit_gateway_route_table_association.md">aws_ec2_transit_gateway_route_table_association.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_transit_gateway_route_table_association.md">aws_ec2_transit_gateway_route_table_association.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_transit_gateway_route_table_association` InSpec audit resource to test properties of a single AWS transit gateway route table association.
 
 A transit gateway route table association associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
@@ -32,7 +42,7 @@ end
 
 `transit_gateway_route_table_id` _(required)_
 
-For additional information, check out the [AWS documentation on transit gateway route table association](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetableassociation.html).
+: For additional information, check out the [AWS documentation on transit gateway route table association](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetableassociation.html).
 
 ## Properties
 

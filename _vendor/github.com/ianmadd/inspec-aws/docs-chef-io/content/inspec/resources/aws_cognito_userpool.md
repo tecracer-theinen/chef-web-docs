@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cognito_userpool Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cognito_userpool.md">aws_cognito_userpool.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cognito_userpool.md">aws_cognito_userpool.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cognito_userpool` InSpec audit resource to test properties of a single specific Cognito user pool.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Cognito user pool](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html).
@@ -32,7 +42,7 @@ end
 
 `user_pool_id` _(required)_
 
-The ID of the user pool.
+: The ID of the user pool.
 
 ## Properties
 

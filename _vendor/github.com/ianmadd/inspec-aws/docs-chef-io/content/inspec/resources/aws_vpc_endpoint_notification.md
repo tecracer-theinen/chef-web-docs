@@ -10,6 +10,16 @@ identifier = "inspec/resources/AWS/aws_vpc_endpoint_connection_notification Reso
 parent = "inspec/resources/AWS"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc_endpoint_notification.md">aws_vpc_endpoint_notification.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc_endpoint_notification.md">aws_vpc_endpoint_notification.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_vpc_endpoint_connection_notification` Inspec audit resource to test the properties of a single specific AWS VPC endpoint connection notification.
 
 For additional information, including details on parameters and properties, see the [AWS VPC endpoint connection notification documentation](https://docs.AWS.amazon.com/AWSCloudFormation/latest/UserGuide/AWS-resource-ec2-vpcendpointconnectionnotification.html).
@@ -40,8 +50,8 @@ end
 
 `connection_notification_id` _(required)_
 
-This resource expects the AWS VPC endpoint connection notification ID as a parameter.
-This can be passed either as a string or as a `connection_notification_id: 'VALUE'` key-value entry in a hash.
+: This resource expects the AWS VPC endpoint connection notification ID as a parameter.
+  This can be passed either as a string or as a `connection_notification_id: 'VALUE'` key-value entry in a hash.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_kms_key Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_kms_key.md">aws_kms_key.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_kms_key.md">aws_kms_key.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_kms_key` InSpec audit resource to test properties of a single AWS KMS Key.
 
 AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data. AWS KMS lets you create master keys that can never be exported from the service and which can be used to encrypt and decrypt data based on policies you define.
@@ -49,15 +59,15 @@ end
 
 ## Parameters
 
-### alias _(required if `key_id` not specified)_
+`alias` _(required if `key_id` not specified)_
 
-This resource accepts searching for a KMS Key by it's Alias.
-This can be passed as a `alias: 'alias/value'` key-value entry in a hash. This will then use the `target_key_id` from the Alias to search for the KMS Key.
+: This resource accepts searching for a KMS Key by it's Alias.
+  This can be passed as a `alias: 'alias/value'` key-value entry in a hash. This will then use the `target_key_id` from the Alias to search for the KMS Key.
 
-##### key_id _(required if `alias` not specified)_
+`key_id` _(required if `alias` not specified)_
 
-This resource accepts searching for a KMS Key by the KMS Key ID which can represent both the actual Key ID or the ARN of the Key.
-This can be passed either as a string or as a `key_id: 'value'` key-value entry in a hash.
+: This resource accepts searching for a KMS Key by the KMS Key ID which can represent both the actual Key ID or the ARN of the Key.
+  This can be passed either as a string or as a `key_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

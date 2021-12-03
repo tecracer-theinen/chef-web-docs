@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_s3_bucket_object Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_s3_bucket_object.md">aws_s3_bucket_object.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_s3_bucket_object.md">aws_s3_bucket_object.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_s3_bucket_object` InSpec audit resource to test properties of a single AWS bucket object.
 
 Each S3 Object has a 'key' which can be thought of as the name of the S3 Object which uniquely identifies it.
@@ -33,15 +43,15 @@ end
 
 ## Parameters
 
-##### bucket_name _(required)_
+`bucket_name` _(required)_
 
-The S3 Bucket Name which uniquely identifies the bucket. 
-This must be passed as a `bucket_name: 'value'` key-value entry in a hash.
+: The S3 Bucket Name which uniquely identifies the bucket. 
+  This must be passed as a `bucket_name: 'value'` key-value entry in a hash.
 
-### key _(required)_
+`key` _(required)_
 
-The S3 Bucket Key which uniquely identifies the bucket object. 
-This must be passed as a `key: 'value'` key-value entry in a hash.
+: The S3 Bucket Key which uniquely identifies the bucket object. 
+  This must be passed as a `key: 'value'` key-value entry in a hash.
 
 ## Properties
 

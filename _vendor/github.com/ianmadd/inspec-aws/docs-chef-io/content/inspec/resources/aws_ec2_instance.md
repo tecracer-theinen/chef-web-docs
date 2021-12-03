@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_instance Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_instance.md">aws_ec2_instance.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_instance.md">aws_ec2_instance.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_instance` InSpec audit resource to test properties of a single AWS EC2 instance.
 
 ## Installation
@@ -36,15 +46,15 @@ end
 
 One of either the EC2 instance's ID or name must be be provided.
 
-##### instance_id _(required if `name` not provided)_
+`instance_id` _(required if `name` not provided)_
 
-The ID of the EC2 instance. This is in the format of `i-` followed by 8 or 17 hexadecimal characters.
-This can be passed either as a string or as an `instance_id: 'value'` key-value entry in a hash.
+: The ID of the EC2 instance. This is in the format of `i-` followed by 8 or 17 hexadecimal characters.
+  This can be passed either as a string or as an `instance_id: 'value'` key-value entry in a hash.
 
-### name _(required if `instance_id` not provided)_
+`name` _(required if `instance_id` not provided)_
 
-If you have a `Name` tag applied to the EC2 instance, this can be used to lookup the instance.
-This must be passed as a `name: 'value'` key-value entry in a hash.
+: If you have a `Name` tag applied to the EC2 instance, this can be used to lookup the instance.
+  This must be passed as a `name: 'value'` key-value entry in a hash.
 
 ## Properties
 

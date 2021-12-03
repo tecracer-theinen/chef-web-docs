@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_client_vpn_target_network_association
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_client_vpn_target_network_associations.md">aws_ec2_client_vpn_target_network_associations.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_client_vpn_target_network_associations.md">aws_ec2_client_vpn_target_network_associations.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_client_vpn_target_network_associations` InSpec audit resource to test properties of multiple AWS EC2 Client VPN target network associations.
 
 The `AWS::EC2::ClientVpnTargetNetworkAssociation` specifies a target network to associate with a Client VPN endpoint.
@@ -34,7 +44,7 @@ end
 
 `client_vpn_endpoint_id` _(required)_
 
-The ID of the Client VPN endpoint.
+: The ID of the Client VPN endpoint.
 
 ## Properties
 

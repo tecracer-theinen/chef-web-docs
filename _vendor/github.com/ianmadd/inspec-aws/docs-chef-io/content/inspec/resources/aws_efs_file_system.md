@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_efs_file_system Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_efs_file_system.md">aws_efs_file_system.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_efs_file_system.md">aws_efs_file_system.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_efs_file_system` InSpec audit resource to test the properties of a single AWS EFS file system.
 This resource is added to InSpec AWS resource pack in version **[1.10.0](https://github.com/inspec/inspec-aws/releases/tag/v1.10.0)** and it is available with InSpec **[4.18.108](https://github.com/inspec/inspec/releases/tag/v4.18.108)** and later versions. 
 
@@ -47,16 +57,16 @@ end
 
 Either the EFS file system id or creation token must be provided.
 
-##### file_system_id _(required if `creation_token` not provided)_
+`file_system_id` _(required if `creation_token` not provided)_
 
-The ID of the EFS file system. This is in the format of `fs-` followed by 8 or 17 hexadecimal characters.
-This can be passed either as a string or as a `file_system_id: 'value'` key-value entry in a hash.
+: The ID of the EFS file system. This is in the format of `fs-` followed by 8 or 17 hexadecimal characters.
+  This can be passed either as a string or as a `file_system_id: 'value'` key-value entry in a hash.
 
-### creation_token _(required if `file_system_id` not provided)_
+`creation_token` _(required if `file_system_id` not provided)_
 
-The creation token is automatically assigned by AWS if not provided by the user at creation. 
-This is a string with minimum 1 and maximum 64-character long.
-This must be passed as a `creation_token: 'value'` key-value entry in a hash.
+: The creation token is automatically assigned by AWS if not provided by the user at creation. 
+  This is a string with minimum 1 and maximum 64-character long.
+  This must be passed as a `creation_token: 'value'` key-value entry in a hash.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_ssh_public_keys Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_ssh_public_keys.md">aws_iam_ssh_public_keys.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_ssh_public_keys.md">aws_iam_ssh_public_keys.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_ssh_public_keys` InSpec audit resource to test the properties of the plural resource of an AWS SSH public key for an IAM user.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS IAM AccessKey.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html).
@@ -40,7 +50,7 @@ end
 
 `user_name` _(required)_ 
 
-The IAM user name associated with the SSH public key. The above required parameter is optional.
+: The IAM user name associated with the SSH public key. The above required parameter is optional.
 
 ## Properties
 

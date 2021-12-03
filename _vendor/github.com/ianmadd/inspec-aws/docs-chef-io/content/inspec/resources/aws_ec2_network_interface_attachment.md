@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_network_interface_attachment Resource
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_network_interface_attachment.md">aws_ec2_network_interface_attachment.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_network_interface_attachment.md">aws_ec2_network_interface_attachment.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_network_interface_attachment` InSpec audit resource to test properties of a single specific AWS EC2 network interface attachment.
 
 The `AWS::EC2::NetworkInterfaceAttachment` resource attaches an elastic network interface (ENI) to an Amazon EC2 instance. You can use this resource type to attach additional network interfaces to an instance without interruption.
@@ -34,7 +44,7 @@ end
 
 `network_interface_id` _(required)_
 
-The ID of the network interface.
+: The ID of the network interface.
 
 ## Properties
 

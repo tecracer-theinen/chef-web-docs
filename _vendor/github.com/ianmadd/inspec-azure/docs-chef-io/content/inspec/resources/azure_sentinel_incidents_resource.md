@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_sentinel_incidents_resource Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_sentinel_incidents_resource.md">azure_sentinel_incidents_resource.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_sentinel_incidents_resource.md">azure_sentinel_incidents_resource.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_sentinel_incidents_resource` InSpec audit resource to test properties of an Azure Azure Sentinel incident.
 
 ## Azure Rest API Version, Endpoint, And HTTP Client Parameters
@@ -20,7 +30,7 @@ If not provided, the latest version will be used.
 For more information, refer to [`azure_generic_resource`]({{< relref "azure_generic_resource.md" >}}).
 
 Unless defined, `azure_cloud` global endpoint, and default values for the HTTP client will be used.
-For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/master/README.md).
+For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/main/README.md).
 For api related info : [`Azure Azure Sentinel incident  Docs`](https://docs.microsoft.com/en-us/rest/api/securityinsights/incidents/get).
 
 
@@ -42,11 +52,14 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in.     |
-| workspace_name                 | Name for the workspace that you want to create your Azure Sentinel incident  in. |
-| incident_id                    | The Azure Sentinel incident  name. |
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`workspace_name`
+: Name for the workspace that you want to create your Azure Sentinel incident  in.
+
+`incident_id`
+: The Azure Sentinel incident  name.
 
 All the parameter sets needs be provided for a valid query:
 - `resource_group` , `workspace_name` and `incident_id`

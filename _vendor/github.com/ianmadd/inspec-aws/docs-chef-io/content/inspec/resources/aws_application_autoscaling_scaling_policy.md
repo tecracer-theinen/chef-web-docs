@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_application_autoscaling_scaling_policy Re
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_application_autoscaling_scaling_policy.md">aws_application_autoscaling_scaling_policy.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_application_autoscaling_scaling_policy.md">aws_application_autoscaling_scaling_policy.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_application_autoscaling_scaling_policy` InSpec audit resource to test properties of a single AWS Application Auto Scaling scaling policy.
 
 For additional information, including details on parameters and properties, see the [AWS ApplicationAutoScaling ScalingPolicy documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html).
@@ -32,7 +42,7 @@ end
 
 `service_namespace` _(required)_
 
-The namespace of the AWS service that provides the resource, or a custom-resource.
+: The namespace of the AWS service that provides the resource, or a custom-resource.
 
 ## Properties
 

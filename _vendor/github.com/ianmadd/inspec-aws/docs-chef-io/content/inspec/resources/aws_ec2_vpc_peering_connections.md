@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_vpc_peering_connections Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_vpc_peering_connections.md">aws_ec2_vpc_peering_connections.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_vpc_peering_connections.md">aws_ec2_vpc_peering_connections.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_vpc_peering_connections` InSpec audit resource to test properties of a plural AWS EC2 Network Interface Attachment.
 
 The AWS::EC2::VPCPeeringConnection resource requests a VPC peering connection between two VPCs: a requester VPC that you own and an accepter VPC with which to create the connection.

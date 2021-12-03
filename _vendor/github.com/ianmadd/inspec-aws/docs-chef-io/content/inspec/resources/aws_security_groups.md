@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_security_groups Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_security_groups.md">aws_security_groups.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_security_groups.md">aws_security_groups.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_security_groups` InSpec audit resource to test properties of some or all security groups.
 
 Security groups are a networking construct that contain ingress and egress rules for network communications. Security groups may be attached to EC2 instances, as well as certain other AWS resources. Along with Network Access Control Lists, Security Groups are one of the two main mechanisms of enforcing network-level security.

@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_data_factory_linked_service Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_data_factory_linked_services.md">azure_data_factory_linked_services.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_data_factory_linked_services.md">azure_data_factory_linked_services.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_data_factory_linked_service` InSpec audit resource to test the properties related to linked services for a resource group or the entire subscription.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -34,10 +44,11 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in.                       |
-| factory_name                   | Azure factory name for which linked services are retrived.                        |
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`factory_name`
+: Azure factory name for which linked services are retrived.
 
 ## Properties
 

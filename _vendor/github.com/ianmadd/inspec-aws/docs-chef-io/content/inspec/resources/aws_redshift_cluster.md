@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_redshift_cluster Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_redshift_cluster.md">aws_redshift_cluster.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_redshift_cluster.md">aws_redshift_cluster.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_redshift_cluster` InSpec audit resource to test detailed properties of an individual AWS Redshift cluster.
 
 
@@ -36,12 +46,12 @@ end
 
 ## Parameters
 
-#### cluster_identifier _(required)_
+`cluster_identifier` _(required)_
 
-This resource accepts a single parameter, the user-supplied cluster identifier. This parameter isn't case-sensitive.
-This can be passed either as a string or as a `cluster_identifier: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the user-supplied cluster identifier. This parameter isn't case-sensitive.
+  This can be passed either as a string or as a `cluster_identifier: 'value'` key-value entry in a hash.
 
-Also see the [AWS Redshift cluster documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html).
+: Also see the [AWS Redshift cluster documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html).
 
 ## Properties
 

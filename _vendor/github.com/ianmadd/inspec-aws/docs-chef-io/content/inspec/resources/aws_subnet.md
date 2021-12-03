@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_subnet Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_subnet.md">aws_subnet.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_subnet.md">aws_subnet.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_subnet` InSpec audit resource to test properties of a vpc subnet.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html).
@@ -30,10 +40,10 @@ end
 
 ## Parameters
 
-##### subnet_id _(required)_
+`subnet_id` _(required)_
 
-This resource accepts a single parameter, the Subnet ID.
-This can be passed either as a string or as a `subnet_id: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the Subnet ID.
+  This can be passed either as a string or as a `subnet_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

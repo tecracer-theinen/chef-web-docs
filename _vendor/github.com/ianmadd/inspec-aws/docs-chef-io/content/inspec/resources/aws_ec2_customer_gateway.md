@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_customer_gateway Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_customer_gateway.md">aws_ec2_customer_gateway.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_customer_gateway.md">aws_ec2_customer_gateway.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_customer_gateway` InSpec audit resource to test properties of a single AWS EC2 customer gateway.
 
 The `AWS::EC2::CustomerGateway` resource type specifies a customer gateway.
@@ -34,7 +44,7 @@ end
 
 `customer_gateway_id` _(required)_
 
-The ID of the customer gateway.
+: The ID of the customer gateway.
 
 ## Properties
 

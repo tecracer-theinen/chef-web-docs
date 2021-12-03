@@ -27,12 +27,17 @@ client_secret = CLIENT_SECRET_VALUE
 tenant_id = TENANT_ID_VALUE
 ```
 
+<div class="admonition-note">
+<p class="admonition-note-title">Note</p>
+<div class="admonition-note-text">
 
 In the Azure web portal, these values are labeled differently:
 - The `client_id` is referred to as the 'Application ID'
 - The `client_secret` is referred to as the 'Key (Password Type)'
 - The `tenant_id` is referred to as the 'Directory ID'
 
+</div>
+</div>
 
 With the credentials are in place, you may now execute Chef InSpec:
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_dms_endpoint Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_dms_endpoint.md">aws_dms_endpoint.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_dms_endpoint.md">aws_dms_endpoint.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_dms_endpoint` InSpec audit resource to test properties of a single specific AWS Database Migration Service (DMS) endpoint.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on DMS endpoints](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html).
@@ -32,7 +42,7 @@ end
 
 `endpoint_arn` _(required)_
 
-The ARN of the DMS endpoint.
+: The ARN of the DMS endpoint.
 
 ## Properties
 

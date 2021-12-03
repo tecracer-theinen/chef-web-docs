@@ -36,12 +36,17 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                      |
-|--------------------------------|----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`    |
-| vnet                           | Name of the Azure virtual network that the subnet is created in. `MyVNetName`    |
-| name                           | Name of the Azure subnet to test. `MySubnetName`                                 |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Network/virtualNetworks/{vnName}/subnets/{subnetName}` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`vnet`
+: Name of the Azure virtual network that the subnet is created in. `MyVNetName`.
+
+`name`
+: Name of the Azure subnet to test. `MySubnetName`.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Network/virtualNetworks/{vnName}/subnets/{subnetName}`.
 
 Either one of the parameter sets can be provided for a valid query:
 - `resource_id`
@@ -155,10 +160,11 @@ Either one of the parameter sets can be provided for a valid query:
 
 ## Parameters
 
-| Property | Description |
-|----------|-------------|
-| address_prefix | The address prefix for the subnet. `its('address_prefix') { should eq "x.x.x.x/x" }` |
-| nsg            | The network security group attached to the subnet. `its('nsg') { should eq 'MyNetworkSecurityGroupName' }` |
+`address_prefix`
+: The address prefix for the subnet. `its('address_prefix') { should eq "x.x.x.x/x" }`.
+
+`nsg`
+: The network security group attached to the subnet. `its('nsg') { should eq 'MyNetworkSecurityGroupName' }`.
 
 For properties applicable to all resources, such as `type`, `name`, `id`, `properties`, refer to [`azure_generic_resource`]({{< relref "azure_generic_resource.md#properties" >}}).
 
@@ -217,6 +223,16 @@ identifier = "inspec/resources/azure/azure_subnet Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_subnet.md">azure_subnet.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_subnet.md">azure_subnet.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_subnet` InSpec audit resource to test properties related to a subnet for a given virtual network.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -243,12 +259,17 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                      |
-|--------------------------------|----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`    |
-| vnet                           | Name of the Azure virtual network that the subnet is created in. `MyVNetName`    |
-| name                           | Name of the Azure subnet to test. `MySubnetName`                                 |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Network/virtualNetworks/{vnName}/subnets/{subnetName}` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`vnet`
+: Name of the Azure virtual network that the subnet is created in. `MyVNetName`.
+
+`name`
+: Name of the Azure subnet to test. `MySubnetName`.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Network/virtualNetworks/{vnName}/subnets/{subnetName}`.
 
 Either one of the parameter sets can be provided for a valid query:
 - `resource_id`

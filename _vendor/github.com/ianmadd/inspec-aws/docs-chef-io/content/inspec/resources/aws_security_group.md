@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_security_group Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_security_group.md">aws_security_group.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_security_group.md">aws_security_group.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_security_group` InSpec audit resource to test detailed properties of an individual Security Group (SG).
 
 SGs are a networking construct which contain ingress and egress rules for network communications.  SGs may be attached to EC2 instances, as well as certain other AWS resources.  Along with Network Access Control Lists, SGs are one of the two main mechanisms of enforcing network-level security.
@@ -61,20 +71,20 @@ end
 
 You must provide at least one parameter; `group_id`, `group_name` or `vpc_id`
 
-##### group_id _(required if no other parameter provided)_
+`group_id` _(required if no other parameter provided)_
 
-The Security Group ID which uniquely identifies the SG.
-This can be passed either as a string or as a `group_id: 'value'` key-value entry in a hash.
+: The Security Group ID which uniquely identifies the SG.
+  This can be passed either as a string or as a `group_id: 'value'` key-value entry in a hash.
 
-##### group_name _(required if no other parameter provided)_
+`group_name` _(required if no other parameter provided)_
 
-The Security Group name.
-This can be passed either as a string or as a `group_name: 'value'` key-value entry in a hash.
+: The Security Group name.
+  This can be passed either as a string or as a `group_name: 'value'` key-value entry in a hash.
 
-##### vpc_id _(required if no other parameter provided)_
+`vpc_id` _(required if no other parameter provided)_
 
-The ID of the VPC associated with the SG.
-This can be passed either as a string or as a `vpc_id: 'value'` key-value entry in a hash.
+: The ID of the VPC associated with the SG.
+  This can be passed either as a string or as a `vpc_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

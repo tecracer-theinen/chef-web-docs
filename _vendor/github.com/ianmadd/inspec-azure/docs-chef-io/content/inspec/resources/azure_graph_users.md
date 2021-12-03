@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_graph_users Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_graph_users.md">azure_graph_users.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_graph_users.md">azure_graph_users.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_graph_users` InSpec audit resource to test properties of some or all Azure Active Directory users within a Tenant.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -33,10 +43,15 @@ end
 
 The following parameters can be passed for targeting specific users.
 
-| Name              | Description                                                 | Example                             |
-|-------------------|-------------------------------------------------------------|-------------------------------------|
-| filter            | A hash containing the filtering options and their values. The `starts_with_` operator can be used for fuzzy string matching. Parameter names are in snake_case. | `{ starts_with_given_name: 'J', starts_with_department: 'Core', country: 'United Kingdom', given_name: John}` |
-| filter_free_text  | [OData](https://www.odata.org/getting-started/basic-tutorial/) query string in double quotes, `"`. Property names are in camelcase, refer to [here](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter) for more information. | `"startswith(displayName,'J') and surname eq 'Doe'"` or `"userType eq 'Guest'"` |
+`filter`
+: A hash containing the filtering options and their values. The `starts_with_` operator can be used for fuzzy string matching. Parameter names are in snake_case.
+
+: **Field**: `{ starts_with_given_name: 'J', starts_with_department: 'Core', country: 'United Kingdom', given_name: John}`
+
+`filter_free_text`
+: [OData](https://www.odata.org/getting-started/basic-tutorial/) query string in double quotes, `"`. Property names are in camelcase, refer to [here](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter) for more information.
+
+: **Field**: `"startswith(displayName,'J') and surname eq 'Doe'"` or `"userType eq 'Guest'"`
 
 It is advised to use these parameters to narrow down the targeted resources at the server side, Azure Graph API, for a more efficient test.
 

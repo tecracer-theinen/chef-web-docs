@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_ssh_public_key Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_ssh_public_key.md">aws_iam_ssh_public_key.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_ssh_public_key.md">aws_iam_ssh_public_key.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_ssh_public_key` InSpec audit resource to test the properties of a singular resource of an AWS SSH public key for an IAM user.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS IAM AccessKey.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html).
@@ -32,15 +42,15 @@ end
 
 `user_name` _(required)_
 
-The IAM user name associated with the SSH public key.
+: The IAM user name associated with the SSH public key.
 
 `ssh_public_key_id` _(required)_
 
-The unique identifier for the SSH public key.
+: The unique identifier for the SSH public key.
 
 `encoding` _(required)_
 
-Specifies the public key encoding format to use in the response. To retrieve the public key in SSH-RSA format, use `SSH`. To retrieve the public key in PEM format, use `PEM`.
+: Specifies the public key encoding format to use in the response. To retrieve the public key in SSH-RSA format, use `SSH`. To retrieve the public key in PEM format, use `PEM`.
 
 ## Properties
 

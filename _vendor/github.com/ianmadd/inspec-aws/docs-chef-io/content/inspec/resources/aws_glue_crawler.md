@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_glue_crawler Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_glue_crawler.md">aws_glue_crawler.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_glue_crawler.md">aws_glue_crawler.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_glue_crawler` InSpec audit resource to test properties of a single AWS Glue crawler.
 
 The AWS::Glue::Crawler resource specifies an AWS Glue crawler.
@@ -34,7 +44,7 @@ end
 
 `name` _(required)_
 
-The name of the crawler.
+: The name of the crawler.
 
 ## Properties
 

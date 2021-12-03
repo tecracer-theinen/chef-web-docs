@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ssm_association Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ssm_association.md">aws_ssm_association.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ssm_association.md">aws_ssm_association.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ssm_association` InSpec audit resource to test properties of a ssm association.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on SSM Associations](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-state-assoc.html).
@@ -36,10 +46,10 @@ end
 
 ## Parameters
 
-### association_id _OR_ name _AND_ instance_id _(name and instance_id are required together)_
+`association_id` _OR_ name _AND_ instance_id _(name and instance_id are required together)_
 
-This resource accepts the association_id, document name and instance id. If not using association_id, name and instance id must both be provided as parameters
-This can be passed either as a string or as a `association_id: 'value'` key-value entry in a hash.
+: This resource accepts the association_id, document name and instance id. If not using association_id, name and instance id must both be provided as parameters
+  This can be passed either as a string or as a `association_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

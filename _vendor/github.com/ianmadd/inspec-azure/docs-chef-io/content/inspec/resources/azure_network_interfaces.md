@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_network_interfaces Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_network_interfaces.md">azure_network_interfaces.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_network_interfaces.md">azure_network_interfaces.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_network_interfaces` InSpec audit resource to test properties and configuration of Azure Network Interfaces.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters

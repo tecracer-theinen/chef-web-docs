@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_key_vault_key Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_key_vault_key.md">azure_key_vault_key.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_key_vault_key.md">azure_key_vault_key.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_key_vault_key` InSpec audit resource to test properties and configuration of an Azure key within a vault.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -42,13 +52,20 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| vault_name                     | The name of the key vault that the targeted key resides in. `my_vault`            |
-| key_name                       | The name of the key to interrogate. `my_key`                                      |
-| name                           | Alias for the `key_name` parameter. `my_key`                                      |
-| key_version                    | (Optional) - The version of a Key, e.g. `7df9bf2c3b4347bab213ebe233f0e350`.       |
-| key_id                         | The unique id of the key, e.g. `https://example_vault.vault.azure.net/keys/key/7df9bf2c3b4347bab213ebe233f0e350`. |
+`vault_name`
+: The name of the key vault that the targeted key resides in. `my_vault`.
+
+`key_name`
+: The name of the key to interrogate. `my_key`.
+
+`name`
+: Alias for the `key_name` parameter. `my_key`.
+
+`key_version`
+: (Optional) - The version of a Key, e.g. `7df9bf2c3b4347bab213ebe233f0e350`.
+
+`key_id`
+: The unique id of the key, e.g. `https://example_vault.vault.azure.net/keys/key/7df9bf2c3b4347bab213ebe233f0e350`.
 
 Either one of the parameter sets can be provided for a valid query:
 - `vault_name` and `key_name`

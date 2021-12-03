@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_lambda_code_signing_config Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambda_code_signing_config.md">aws_lambda_code_signing_config.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambda_code_signing_config.md">aws_lambda_code_signing_config.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_lambda_code_signing_config` InSpec audit resource to test properties of a single AWS Lambda code signing configuration.
 
 The `AWS::Lambda::CodeSigningConfig` resource specifies the details about a code signing configuration.
@@ -34,7 +44,7 @@ end
 
 `code_signing_config_arn` _(required)_
 
-The Amazon Resource Name (ARN) of the code signing configuration.
+: The Amazon Resource Name (ARN) of the code signing configuration.
 
 ## Properties
 

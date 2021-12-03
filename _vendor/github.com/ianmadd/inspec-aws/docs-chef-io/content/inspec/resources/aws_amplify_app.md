@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_amplify_app resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_amplify_app.md">aws_amplify_app.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_amplify_app.md">aws_amplify_app.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_amplify_app` InSpec audit resource to test the properties of a single specific AWS Amplify app.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS Amplify  App](https://docs.aws.amazon.com/amplify/latest/APIReference/API_App.html).
@@ -32,7 +42,7 @@ end
 
 `app_id` _(required)_
 
-The unique ID of the Amplify app.
+: The unique ID of the Amplify app.
 
 ## Properties
 

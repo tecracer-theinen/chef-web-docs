@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ebs_snapshot Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ebs_snapshot.md">aws_ebs_snapshot.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ebs_snapshot.md">aws_ebs_snapshot.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ebs_snapshot` InSpec audit resource to test properties of a single AWS EBS Snapshot. These are point-in-time
 incremental backups of AWS EBS volumes that are saved to AWS S3.
 
@@ -41,15 +51,15 @@ end
 
 This resource accepts a single parameter, either the EBS Snapshot ID or name (from the Name tag). At least one must be provided.
 
-#### snapshot_id
+`snapshot_id`
 
-The EBS Snapshot ID which uniquely identifies the volume.
-This can be passed as either a string or an `snapshot_id: 'value'` key-value entry in a hash.
+: The EBS Snapshot ID which uniquely identifies the volume.
+  This can be passed as either a string or an `snapshot_id: 'value'` key-value entry in a hash.
 
-### name _(required if `snapshot_id` not provided)_
+`name` _(required if `snapshot_id` not provided)_
 
-The EBS volume name from the name tag. This must be passed as a `name: 'value'` key-value entry in a hash.
-It is not advised to use this parameter if your Name tags for your snapshots are not unique, as at most one entry is returned.
+: The EBS volume name from the name tag. This must be passed as a `name: 'value'` key-value entry in a hash.
+  It is not advised to use this parameter if your Name tags for your snapshots are not unique, as at most one entry is returned.
 
 ## Properties
 

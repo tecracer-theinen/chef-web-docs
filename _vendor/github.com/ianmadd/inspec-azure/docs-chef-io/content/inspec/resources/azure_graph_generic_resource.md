@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_graph_generic_resource Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_graph_generic_resource.md">azure_graph_generic_resource.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_graph_generic_resource.md">azure_graph_generic_resource.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_graph_generic_resource` Inspec audit resource to test any valid Azure resource available through Microsoft Azure Graph API. 
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -37,12 +47,25 @@ where
 
 The following parameters can be passed for targeting a specific Azure resource.
 
-| Name              | Description                                                                                                                                                         | Example                                |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| resource          | Azure resource type that the targeted resource belongs to.                                                                                                          | `users`                                |
-| id                | Globally unique ID of the targeted resource.                                                                                                                        | `jdoe@contoso.com`                     |
-| select            | The list of query parameters defining which attributes that the resource will expose. If not provided then the predefined attributes will be returned from the API. | `['givenName', 'surname', 'department']` |
-| api_version       | API version of the GRAPH API to use when interrogating the resource. If not set then the predefined stable version will be used.                                    | `v1.0`, `beta`                         |
+`resource`
+: Azure resource type that the targeted resource belongs to.
+
+: **Field**: `users`
+
+`id`
+: Globally unique ID of the targeted resource.
+
+: **Field**: `jdoe@contoso.com`
+
+`select`
+: The list of query parameters defining which attributes that the resource will expose. If not provided then the predefined attributes will be returned from the API.
+
+: **Field**: `['givenName', 'surname', 'department']`
+
+`api_version`
+: API version of the GRAPH API to use when interrogating the resource. If not set then the predefined stable version will be used.
+
+: **Field**: `v1.0`, `beta`
 
 ## Properties
 

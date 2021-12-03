@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_servicecatalog_portfolio_product_associat
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_servicecatalog_portfolio_product_association.md">aws_servicecatalog_portfolio_product_association.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_servicecatalog_portfolio_product_association.md">aws_servicecatalog_portfolio_product_association.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_servicecatalog_portfolio_product_association` InSpec audit resource to test properties of a single specific AWS Service Catalog portfolio product association.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS Service Catalog Portfolio Product Association](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html).
@@ -32,7 +42,7 @@ end
 
 `product_id` _(required)_
 
-The product identifier.
+: The product identifier.
 
 ## Properties
 

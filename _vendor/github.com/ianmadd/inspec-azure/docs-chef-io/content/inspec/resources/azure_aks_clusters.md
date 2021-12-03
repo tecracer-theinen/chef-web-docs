@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_aks_clusters Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_aks_clusters.md">azure_aks_clusters.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_aks_clusters.md">azure_aks_clusters.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_aks_clusters` InSpec audit resource to test properties and configuration of multiple Azure AKS Clusters.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters

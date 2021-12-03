@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatchlogs_subscription_filters Resou
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatchlogs_subscription_filters.md">aws_cloudwatchlogs_subscription_filters.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatchlogs_subscription_filters.md">aws_cloudwatchlogs_subscription_filters.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatchlogs_subscription_filters` InSpec audit resource to test properties of the plural resource of AWS Logs Subscription Filters.
 
 The AWS::Logs::SubscriptionFilter specifies a subscription filter and associates it with the specified log group.
@@ -34,7 +44,7 @@ end
 
 `log_group_name` _(required)_
 
-The name of the log group.
+: The name of the log group.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_graph_generic_resources Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_graph_generic_resources.md">azure_graph_generic_resources.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_graph_generic_resources.md">azure_graph_generic_resources.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_graph_generic_resources` Inspec audit resource to test any valid Azure resource available through Microsoft Azure Graph API. 
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -38,13 +48,30 @@ where
 
 The following parameters can be passed for targeting specific Azure resources.
 
-| Name              | Description                                                                                                                                                           | Example                             |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| resource          | Azure resource type that the targeted resource belongs to. This is the only **MANDATORY** parameter.                                                                  | `users`                             |
-| filter            | A hash containing the filtering options and their values. The `starts_with_` operator can be used for fuzzy string matching. Parameter names are in snakecase. | `{ starts_with_given_name: 'J', starts_with_department: 'Core', country: 'United Kingdom', given_name: John}` |
-| filter_free_text  | [OData](https://www.odata.org/getting-started/basic-tutorial/) query string in double quotes, `"`. Property names are in camelcase, refer to [here](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter) for more information. | `"startswith(displayName,'J') and surname eq 'Doe'"`    |
-| select            | A list of the query parameters defining which attributes that the resource will expose and to be tested. Property names are in camelcase. If not provided then the predefined attributes will be returned from the API. | `['givenName', 'surname', 'department']`    |
-| api_version       | API version of the Azure Graph API to use when interrogating the resource. If not set then the predefined stable version will be used.                                 | `v1.0`, `beta`                      |
+`resource`
+: Azure resource type that the targeted resource belongs to. This is the only **MANDATORY** parameter.
+
+: **Field**: `users`
+
+`filter`
+: A hash containing the filtering options and their values. The `starts_with_` operator can be used for fuzzy string matching. Parameter names are in snakecase.
+
+: **Field**: `{ starts_with_given_name: 'J', starts_with_department: 'Core', country: 'United Kingdom', given_name: John}`
+
+`filter_free_text`
+: [OData](https://www.odata.org/getting-started/basic-tutorial/) query string in double quotes, `"`. Property names are in camelcase, refer to [here](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter) for more information.
+
+: **Field**: `"startswith(displayName,'J') and surname eq 'Doe'"`
+
+`select`
+: A list of the query parameters defining which attributes that the resource will expose and to be tested. Property names are in camelcase. If not provided then the predefined attributes will be returned from the API.
+
+: **Field**: `['givenName', 'surname', 'department']`
+
+`api_version`
+: API version of the Azure Graph API to use when interrogating the resource. If not set then the predefined stable version will be used.
+
+: **Field**: `v1.0`, `beta`
 
 It is advised to use `filter` or `filter_free_text` to narrow down the targeted resources at the server side, Azure Graph API, for a more efficient test.
 

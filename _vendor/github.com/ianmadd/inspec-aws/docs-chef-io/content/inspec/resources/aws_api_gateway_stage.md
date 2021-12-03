@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_api_gateway_stage Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_api_gateway_stage.md">aws_api_gateway_stage.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_api_gateway_stage.md">aws_api_gateway_stage.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_api_gateway_stage` InSpec audit resource to test properties of a single AWS API Gateway stage.
 
 The `AWS::ApiGateway::Stage` resource deploys an API Gateway REST API resource to a stage so that clients can call the API over the internet. The stage acts as an environment.
@@ -34,11 +44,11 @@ end
 
 `rest_api_id` _(required)_
 
-The ID of the REST API resource that you're deploying with this stage.
+: The ID of the REST API resource that you're deploying with this stage.
 
 `stage_name` _(required)_
 
-The API Gateway stage name.
+: The API Gateway stage name.
 
 ## Properties
 

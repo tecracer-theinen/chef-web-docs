@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_sns_subscriptions Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_sns_subscriptions.md">aws_sns_subscriptions.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_sns_subscriptions.md">aws_sns_subscriptions.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_sns_subscriptions` InSpec audit resource to test properties of an AWS Simple Notification Service (SNS) subscription VPN route.
 
 The `AWS::SNS::Subscription` resource subscribes an endpoint to an Amazon SNS topic. For a subscription to be created, the owner of the endpoint must confirm the subscription.

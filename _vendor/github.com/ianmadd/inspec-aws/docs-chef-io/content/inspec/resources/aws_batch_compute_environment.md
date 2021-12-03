@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_batch_compute_environment Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_batch_compute_environment.md">aws_batch_compute_environment.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_batch_compute_environment.md">aws_batch_compute_environment.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_batch_compute_environment` InSpec audit resource to test the properties of a single AWS Batch compute environment.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on Batch compute environment](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html).
@@ -31,7 +41,7 @@ end
 
 `compute_environment_name` _(required)_
 
-The name of the Batch compute environment.
+: The name of the Batch compute environment.
 
 ## Properties
 

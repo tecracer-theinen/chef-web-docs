@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudformation_template Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudformation_template.md">aws_cloudformation_template.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudformation_template.md">aws_cloudformation_template.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudformation_template` InSpec audit resource to test a single AWS CloudFormation template.
 
 The above resource returns information about a new or existing template.
@@ -56,24 +66,24 @@ end
 
 ## Parameters
 
-This resource requires one of the following parameters.
-It must be passed as a `PARAMETER: 'PARAMETER_VALUE'` key-value entry in a hash.
+: This resource requires one of the following parameters.
+  It must be passed as a `PARAMETER: 'PARAMETER_VALUE'` key-value entry in a hash.
 
 `stack_name` _(required if another parameter not provided)_
 
-The name or the stack ID that is associated with the stack, which are not always interchangeable.
+: The name or the stack ID that is associated with the stack, which are not always interchangeable.
 
 `stack_set_name` _(required if another parameter not provided)_
 
-The name or unique ID of the stack set from which the stack was created.
+: The name or unique ID of the stack set from which the stack was created.
 
 `template_url` _(required if another parameter not provided)_
 
-Location of file containing the template body. The URL must point to a template (max size: 460,800 bytes) that is located in an Amazon S3 bucket.
+: Location of file containing the template body. The URL must point to a template (max size: 460,800 bytes) that is located in an Amazon S3 bucket.
 
 `template_body` _(required if another parameter not provided)_
 
-Structure containing the template body with a minimum length of 1 byte and a maximum length of 51,200 bytes.
+: Structure containing the template body with a minimum length of 1 byte and a maximum length of 51,200 bytes.
 
 ## Properties
 

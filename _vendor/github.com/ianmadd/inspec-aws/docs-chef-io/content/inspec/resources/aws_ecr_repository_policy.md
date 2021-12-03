@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ecr_repository_policy Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ecr_repository_policy.md">aws_ecr_repository_policy.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ecr_repository_policy.md">aws_ecr_repository_policy.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ecr_repository_policy` InSpec audit resource to test the policy configured for a single AWS Elastic Container Registry (ECR) repository.
 
 New in InSpec AWS resource pack [1.11.0](https://github.com/inspec/inspec-aws/releases/tag/v1.11.0).
@@ -40,42 +50,42 @@ end
 
 The repository name must be provided.
 
-#### repository_name _(required)_
+`repository_name` _(required)_
 
-The name of the ECR repository must satisfy the following constraints:
-- Regex pattern `(?:[a-z0-9]+(?:[._-][a-z0-9]+)*/)*[a-z0-9]+(?:[._-][a-z0-9]+)*`.
-- Minimum 2 and maximum of 256 characters long.
+: The name of the ECR repository must satisfy the following constraints:
+  - Regex pattern `(?:[a-z0-9]+(?:[._-][a-z0-9]+)*/)*[a-z0-9]+(?:[._-][a-z0-9]+)*`.
+  - Minimum 2 and maximum of 256 characters long.
 
-This can be passed either as a string or as a `repository_name: 'value'` key-value entry in a hash.
+: This can be passed either as a string or as a `repository_name: 'value'` key-value entry in a hash.
 
-### have_statement
+`have_statement`
 
-The `have_statement` examines the list of statements contained in the policy and passes if at least one of the statements matches.
-This matcher does _not_ interpret the policy in a request authorization context as AWS does when a request is processed. Rather, the `have_statement` examines the literal contents of the IAM policy and reports on what is present (or absent, when used with `should_not`).
+: The `have_statement` examines the list of statements contained in the policy and passes if at least one of the statements matches.
+  This matcher does _not_ interpret the policy in a request authorization context as AWS does when a request is processed. Rather, the `have_statement` examines the literal contents of the IAM policy and reports on what is present (or absent, when used with `should_not`).
 
-**Criteria**
+: **Criteria**
 
-The `have_statement` accepts the following criteria to search for matching statements. A test is successful if any statement matches all the criteria. Criteria can be formatted in title case or lowercase, and as a string or symbol.
+: The `have_statement` accepts the following criteria to search for matching statements. A test is successful if any statement matches all the criteria. Criteria can be formatted in title case or lowercase, and as a string or symbol.
 
-`Action`
-: Expresses the requested operation. Acceptable literal values are any AWS operation name, including the '\*' wildcard character.
-  `Action` may also use a list of AWS operation names.
+: `Action`
+  : Expresses the requested operation. Acceptable literal values are any AWS operation name, including the '\*' wildcard character.
+    `Action` may also use a list of AWS operation names.
 
-`Effect`
-: Expresses if the operation is permitted. Acceptable values are `'Deny'` and `'Allow'`.
+: `Effect`
+  : Expresses if the operation is permitted. Acceptable values are `'Deny'` and `'Allow'`.
 
-`Sid`
-: A user-provided string identifier for the statement.
+: `Sid`
+  : A user-provided string identifier for the statement.
 
-`Principal`
-: Expresses the operation's target. Acceptable values are Amazon Resource Names (ARNs), including the '\*' wildcard.
-  `Principal` may also use a list of ARN values.
+: `Principal`
+  : Expresses the operation's target. Acceptable values are Amazon Resource Names (ARNs), including the '\*' wildcard.
+    `Principal` may also use a list of ARN values.
 
-Please note the following about the behavior of the `have_statement`:
+: Please note the following about the behavior of the `have_statement`:
 
-- The `Action`, `Sid`, and `Resource` criteria will allow a regular expression instead of a string literal.
-- The `have_statement` does not support wildcard expansion; to check for a wildcard value, check for it explicitly. For example, if the policy includes a statement with `"Action": "s3:*"` and the test checks for `Action: "s3:PutObject"`, the test _will not match_. You must write an additional test checking for the wildcard case.
-- The `have_statement` supports searching for list values. For example, if a statement contains a list of three resources and a `have_statement` test specifies _one_ of those resources, it will match.
+: - The `Action`, `Sid`, and `Resource` criteria will allow a regular expression instead of a string literal.
+  - The `have_statement` does not support wildcard expansion; to check for a wildcard value, check for it explicitly. For example, if the policy includes a statement with `"Action": "s3:*"` and the test checks for `Action: "s3:PutObject"`, the test _will not match_. You must write an additional test checking for the wildcard case.
+  - The `have_statement` supports searching for list values. For example, if a statement contains a list of three resources and a `have_statement` test specifies _one_ of those resources, it will match.
 
 ## Examples
 

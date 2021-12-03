@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatchlogs_destination Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatchlogs_destination.md">aws_cloudwatchlogs_destination.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatchlogs_destination.md">aws_cloudwatchlogs_destination.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatchlogs_destination` InSpec audit resource to test properties of a single specific AWS Logs destination.
 
 The `AWS::Logs::Destination` resource type specifies a CloudWatch Logs destination. A destination encapsulates a physical resource (such as an Amazon Kinesis data stream) and enables you to subscribe that resource to a stream of log events.
@@ -34,7 +44,7 @@ end
 
 `destination_name_prefix` _(required)_
 
-The name of the destination.
+: The name of the destination.
 
 ## Properties
 

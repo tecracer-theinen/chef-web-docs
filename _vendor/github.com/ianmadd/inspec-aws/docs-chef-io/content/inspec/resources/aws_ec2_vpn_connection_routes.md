@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_vpn_connection_routes Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_vpn_connection_routes.md">aws_ec2_vpn_connection_routes.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_vpn_connection_routes.md">aws_ec2_vpn_connection_routes.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_vpn_connection_routes` InSpec audit resource to test properties of multiple AWS EC2 VPN connection routes.
 
 The `AWS::EC2::VPNConnectionRoute` resource specifies a static route for a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway.
@@ -34,7 +44,7 @@ end
 
 `vpn_connection_id` _(required)_
 
-The ID of the VPN Connection.
+: The ID of the VPN Connection.
 
 ## Properties
 

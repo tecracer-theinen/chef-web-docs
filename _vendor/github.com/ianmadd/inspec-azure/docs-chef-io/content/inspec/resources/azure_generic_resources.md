@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_generic_resources Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_generic_resources.md">azure_generic_resources.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_generic_resources.md">azure_generic_resources.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_generic_resources` Inspec audit resource to test any valid Azure resources. 
 
 ### Availability
@@ -33,19 +43,55 @@ end
 The following parameters can be passed for targeting Azure resources. 
 All of them are optional. 
 
-| Name                           | Description                                                                                                               | Example                             |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| resource_group                 | Azure resource group that the targeted resources have been created in.                                                    | `MyResourceGroup`                   |
-| substring_of_resource_group    | Substring of an Azure resource group name that the targeted resources have been created in.                               | `My`                                |
-| name                           | Name of the Azure resources to test.                                                                                      | `MyVM`                              |
-| substring_of_name              | Substring of a name of the Azure resources to test.                                                                       | `My  `                              |
-| resource_provider              | Azure resource provider of the resources to be tested.                                                                    | `Microsoft.Compute/virtualMachines` |
-| tag_name<superscript>*</superscript> | Tag name defined on the Azure resources.                                                                            | `name`                              |
-| tag_value                      | Tag value of the tag defined with the `tag_name`.                                                                         | `external_linux`                    |
-| resource_uri                   | Azure REST API URI of the resources to be tested. This parameter should be used when resources do not reside in resource groups. It requires `add_subscription_id` parameter to be provided together. | `/providers/Microsoft.Authorization/policyDefinitions/` |
-| add_subscription_id            | Indicates whether the `resource_uri` contains the subscription id. | `true` or `false` |
-| filter_free_text               | Filter expression for the endpoints supporting `$filter` parameter, eg. [Azure role assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-rest). This can only be used with the `resource_uri` parameter. | `"atScope()"` | 
+`resource_group`
+: Azure resource group that the targeted resources have been created in.
 
+: **Field**: `MyResourceGroup`
+
+`substring_of_resource_group`
+: Substring of an Azure resource group name that the targeted resources have been created in.
+
+: **Field**: `My`
+
+`name`
+: Name of the Azure resources to test.
+
+: **Field**: `MyVM`
+
+`substring_of_name`
+: Substring of a name of the Azure resources to test.
+
+: **Field**: `My  `
+
+`resource_provider`
+: Azure resource provider of the resources to be tested.
+
+: **Field**: `Microsoft.Compute/virtualMachines`
+
+`tag_name<superscript>*</superscript>`
+: Tag name defined on the Azure resources.
+
+: **Field**: `name`
+
+`tag_value`
+: Tag value of the tag defined with the `tag_name`.
+
+: **Field**: `external_linux`
+
+`resource_uri`
+: Azure REST API URI of the resources to be tested. This parameter should be used when resources do not reside in resource groups. It requires `add_subscription_id` parameter to be provided together.
+
+: **Field**: `/providers/Microsoft.Authorization/policyDefinitions/`
+
+`add_subscription_id`
+: Indicates whether the `resource_uri` contains the subscription id.
+
+: **Field**: `true` or `false`
+
+`filter_free_text`
+: Filter expression for the endpoints supporting `$filter` parameter, eg. [Azure role assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-rest). This can only be used with the `resource_uri` parameter.
+
+: **Field**: `"atScope()"`
 <superscript>*</superscript> When resources are filtered by a tag name and value, the tags for each resource are not returned in the results.
 
 Either one of the parameter sets can be provided for a valid query:

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_fleets Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_fleets.md">aws_ec2_fleets.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_fleets.md">aws_ec2_fleets.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_fleets` InSpec audit resource to test properties multiple AWS EC2 fleets.
 
 The `AWS::EC2::SpotFleet` resource specifies the configuration information to launch a fleet--or group--of instances.

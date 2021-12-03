@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ebs_volume Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ebs_volume.md">aws_ebs_volume.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ebs_volume.md">aws_ebs_volume.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ebs_volume` InSpec audit resource to test properties of a single AWS EBS volume.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on EBS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html).
@@ -39,15 +49,15 @@ end
 
 This resource accepts a single parameter, either the EBS Volume name or id. At least one must be provided.
 
-##### volume_id _(required if `name` not provided)_
+`volume_id` _(required if `name` not provided)_
 
-The EBS Volume ID which uniquely identifies the volume.
-This can be passed as either a string or an `volume_id: 'value'` key-value entry in a hash.
+: The EBS Volume ID which uniquely identifies the volume.
+  This can be passed as either a string or an `volume_id: 'value'` key-value entry in a hash.
 
-### name _(required if `volume_id` not provided)_
+`name` _(required if `volume_id` not provided)_
 
-The EBS Volume Name which uniquely identifies the volume.
-This must be passed as a `name: 'value'` key-value entry in a hash.
+: The EBS Volume Name which uniquely identifies the volume.
+  This must be passed as a `name: 'value'` key-value entry in a hash.
 
 ## Properties
 

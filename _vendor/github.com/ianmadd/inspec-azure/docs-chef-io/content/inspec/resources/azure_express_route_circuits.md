@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_express_route_circuits Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_express_route_circuits.md">azure_express_route_circuits.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_express_route_circuits.md">azure_express_route_circuits.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_express_route_circuits` InSpec audit resource to test properties of Azure ExpressRoute circuits for a resource group.
 
 ## Azure Rest API Version, Endpoint, And HTTP Client Parameters
@@ -20,7 +30,7 @@ If not provided, the latest version will be used.
 For more information, refer to [`azure_generic_resource`]({{< relref "azure_generic_resource.md" >}}).
 
 Unless defined, `azure_cloud` global endpoint, and default values for the HTTP client will be used.
-For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/master/README.md).
+For more information, refer to the resource pack [README](https://github.com/inspec/inspec-azure/blob/main/README.md).
 
 ### Availability
 
@@ -40,9 +50,8 @@ end
 
 ## Parameters
 
-|Property        | Description                                                                          |
-|----------------|--------------------------------------------------------------------------------------|
-| resource_group | The Azure resource group that the targeted resources reside in.                      |
+`resource_group`
+: The Azure resource group that the targeted resources reside in.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_policy_insights_query_results Resourc
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_policy_insights_query_results.md">azure_policy_insights_query_results.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_policy_insights_query_results.md">azure_policy_insights_query_results.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_policy_insights_query_results` InSpec audit resource to test properties and configuration of multiple Azure Policy Insights query results.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters

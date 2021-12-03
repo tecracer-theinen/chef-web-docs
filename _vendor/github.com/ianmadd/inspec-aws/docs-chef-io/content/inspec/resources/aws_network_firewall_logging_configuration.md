@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_network_firewall_logging_configuration Re
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_network_firewall_logging_configuration.md">aws_network_firewall_logging_configuration.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_network_firewall_logging_configuration.md">aws_network_firewall_logging_configuration.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_network_firewall_logging_configuration` InSpec audit resource to test properties of a single specific AWS Network Firewall Logging Configuration.
 
 The `AWS::NetworkFirewall::LoggingConfiguration` resource defines the destinations and logging options for an [`AWS::NetworkFirewall::Firewall`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-firewall.html).
@@ -34,7 +44,7 @@ end
 
 `firewall_name` _(required)_
 
-The Amazon Resource Name (ARN) of the firewall.
+: The Amazon Resource Name (ARN) of the firewall.
 
 ## Properties
 

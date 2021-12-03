@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ecs_task_definitions Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ecs_task_definitions.md">aws_ecs_task_definitions.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ecs_task_definitions.md">aws_ecs_task_definitions.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ecs_task_definitions` InSpec audit resource to test the properties of multiple ECS task definitions.
 
 For additional information, including details on parameters and properties, see the [AWS ECS task definition documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html).

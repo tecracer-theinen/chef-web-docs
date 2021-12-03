@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ram_resource_share Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ram_resource_share.md">aws_ram_resource_share.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ram_resource_share.md">aws_ram_resource_share.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ram_resource_share` InSpec audit resource to test properties of a single specific AWS RAM resource share.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS RAM Resource Share](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html).
@@ -32,11 +42,11 @@ end
 
 `resource_owner` _(required)_
 
-The type of owner. Possible values: `SELF` and `OTHER-ACCOUNTS`.
+: The type of owner. Possible values: `SELF` and `OTHER-ACCOUNTS`.
 
 `resource_share_arn` _(required)_
 
-The Amazon Resource Name (ARN) of the resource share.
+: The Amazon Resource Name (ARN) of the resource share.
 
 ## Properties
 

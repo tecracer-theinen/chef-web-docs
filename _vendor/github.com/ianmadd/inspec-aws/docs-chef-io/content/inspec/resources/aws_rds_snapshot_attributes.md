@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_rds_snapshot_attributes Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_rds_snapshot_attributes.md">aws_rds_snapshot_attributes.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_rds_snapshot_attributes.md">aws_rds_snapshot_attributes.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_rds_snapshotattributes` InSpec audit resource to test the detailed properties of an individual RDS snapshot attrbutes.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.html).
@@ -41,9 +51,9 @@ end
 
 ## Parameters
 
-### db_snapshot_identifier
+`db_snapshot_identifier`
 
-This resource accepts a single parameter either as a string or a `db_snapshot_identifier: 'value'` key-value entry in a hash. This parameter is user-supplied DB snapshot identifier. This parameter isn't case-sensitive and is a required parameter.
+: This resource accepts a single parameter either as a string or a `db_snapshot_identifier: 'value'` key-value entry in a hash. This parameter is user-supplied DB snapshot identifier. This parameter isn't case-sensitive and is a required parameter.
 
 ## Properties
 

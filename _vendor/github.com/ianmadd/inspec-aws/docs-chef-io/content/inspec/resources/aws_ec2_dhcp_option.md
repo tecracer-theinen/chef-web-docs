@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_ec2_dhcp_option Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_dhcp_option.md">aws_ec2_dhcp_option.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_dhcp_option.md">aws_ec2_dhcp_option.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_ec2_dhcp_option` InSpec audit resource to test the properties of a single AWS DHCP options set.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on EC2](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeDhcpOptions.html).
@@ -44,15 +54,15 @@ end
 
 This resource requires either the `dhcp_options_id` or `name` parameter.
 
-### dhcp_options_id
+`dhcp_options_id`
 
-The DHCP options ID uniquely identifies the DHCP options set.
-This can be passed either as a string or as a `dhcp_options_id: 'value'` key-value entry in a hash.
+: The DHCP options ID uniquely identifies the DHCP options set.
+  This can be passed either as a string or as a `dhcp_options_id: 'value'` key-value entry in a hash.
 
-### name
+`name`
 
-The DHCP options name uniquely identifies the DHCP options set.
-This can be passed as a `name: 'value'` key-value entry in a hash.
+: The DHCP options name uniquely identifies the DHCP options set.
+  This can be passed as a `name: 'value'` key-value entry in a hash.
 
 ## Properties
 

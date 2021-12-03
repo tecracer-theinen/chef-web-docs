@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_autoscaling_scaling_policies Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_autoscaling_scaling_policies.md">aws_autoscaling_scaling_policies.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_autoscaling_scaling_policies.md">aws_autoscaling_scaling_policies.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_autoscaling_scaling_policies` InSpec audit resource to test properties of multiple Amazon EC2 Auto Scaling scaling policies.
 
 For additional information, including details on parameters and properties, see the [AWS AutoScaling Scaling Policy documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html).

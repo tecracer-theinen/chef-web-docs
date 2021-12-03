@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_postgresql_databases Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_postgresql_databases.md">azure_postgresql_databases.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_postgresql_databases.md">azure_postgresql_databases.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_postgresql_databases` InSpec audit resource to test properties and configuration of Azure PostgreSQL Databases.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -31,10 +41,11 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                          |
-|--------------------------------|--------------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`        |
-| server_name                    | The name of the server in which the database resides. `serverName`                   |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`server_name`
+: The name of the server in which the database resides. `serverName`.
 
 ## Properties
 

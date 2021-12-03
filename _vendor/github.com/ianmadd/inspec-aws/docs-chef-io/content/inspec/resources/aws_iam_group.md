@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_group Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_group.md">aws_iam_group.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_group.md">aws_iam_group.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_group` InSpec audit resource to test properties of a single IAM group.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on IAM Groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html).
@@ -37,10 +47,10 @@ end
 
 ## Parameters
 
-##### group_name _(required)_
+`group_name` _(required)_
 
-This resource accepts a single parameter, the Group Name which uniquely identifies the IAM Group. 
-This can be passed either as a string or as a `group_name: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the Group Name which uniquely identifies the IAM Group. 
+  This can be passed either as a string or as a `group_name: 'value'` key-value entry in a hash.
 
 ## Properties
 

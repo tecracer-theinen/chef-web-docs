@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_active_directory_domain_service Resou
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_active_directory_domain_service.md">azure_active_directory_domain_service.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_active_directory_domain_service.md">azure_active_directory_domain_service.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_active_directory_domain_service` InSpec audit resource to test properties of an Azure Active Directory service within a tenant.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -32,9 +42,10 @@ end
 
 Either one of the following parameters is mandatory.
 
-| Name               | Description | Example |
-|--------------------|-------------|---------|
-| id                 | Domain ID   | `example.com` |
+`id`
+: Domain ID.
+
+: **Field**: `example.com`
 
 ## Properties
 

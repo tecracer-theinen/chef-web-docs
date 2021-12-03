@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_data_lake_storage_gen2_filesystem Res
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_data_lake_storage_gen2_filesystem.md">azure_data_lake_storage_gen2_filesystem.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_data_lake_storage_gen2_filesystem.md">azure_data_lake_storage_gen2_filesystem.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_data_lake_storage_gen2_filesystem` InSpec audit resource to test the properties related to Azure Data Lake Storage Gen2 Filesystem.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -40,15 +50,15 @@ end
 
 `name` _(required)_
 
-Name of the Azure Date Lake Storage Gen2 to test.
+: Name of the Azure Date Lake Storage Gen2 to test.
 
 `account_name` _(required)_
 
-Azure storage account name.
+: Azure storage account name.
 
 `dns_suffix` _(optional)_
 
-The DNS suffix for the Azure Data Lake Storage endpoint.
+: The DNS suffix for the Azure Data Lake Storage endpoint.
 
 ## Properties
 

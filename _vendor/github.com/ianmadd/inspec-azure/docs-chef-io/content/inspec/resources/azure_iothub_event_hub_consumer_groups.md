@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_iothub_event_hub_consumer_groups Reso
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_iothub_event_hub_consumer_groups.md">azure_iothub_event_hub_consumer_groups.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_iothub_event_hub_consumer_groups.md">azure_iothub_event_hub_consumer_groups.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_iothub_event_hub_consumer_groups` InSpec audit resource to test properties and configuration of an Azure IoT Hub Event Hub Consumer Groups within a Resource Group.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -32,11 +42,14 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                          |
-|--------------------------------|--------------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`        |
-| resource_name                  | The name of the IoT hub. `my-iot-hub`                                                |
-| event_hub_endpoint             | The name of the Event Hub-compatible endpoint in the IoT hub. `eventHubEndpointName` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`resource_name`
+: The name of the IoT hub. `my-iot-hub`.
+
+`event_hub_endpoint`
+: The name of the Event Hub-compatible endpoint in the IoT hub. `eventHubEndpointName`.
 
 ## Properties
 

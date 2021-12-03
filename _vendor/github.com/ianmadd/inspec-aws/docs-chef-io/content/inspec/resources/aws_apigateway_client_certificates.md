@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_apigateway_client_certificates Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_apigateway_client_certificates.md">aws_apigateway_client_certificates.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_apigateway_client_certificates.md">aws_apigateway_client_certificates.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_apigateway_client_certificates` InSpec audit resource to test properties of multiple AWS API Gateway client certificates.
 
 The `AWS::ApiGateway::ClientCertificate` resource creates a client certificate that API Gateway uses to configure client-side SSL authentication for sending requests to the integration endpoint.

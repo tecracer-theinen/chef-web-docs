@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_dms_replication_instance Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_dms_replication_instance.md">aws_dms_replication_instance.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_dms_replication_instance.md">aws_dms_replication_instance.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_dms_replication_instance` InSpec audit resource to test properties of a single AWS DMS replication instance.
 
 The AWS::DMS::ReplicationInstance resource creates an AWS DMS replication instance.

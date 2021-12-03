@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_resource_health_availability_status R
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_resource_health_availability_status.md">azure_resource_health_availability_status.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_resource_health_availability_status.md">azure_resource_health_availability_status.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_resource_health_availability_status` InSpec audit resource to test properties related to a Azure Resource Health availability status.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -37,11 +47,14 @@ end
 
 ## Parameters
 
-| Name           | Description                                                                      |
-|----------------|----------------------------------------------------------------------------------|
-| name           | Name of the Azure resource to test.                                              |
-| resource_group | Azure resource group that the targeted resource resides in.                      |
-| resource_type  | Azure resource type of the targeted resource.                                    |
+`name`
+: Name of the Azure resource to test.
+
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`resource_type`
+: Azure resource type of the targeted resource.
 
 The parameter set should be provided for a valid query:
 - `resource_group`, `resource_type` and `name`

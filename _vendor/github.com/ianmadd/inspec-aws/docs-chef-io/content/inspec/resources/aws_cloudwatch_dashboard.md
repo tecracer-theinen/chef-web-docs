@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudwatch_dashboard Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_dashboard.md">aws_cloudwatch_dashboard.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_dashboard.md">aws_cloudwatch_dashboard.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudwatch_dashboard` InSpec audit resource to test properties of the plural AWS CloudWatch dashboard.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS CloudWatch Dashboard.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html).
@@ -32,7 +42,7 @@ end
 
 `dashboard_name` _(required)_
 
-The name of a dashboard.
+: The name of a dashboard.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_policy Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_policy.md">aws_iam_policy.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_policy.md">aws_iam_policy.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_policy` InSpec audit resource to test properties of a single managed AWS IAM Policy.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on IAM Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
@@ -40,15 +50,15 @@ end
 
 This resource requires either the `policy_name` or the `policy_arn` to be provided.
 
-##### policy_name _(required if `policy_arn` not provided)_
+`policy_name` _(required if `policy_arn` not provided)_
 
-The Policy Name which uniquely identifies the Policy. 
-This must be passed as a `policy_name: 'value'` key-value entry in a hash.
+: The Policy Name which uniquely identifies the Policy. 
+  This must be passed as a `policy_name: 'value'` key-value entry in a hash.
 
-##### policy_arn _(required if `policy_name` not provided)_
+`policy_arn` _(required if `policy_name` not provided)_
 
-The Policy ARN which uniquely identifies the Policy. 
-This must be passed as a `policy_arn: 'value'` key-value entry in a hash.
+: The Policy ARN which uniquely identifies the Policy. 
+  This must be passed as a `policy_arn: 'value'` key-value entry in a hash.
 
 ## Properties
 

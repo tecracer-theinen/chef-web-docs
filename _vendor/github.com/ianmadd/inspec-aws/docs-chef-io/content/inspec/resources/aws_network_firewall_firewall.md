@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_network_firewall_firewall Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_network_firewall_firewall.md">aws_network_firewall_firewall.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_network_firewall_firewall.md">aws_network_firewall_firewall.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_network_firewall_firewall` InSpec audit resource to test properties of a single specific AWS Network Firewall firewall.
 
 The firewall defines the configuration settings for an AWS Network Firewall firewall. The settings include the firewall policy, the subnets in your VPC to use for the firewall endpoints, and any tags that are attached to the firewall AWS resource.
@@ -34,7 +44,7 @@ end
 
 `firewall_name` _(required)_
 
-The descriptive name of the firewall.
+: The descriptive name of the firewall.
 
 ## Properties
 

@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_synapse_notebooks Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_synapse_notebooks.md">azure_synapse_notebooks.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_synapse_notebooks.md">azure_synapse_notebooks.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_synapse_notebooks` InSpec audit resource to test properties related to all Azure Synapse notebooks in a Synapse Analytics workspace.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -34,9 +44,8 @@ end
 
 This resource requires the `endpoint` parameter for valid query.
 
-| Name                            | Description                                                                      |
-|---------------------------------|----------------------------------------------------------------------------------|
-| endpoint                        | The Azure Synapse workspace development endpoint.                                |
+`endpoint`
+: The Azure Synapse workspace development endpoint.
 
 ## Properties
 

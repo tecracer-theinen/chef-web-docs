@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_elasticache_replication_group Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_elasticache_replication_group.md">aws_elasticache_replication_group.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_elasticache_replication_group.md">aws_elasticache_replication_group.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_elasticache_replication_group` InSpec audit resource to test the properties of a single Amazon ElastiCache replication group.
 
 ## Installation
@@ -38,15 +48,15 @@ end
 
 The ElastiCache replication group ID is required.
 
-#### replication_group_id _(required)_
+`replication_group_id` _(required)_
 
-The ID of the ElastiCache replication group:
+: The ID of the ElastiCache replication group:
 
- - must contain between 1 and 50 alphanumeric characters or hyphens 
- - should start with a letter 
- - cannot end with a hyphen or contain two consecutive hyphens
+:  - must contain between 1 and 50 alphanumeric characters or hyphens 
+   - should start with a letter 
+   - cannot end with a hyphen or contain two consecutive hyphens
 
-It can be passed either as a string or as a `replication_group_id: 'value'` key-value entry in a hash.
+: It can be passed either as a string or as a `replication_group_id: 'value'` key-value entry in a hash.
 
 ## Properties
 

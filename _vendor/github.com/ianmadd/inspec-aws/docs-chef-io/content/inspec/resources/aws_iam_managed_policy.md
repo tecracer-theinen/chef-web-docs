@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_managed_policy Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_managed_policy.md">aws_iam_managed_policy.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_managed_policy.md">aws_iam_managed_policy.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_managed_policy` InSpec audit resource to test the properties of an AWS IAM managed policy.
 
 ## Installation
@@ -33,7 +43,7 @@ See the [AWS documentation on IAM Managed Policy](https://docs.aws.amazon.com/AW
 
 `policy_arn` _(required)_
 
-The ARN of the AWS IAM managed policy.
+: The ARN of the AWS IAM managed policy.
 
 ## Properties
 

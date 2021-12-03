@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_vpcs Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpcs.md">aws_vpcs.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpcs.md">aws_vpcs.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_vpcs` InSpec audit resource to test the properties of some or all AWS Virtual Private Clouds (VPCs) and the CIDR block that is used within the VPC.
 
 Each VPC is uniquely identified by its `VPC ID`. In addition, each VPC has a non-unique CIDR IP address range (such as 10.0.0.0/16), which it manages.

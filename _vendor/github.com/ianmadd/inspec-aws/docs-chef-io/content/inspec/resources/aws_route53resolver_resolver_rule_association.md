@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_route53resolver_resolver_rule_association
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route53resolver_resolver_rule_association.md">aws_route53resolver_resolver_rule_association.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route53resolver_resolver_rule_association.md">aws_route53resolver_resolver_rule_association.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_route53resolver_resolver_rule_association` InSpec audit resource to test properties of a single AWS Route53 Resolver rule association.
 
 The Resolver rule association determines which DNS queries that originate in the VPC are forwarded to your network.
@@ -34,7 +44,7 @@ end
 
 `resolver_rule_association_id` _(required)_
 
-The ID of the Resolver rule association that you want to get information about.
+: The ID of the Resolver rule association that you want to get information about.
 
 ## Properties
 

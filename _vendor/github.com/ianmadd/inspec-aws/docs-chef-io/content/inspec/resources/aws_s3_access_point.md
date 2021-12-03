@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_s3_access_point Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_s3_access_point.md">aws_s3_access_point.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_s3_access_point.md">aws_s3_access_point.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_s3_access_point` InSpec audit resource to test properties of a single specific S3 bucket resource.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on AWS API Metric.](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketMetricsConfiguration.html).
@@ -32,11 +42,11 @@ end
 
 `domain_name` _(required)_
 
-The name of the bucket containing the metrics configuration to retrieve.
+: The name of the bucket containing the metrics configuration to retrieve.
 
 `metrics_id` _(required)_
 
-The ID used to identify the metrics configuration.
+: The ID used to identify the metrics configuration.
 
 ## Properties
 

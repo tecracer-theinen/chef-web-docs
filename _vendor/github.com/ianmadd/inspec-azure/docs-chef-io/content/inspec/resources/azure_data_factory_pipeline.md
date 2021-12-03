@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_data_factory_pipeline Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_data_factory_pipeline.md">azure_data_factory_pipeline.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_data_factory_pipeline.md">azure_data_factory_pipeline.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_data_factory_pipeline` InSpec audit resource to test properties of an Azure pipeline.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -32,11 +42,14 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
- |--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `MyResourceGroup`     |
-| factory_name                           | Name for the data factory that you want to create your pipeline in..                                                                 |
-| pipeline_name                 | The pipeline name. |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+
+`factory_name`
+: Name for the data factory that you want to create your pipeline in..
+
+`pipeline_name`
+: The pipeline name.
 
 All the parameter sets needs be provided for a valid query:
 - `resource_group` , `factory_name` and `pipeline_name`

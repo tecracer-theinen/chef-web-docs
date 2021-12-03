@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_batch_job_definition Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_batch_job_definition.md">aws_batch_job_definition.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_batch_job_definition.md">aws_batch_job_definition.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_batch_job_definition` InSpec audit resource to test the properties of a single specific Batch job definition.
 
 The AWS::Batch::JobDefinition resource specifies the parameters for an AWS Batch job definition.
@@ -34,7 +44,7 @@ end
 
 `job_definition_name` _(required)_
 
-The name of the job definition.
+: The name of the job definition.
 
 ## Properties
 

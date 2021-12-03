@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_access_keys Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_access_keys.md">aws_iam_access_keys.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_access_keys.md">aws_iam_access_keys.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_access_keys` InSpec audit resource to test properties of some or all AWS IAM Access Keys.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on IAM Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html).
@@ -34,10 +44,10 @@ end
 This resources accepts a single optional parameter, a Username for which to retrieve all Access Keys.
 If not provided, all Access Keys for all Users will be retrieved.
 
-### username _(optional)_
+`username` _(optional)_
 
-The IAM Username for which to retrieve the Access Keys.
-This can be passed either as a string or as a `username: 'value'` key-value entry in a hash.
+: The IAM Username for which to retrieve the Access Keys.
+  This can be passed either as a string or as a `username: 'value'` key-value entry in a hash.
 
 ## Properties
 

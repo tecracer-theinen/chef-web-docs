@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_network_manager_customer_gateway_associat
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_network_manager_customer_gateway_association.md">aws_network_manager_customer_gateway_association.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_network_manager_customer_gateway_association.md">aws_network_manager_customer_gateway_association.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_network_manager_customer_gateway_association` InSpec audit resource to test properties of a single specific AWS Network Manager customer gateway association.
 
 The `AWS::NetworkManager::CustomerGatewayAssociation` resource specifies an association between a customer gateway, a device, and optionally, a link.
@@ -34,11 +44,11 @@ end
 
 `global_network_id` _(required)_
 
-The ID of the global network.
+: The ID of the global network.
 
 `customer_gateway_arn` _(required)_
 
-The Amazon Resource Name (ARN) of the customer gateway.
+: The Amazon Resource Name (ARN) of the customer gateway.
 
 ## Properties
 

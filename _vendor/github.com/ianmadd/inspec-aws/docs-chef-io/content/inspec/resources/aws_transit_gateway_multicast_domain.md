@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_transit_gateway_multicast_domain Resource
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway_multicast_domain.md">aws_transit_gateway_multicast_domain.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway_multicast_domain.md">aws_transit_gateway_multicast_domain.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_transit_gateway_multicast_domain` Chef InSpec audit resource to test properties of an AWS EC2 transit gateway multicast domain.
 
 The `AWS::EC2::TransitGatewayMulticastDomain` resource creates a multicast domain using the specified transit gateway.
@@ -34,7 +44,7 @@ end
 
 `transit_gateway_attachment_id` _(required)_
 
-The ID of the transit gateway multicast domain.
+: The ID of the transit gateway multicast domain.
 
 ## Properties
 

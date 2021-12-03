@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_rds_group_options Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_rds_group_options.md">aws_rds_group_options.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_rds_group_options.md">aws_rds_group_options.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_rds_group_options` InSpec audit resource to test detailed properties of a group of Amazon Relational Database Service (RDS) clusters.
 
 RDS gives you access to the capabilities of a MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, Oracle, or Amazon Aurora database server.

@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_apigateway_api_key Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_apigateway_api_key.md">aws_apigateway_api_key.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_apigateway_api_key.md">aws_apigateway_api_key.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_apigateway_api_key` InSpec audit resource to test properties of a single specific AWS APIGateway ApiKey.
 
 The AWS::ApiGateway::ApiKey resource creates a unique key that you can distribute to clients who are executing API Gateway Method resources that require an API key.
@@ -34,7 +44,7 @@ end
 
 `api_key` _(required)_
 
-The identifier of the API key resource.
+: The identifier of the API key resource.
 
 ## Properties
 

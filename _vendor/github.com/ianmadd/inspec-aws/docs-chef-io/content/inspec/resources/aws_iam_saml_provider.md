@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_iam_saml_provider Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_saml_provider.md">aws_iam_saml_provider.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_saml_provider.md">aws_iam_saml_provider.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_iam_saml_provider` InSpec audit resource to test properties of an AWS IAM SAML Provider.
 
 ## Installation
@@ -28,8 +38,8 @@ end
 
 `saml_provider_arn` _(required)_
 
-This resource accepts a single parameter, the ARN of the SAML Provider.
-This can be passed either as a string or as a `saml_provider_arn: 'value'` key-value entry in a hash.
+: This resource accepts a single parameter, the ARN of the SAML Provider.
+  This can be passed either as a string or as a `saml_provider_arn: 'value'` key-value entry in a hash.
 
 ## Properties
 

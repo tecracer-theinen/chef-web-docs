@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_elasticsearchservice_domain Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_elasticsearchservice_domain.md">aws_elasticsearchservice_domain.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_elasticsearchservice_domain.md">aws_elasticsearchservice_domain.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_elasticsearchservice_domain` InSpec audit resource to test properties of a single specific Elasticsearch domain.
 
 The AWS::Elasticsearch::Domain resource creates an Amazon Elasticsearch Service (Amazon ES) domain.
@@ -34,8 +44,8 @@ end
 
 `domain_name` _(required)_
 
-The name of an Elasticsearch domain.
-Pass the domain name as a key-value entry in a hash.
+: The name of an Elasticsearch domain.
+  Pass the domain name as a key-value entry in a hash.
 
 ## Properties
 

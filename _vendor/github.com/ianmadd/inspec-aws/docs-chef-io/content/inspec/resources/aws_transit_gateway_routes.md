@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_transit_gateway_routes Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway_routes.md">aws_transit_gateway_routes.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway_routes.md">aws_transit_gateway_routes.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_transit_gateway_routes` InSpec audit resource to test the properties of all Route for a AWS transit gateway route table.
 To audit a single gateway route, use the `aws_transit_gateway_route` (singular) resource.
 
@@ -38,32 +48,32 @@ The following additional parameters are optional:
 - `subnet_of_match`
 - `supernet_of_match`
 
-#### transit_gateway_route_table_id _(required)_
+`transit_gateway_route_table_id` _(required)_
 
-The **ID** of the AWS transit gateway route table:
+: The **ID** of the AWS transit gateway route table:
 
-- must contain alphanumeric characters between 1 to 50, or hyphens
-- should start with `tgw-rtb-`
-- cannot end with a hyphen or contain two consecutive hyphens
+: - must contain alphanumeric characters between 1 to 50, or hyphens
+  - should start with `tgw-rtb-`
+  - cannot end with a hyphen or contain two consecutive hyphens
 
-The ID of the AWS transit gateway route table should be passed as a `transit_gateway_route_table_id: 'value'` key-value entry in a hash.
+: The ID of the AWS transit gateway route table should be passed as a `transit_gateway_route_table_id: 'value'` key-value entry in a hash.
 
-#### exact_match
+`exact_match`
 
-The exact match of the **CIDR** block is used for destination matches. It could be passed as a `exact_match: 'value'` key-value entry in a hash.
+: The exact match of the **CIDR** block is used for destination matches. It could be passed as a `exact_match: 'value'` key-value entry in a hash.
 
-#### longest_prefix_match
+`longest_prefix_match`
 
-The longest prefix that matches the route. It could be passed as a `longest_prefix_match: 'value'` key-value entry in a hash.
+: The longest prefix that matches the route. It could be passed as a `longest_prefix_match: 'value'` key-value entry in a hash.
 
-#### subnet_of_match
+`subnet_of_match`
 
-The routes with a subnet that match the specified CIDR filter. It could be passed as a `subnet_of_match: 'value'` key-value entry in a hash.
+: The routes with a subnet that match the specified CIDR filter. It could be passed as a `subnet_of_match: 'value'` key-value entry in a hash.
 
-#### supernet_of_match
+`supernet_of_match`
 
-The routes with a CIDR that encompass the CIDR filter. For example, if you have 10.0.1.0/29 and 10.0.1.0/31 routes in your route table and you specify supernet-of-match as 10.0.1.0/30, then the result returns 10.0.1.0/29.
-It could be passed as a `supernet_of_match: 'value'` key-value entry in a hash.
+: The routes with a CIDR that encompass the CIDR filter. For example, if you have 10.0.1.0/29 and 10.0.1.0/31 routes in your route table and you specify supernet-of-match as 10.0.1.0/30, then the result returns 10.0.1.0/29.
+  It could be passed as a `supernet_of_match: 'value'` key-value entry in a hash.
 
 ## Properties
 

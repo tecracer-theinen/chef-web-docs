@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_cosmosdb_database_account Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_cosmosdb_database_account.md">azure_cosmosdb_database_account.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_cosmosdb_database_account.md">azure_cosmosdb_database_account.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_cosmosdb_database_account` InSpec audit resource to test properties and configuration of an Azure CosmosDb Database Account within a Resource Group.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -36,12 +46,17 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                       |
-|--------------------------------|-----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in. `resource-group-name` |
-| name                           | The unique name of the targeted resource. `resource-name`                         |
-| cosmosdb_database_account      | Alias for the `name` parameter.                                                   |
-| resource_id                    | The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}` |
+`resource_group`
+: Azure resource group that the targeted resource resides in. `resource-group-name`.
+
+`name`
+: The unique name of the targeted resource. `resource-name`.
+
+`cosmosdb_database_account`
+: Alias for the `name` parameter.
+
+`resource_id`
+: The unique resource ID. `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}`.
 
 Either one of the parameter sets can be provided for a valid query:
 - `resource_id`

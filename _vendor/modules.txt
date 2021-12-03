@@ -9,8 +9,8 @@
 # github.com/inspec/inspec-aws/docs-chef-io v0.0.0-20211201164909-ffd3a7c711ae
 # github.com/inspec/inspec-azure/docs-chef-io v0.0.0-20211108210100-c4107bea329e
 # github.com/chef/supermarket/docs-chef-io v0.0.0-20211112205954-a35850e2fef1
-# github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211129234806-2228e743829c
-# github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211129234835-89f988db8bed
+# github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211202235606-6daf46b1f3c0
+# github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211202235432-b0e6e6e2acaa
 # github.com/cowboy/jquery-hashchange v0.0.0-20100902193700-0310f3847f90
 # github.com/swiftype/swiftype-autocomplete-jquery v0.0.0-20190222215504-a90008d64b30
 # github.com/swiftype/swiftype-search-jquery v1.1.0

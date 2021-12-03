@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_s3_buckets Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_s3_buckets.md">aws_s3_buckets.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_s3_buckets.md">aws_s3_buckets.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_s3_buckets` InSpec audit resource to list all buckets in a single account.
 
 For additional information, including details on parameters and properties, see the [AWS documentation on S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html).

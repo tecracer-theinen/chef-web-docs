@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_dns_zones_resource Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_dns_zones_resource.md">azure_dns_zones_resource.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_dns_zones_resource.md">azure_dns_zones_resource.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_dns_zones_resource` InSpec audit resource to test properties of an Azure DNS zone.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
@@ -40,11 +50,14 @@ end
 
 ## Parameters
 
-| Name                           | Description                                                                      |
-|--------------------------------|----------------------------------------------------------------------------------|
-| resource_group                 | Azure resource group that the targeted resource resides in.                      |
-| name                           | Name of the DNS zone to test.                                                    |
-| resource_id                    | The resource ID of the DNS zone to test.                                         |
+`resource_group`
+: Azure resource group that the targeted resource resides in.
+
+`name`
+: Name of the DNS zone to test.
+
+`resource_id`
+: The resource ID of the DNS zone to test.
 
 The `resource_group` and `name`, or the `resource_id` are required parameters.
 

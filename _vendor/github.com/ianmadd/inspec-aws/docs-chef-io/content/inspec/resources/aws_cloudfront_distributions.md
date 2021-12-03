@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_cloudfront_distributions Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_distributions.md">aws_cloudfront_distributions.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_distributions.md">aws_cloudfront_distributions.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_cloudfront_distributions` InSpec audit resource to test the properties of a collection of an AWS CloudFront distributions.
 
 For additional information, including details on parameters and properties, see the [AWS API reference for CloudFront distributions](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_distribution.html).

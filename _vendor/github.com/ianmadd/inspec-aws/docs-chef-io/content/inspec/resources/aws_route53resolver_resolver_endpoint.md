@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_route53resolver_resolver_endpoint Resourc
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route53resolver_resolver_endpoint.md">aws_route53resolver_resolver_endpoint.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route53resolver_resolver_endpoint.md">aws_route53resolver_resolver_endpoint.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_route53resolver_resolver_endpoint` InSpec audit resource to test properties of a single AWS Route53 Resolver endpoint.
 
 There are two types of Resolver endpoints, inbound and outbound. An inbound Resolver endpoint forwards DNS queries to the DNS service for a VPC from your network. An outbound Resolver endpoint forwards DNS queries from the DNS service for a VPC to your network.
@@ -34,7 +44,7 @@ end
 
 `resolver_endpoint_id` _(required)_
 
-The ID of the Resolver endpoint.
+: The ID of the Resolver endpoint.
 
 ## Properties
 

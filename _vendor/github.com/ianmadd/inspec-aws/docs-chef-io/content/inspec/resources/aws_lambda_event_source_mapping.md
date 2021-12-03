@@ -10,6 +10,16 @@ identifier = "inspec/resources/aws/aws_lambda_event_source_mapping Resource"
 parent = "inspec/resources/aws"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambda_event_source_mapping.md">aws_lambda_event_source_mapping.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambda_event_source_mapping.md">aws_lambda_event_source_mapping.md</a></p>
+</div>
+</div>
+
+
+
 Use the `aws_lambda_event_source_mapping` InSpec audit resource to test properties of a single mapping between an AWS event source and an AWS Lambda function.
 
 The `AWS::Lambda::EventSourceMapping` resource creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function.
@@ -34,7 +44,7 @@ end
 
 `uuid` _(required)_
 
-The identifier of the event source mapping.
+: The identifier of the event source mapping.
 
 ## Properties
 

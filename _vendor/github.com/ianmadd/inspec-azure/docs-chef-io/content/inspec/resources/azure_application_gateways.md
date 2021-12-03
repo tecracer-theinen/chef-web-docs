@@ -10,6 +10,16 @@ identifier = "inspec/resources/azure/azure_application_gateways Resource"
 parent = "inspec/resources/azure"
 +++
 
+<div class="admonition-note">
+<p class="admonition-note-title">Audit Section</p>
+<div class="admonition-note-text">
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_application_gateways.md">azure_application_gateways.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_application_gateways.md">azure_application_gateways.md</a></p>
+</div>
+</div>
+
+
+
 Use the `azure_application_gateways` InSpec audit resource to test properties and configuration of Azure Application Gateways.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
