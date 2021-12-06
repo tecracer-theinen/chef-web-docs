@@ -134,6 +134,9 @@ end
 `resource_identifiers`
 : The resource identifier of the resource identifier summaries.
 
+`template_body`
+: The structure that contains the body of the template. The `stack_name` must be passed as a parameter to access this property.
+
 ## Examples
 
 **Ensure that the parameter keys exists by passing the required parameter `stack_name`.**
