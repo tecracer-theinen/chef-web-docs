@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambdas.md">aws_lambdas.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambdas.md">aws_lambdas.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambdas.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambdas.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambdas.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambdas.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_lambdas` resource to test the collection of lambdas deployed into an account.
@@ -29,15 +28,14 @@ Use the `aws_lambdas` resource to test the collection of lambdas deployed into a
 ## Syntax
 
 ````
-    describe aws_lambdas do
-      its('count') { should eq 20 }
-    end
-````    
+describe aws_lambdas do
+    its('count') { should eq 20 }
+end
+````
 
 ## Parameters
 
 This resource does not expect any parameters.
-
 
 ## Properties
 
@@ -50,28 +48,27 @@ This resource does not expect any parameters.
 ## Examples
 
 
-**tests that all lambdas with a particular tag is correctly deployed.**
+**Tests that all lambdas with a particular tag is correctly deployed.**
 
 ````
-  lambdas = aws_lambdas() 
+lambdas = aws_lambdas()
 
-  describe lambdas do
-    its ('count') { should eq 33}    
-  end
+describe lambdas do
+its ('count') { should eq 33}
+end
 
-  lambdas.tags.each_with_index { | tag, i |    
-    if tag!= {} and tag.include? 'Application' and tag['Application']=='test')
-      lambda_name = lambdas.names[i]
+lambdas.tags.each_with_index { | tag, i |
+if tag!= {} and tag.include? 'Application' and tag['Application']=='test')
+    lambda_name = lambdas.names[i]
 
-      describe aws_lambda(lambda_name) do
-          it { should exist}    
-          its ('handler') { should eq 'main.on_event'}
-          its ('version') { should eq '$LATEST' }
-          its ('runtime') { should eq 'python3.7' }
-      end
+    describe aws_lambda(lambda_name) do
+        it { should exist}
+        its ('handler') { should eq 'main.on_event'}
+        its ('version') { should eq '$LATEST' }
+        its ('runtime') { should eq 'python3.7' }
     end
-  }
-
+end
+}
 ````
 
 ## Matchers
@@ -84,4 +81,3 @@ This InSpec audit resource uses the standard matchers.  For a full list of avail
 {{% aws_permissions_principal action="Lambda:Client:ListFunctionsResponse" %}}
 
 You can find detailed documentation at [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)
-

@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_key_group.md">aws_cloudfront_key_group.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_key_group.md">aws_cloudfront_key_group.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_key_group.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudfront_key_group.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_key_group.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudfront_key_group.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_cloudfront_key_group` InSpec audit resource to test properties of a single AWS CloudFront key group.
@@ -46,13 +45,20 @@ end
 
 ## Properties
 
-| Property | Description |
-| --- | --- |
-| id | The identifier for the key group. |
-| last_modified_time | The date and time when the key group was last modified. |
-| key_group_config.name | A name to identify the key group. | name |
-| key_group_config.items | A list of the identifiers of the public keys in the key group. |
-| key_group_config.comment | A comment to describe the key group. The comment cannot be longer than 128 characters. |
+`id`
+: The identifier for the key group.
+
+`last_modified_time`
+: The date and time when the key group was last modified.
+
+`key_group_config.name`
+: A name to identify the key group.
+
+`key_group_config.items`
+: A list of the identifiers of the public keys in the key group.
+
+`key_group_config.comment`
+: A comment to describe the key group. The comment cannot be longer than 128 characters.
 
 ## Examples
 

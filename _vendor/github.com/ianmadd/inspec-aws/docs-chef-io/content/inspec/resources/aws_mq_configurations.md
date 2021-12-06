@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_mq_configurations.md">aws_mq_configurations.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_mq_configurations.md">aws_mq_configurations.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_mq_configurations.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_mq_configurations.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_mq_configurations.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_mq_configurations.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_mq_configurations` InSpec audit resource to test the properties of multiple AWS MQ configuration.
@@ -37,6 +36,10 @@ end
 ```
 
 For additional information, see the [AWS documentation on AWS MQ configuration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html).
+
+## Parameters
+
+This resource does not expect any parameters.
 
 ## Properties
 
@@ -87,7 +90,7 @@ For additional information, see the [AWS documentation on AWS MQ configuration](
 
 ## Examples
 
-**Ensure a configuration id is available.**
+**Ensure a configuration ID is available.**
 
 ```ruby
 describe aws_mq_configurations do
@@ -95,7 +98,7 @@ describe aws_mq_configurations do
 end
 ```
 
-**Ensure a configuration name is available..**
+**Ensure a configuration name is available.**
 
 ```ruby
 describe aws_mq_configurations do
@@ -139,4 +142,4 @@ end
 
 ## AWS Permissions
 
-Your [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal) will need the `MQ:Client:ListConfigurationsResponsegit ` action with `Effect` set to `Allow`.
+{{% aws_permissions_principal action="MQ:Client:ListConfigurationsResponsegit" %}}

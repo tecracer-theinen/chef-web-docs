@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway_routes.md">aws_transit_gateway_routes.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway_routes.md">aws_transit_gateway_routes.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway_routes.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_transit_gateway_routes.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway_routes.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_transit_gateway_routes.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_transit_gateway_routes` InSpec audit resource to test the properties of all Route for a AWS transit gateway route table.
@@ -220,6 +219,6 @@ end
 
 ## AWS Permissions
 
-To set the `allow` permission for the [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal), you need the `EC2:Client:DescribeTransitGatewayRouteTablesResult` action.
+{{% aws_permissions_principal action="EC2:Client:DescribeTransitGatewayRouteTablesResult" %}}
 
 Get the detailed document at [Actions, Resources, and Condition Keys for transit gateway route](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-policy-examples.html), and [Actions, Resources, and Condition Keys for Identity And Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_identityandaccessmanagement.html).

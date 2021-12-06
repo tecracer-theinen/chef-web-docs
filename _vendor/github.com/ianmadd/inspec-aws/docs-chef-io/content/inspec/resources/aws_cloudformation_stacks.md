@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudformation_stacks.md">aws_cloudformation_stacks.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudformation_stacks.md">aws_cloudformation_stacks.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudformation_stacks.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudformation_stacks.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudformation_stacks.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudformation_stacks.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_cloudformation_stacks` InSpec audit resource to test properties of an AWS CloudFormation stack in bulk.
@@ -37,6 +36,10 @@ end
 ```
 
 See the [AWS documentation on CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/Welcome.html) for additional information.
+
+## Parameters
+
+This resource does not expect any parameters.
 
 ## Properties
 

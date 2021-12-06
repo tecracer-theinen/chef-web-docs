@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_vpn_gateway_route_propagations.md">aws_ec2_vpn_gateway_route_propagations.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_vpn_gateway_route_propagations.md">aws_ec2_vpn_gateway_route_propagations.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_vpn_gateway_route_propagations.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_vpn_gateway_route_propagations.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_vpn_gateway_route_propagations.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_vpn_gateway_route_propagations.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_ec2_transit_gateway_route_table_propagations` InSpec audit resource to test if virtual private gateways can propagate routes to multiple AWS EC2 route tables.

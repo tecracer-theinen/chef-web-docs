@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_hosted_zone.md">aws_hosted_zone.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_hosted_zone.md">aws_hosted_zone.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_hosted_zone.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_hosted_zone.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_hosted_zone.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_hosted_zone.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_hosted_zone` resource to test a specific hosted zone configuration.
@@ -28,19 +27,20 @@ Use the `aws_hosted_zone` resource to test a specific hosted zone configuration.
 
 ## Syntax
 
-````
-    describe aws_hosted_zone('zone-name') do
-      it { should exist }
-      its ('name_servers.count') { should eq 4 }
-      its ('private_zone') { should be false }
-      its ('record_names') { should include 'sid-james.carry-on.films.com' }
-    end
-````    
+```ruby
+describe aws_hosted_zone('zone-name') do
+    it { should exist }
+    its ('name_servers.count') { should eq 4 }
+    its ('private_zone') { should be false }
+    its ('record_names') { should include 'sid-james.carry-on.films.com' }
+end
+```
 
 ## Parameters
 
-This resource takes one parameter, the name of the hosted zone to validate.
+`zone_name`
 
+: This resource takes one parameter, the name of the hosted zone to validate.
 
 ## Properties
 
@@ -64,14 +64,13 @@ This resource takes one parameter, the name of the hosted zone to validate.
 
 ## Examples
 
-
 **Ensure a specific hosted zone exists.**
 
-````
-    describe aws_hosted_zone('zone-name') do
-      it { should exist }
-    end
-````
+```ruby
+describe aws_hosted_zone('zone-name') do
+    it { should exist }
+end
+```
 
 ## Matchers
 
@@ -82,17 +81,20 @@ This InSpec audit resource has the following special matchers. For a full list o
 The control will pass if the describe passes all tests.
 
 Use `exist` to validate the hosted zone exists
-````
-    describe aws_hosted_zone('zone-name') do
-      it { should exist }
-    end
-````
+
+```ruby
+describe aws_hosted_zone('zone-name') do
+    it { should exist }
+end
+```
+
 Use `should_not` to test the entity should not exist.
-````
-    describe aws_hosted_zone('zone-name') do
-      it { should_not exist }
-    end
-````
+
+```ruby
+describe aws_hosted_zone('zone-name') do
+    it { should_not exist }
+end
+```
 
 ### should
 
@@ -100,15 +102,14 @@ The control will pass if the describe passes all tests.
 
 Use `should` to validate the hosted zone if public or private, the number of name servers is correct or that a specific record exists e.g.
 
-````
-    describe aws_hosted_zone('zone-name') do
-      it { should exist }
-      its ('name_servers.count') { should eq 4 }
-      its ('private_zone') { should be false }
-      its ('record_names') { should include 'sid-james.carry-on.films.com' }
-    end
-
-````
+```ruby
+describe aws_hosted_zone('zone-name') do
+    it { should exist }
+    its ('name_servers.count') { should eq 4 }
+    its ('private_zone') { should be false }
+    its ('record_names') { should include 'sid-james.carry-on.films.com' }
+end
+```
 
 ## AWS Permissions
 

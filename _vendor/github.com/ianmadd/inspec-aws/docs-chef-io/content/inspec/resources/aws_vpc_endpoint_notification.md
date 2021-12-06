@@ -6,18 +6,17 @@ gh_repo = "inspec-AWS"
 
 [menu.inspec]
 title = "aws_vpc_endpoint_connection_notification"
-identifier = "inspec/resources/AWS/aws_vpc_endpoint_connection_notification Resource"
-parent = "inspec/resources/AWS"
+identifier = "inspec/resources/aws/aws_vpc_endpoint_connection_notification Resource"
+parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc_endpoint_notification.md">aws_vpc_endpoint_notification.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc_endpoint_notification.md">aws_vpc_endpoint_notification.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc_endpoint_notification.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc_endpoint_notification.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc_endpoint_notification.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc_endpoint_notification.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_vpc_endpoint_connection_notification` Inspec audit resource to test the properties of a single specific AWS VPC endpoint connection notification.
@@ -128,6 +127,6 @@ end
 
 ## AWS Permissions
 
-To get the permission for the [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal), will need the `EC2:Client:DescribeVpcEndpointConnectionNotificationsResult` action with `Effect` set to `Allow`.
+{{% aws_permissions_principal action="EC2:Client:DescribeVpcEndpointConnectionNotificationsResult" %}}
 
 You can find the detailed documentation at [Actions, Resources, and Condition Keys for Amazon EC2](https://docs.AWS.amazon.com/IAM/latest/UserGuide/list_amazonec2.html).

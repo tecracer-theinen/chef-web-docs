@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_amis.md">aws_amis.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_amis.md">aws_amis.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_amis.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_amis.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_amis.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_amis.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_amis` InSpec audit resource to test properties of some or all AWS AMIs.
@@ -62,7 +61,7 @@ This resource must be provided with the parameter 'all_amis' (returns ALL AMIs a
 `owner_id` _(optional)_
 `owners` _(optional)_
 
-:     - Scopes the results to images with the specified owners. You can specify a combination of AWS account IDs, `self`, `amazon`, and `aws-marketplace`. 
+:     - Scopes the results to images with the specified owners. You can specify a combination of AWS account IDs, `self`, `amazon`, and `aws-marketplace`.
   ```ruby
   If you omit this parameter, the results include all images for which you have launch permissions, regardless of ownership.
   ```
@@ -200,7 +199,7 @@ end
 
 ## Matchers
 
-For a full list of available matchers, please visit our [Universal Matchers page](https://www.inspec.io/docs/reference/matchers/). 
+For a full list of available matchers, please visit our [Universal Matchers page](https://www.inspec.io/docs/reference/matchers/).
 
 ### exist
 
@@ -222,6 +221,6 @@ end
 
 ## AWS Permissions
 
-Your [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal) will need the `EC2:Client:DescribeImages`.
+{{% aws_permissions_principal action="EC2:Client:DescribeImages" %}}
 
-You can find detailed documentation at [Actions, Resources, and Condition Keys for Amazon EC2](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonec2.html).  
+You can find detailed documentation at [Actions, Resources, and Condition Keys for Amazon EC2](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonec2.html).

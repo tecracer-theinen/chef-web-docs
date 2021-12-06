@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambda_permissions.md">aws_lambda_permissions.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambda_permissions.md">aws_lambda_permissions.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambda_permissions.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_lambda_permissions.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambda_permissions.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_lambda_permissions.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_lambda_permissions` InSpec audit resource to test properties of multiple AWS Lambda permissions.
@@ -85,6 +84,6 @@ This InSpec audit resource has the following special matchers. For a full list o
 
 The controls will pass if the `get` method returns at least one result.
 
-### AWS permissions
+## AWS Permissions
 
-Your [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal) will need the `Lambda:Client:GetPolicyResponse` action with `Effect` set to `Allow`.
+{{% aws_permissions_principal action="Lambda:Client:GetPolicyResponse" %}}

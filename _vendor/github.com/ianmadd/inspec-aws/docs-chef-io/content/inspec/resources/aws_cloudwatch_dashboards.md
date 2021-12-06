@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_dashboards.md">aws_cloudwatch_dashboards.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_dashboards.md">aws_cloudwatch_dashboards.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_dashboards.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_dashboards.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_dashboards.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_dashboards.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_cloudwatch_dashboards` InSpec audit resource to test properties of the plural AWS CloudWatch dashboard.
@@ -108,4 +107,4 @@ end
 
 ## AWS Permissions
 
-Your [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal) will need the `CloudWatch:Client:ListDashboardsOutput action with `Effect` set to `Allow`.
+{{% aws_permissions_principal action="CloudWatch:Client:ListDashboardsOutput" %}}

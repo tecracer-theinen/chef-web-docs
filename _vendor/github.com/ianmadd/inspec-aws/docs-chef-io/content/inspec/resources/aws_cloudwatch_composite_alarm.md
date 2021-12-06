@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_composite_alarm.md">aws_cloudwatch_composite_alarm.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_composite_alarm.md">aws_cloudwatch_composite_alarm.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_composite_alarm.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_cloudwatch_composite_alarm.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_composite_alarm.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_cloudwatch_composite_alarm.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_cloudwatch_composite_alarm` InSpec audit resource to test properties of a single specific AWS CloudWatch composite alarm.
@@ -48,21 +47,44 @@ end
 
 ## Properties
 
-| Property | Description |
-| --- | --- |
-| actions_enabled | Indicates whether actions should be executed during any changes to the alarm state. |
-| alarm_actions | The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN). |
-| alarm_arn | The Amazon Resource Name (ARN) of the alarm. |
-| alarm_configuration_updated_timestamp | The time stamp of the last update to the alarm configuration. |
-| alarm_description | The description of the alarm. | alarm_description |
-| alarm_name | The name of the alarm. |
-| alarm_rule | The rule that this alarm uses to evaluate its alarm state. |
-| insufficient_data_actions | The actions to execute when this alarm transitions to the INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN). |
-| ok_actions | The actions to execute when this alarm transitions to the OK state from any other state. Each action is specified as an Amazon Resource Name (ARN). |
-| state_reason | An explanation for the alarm state, in text format. |
-| state_reason_data | An explanation for the alarm state, in JSON format. |
-| state_updated_timestamp | The time stamp of the last update to the alarm state. |
-| state_value | The state value for the alarm. |
+`actions_enabled`
+: Indicates whether actions should be executed during any changes to the alarm state.
+
+`alarm_actions`
+: The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+
+`alarm_arn`
+: The Amazon Resource Name (ARN) of the alarm.
+
+`alarm_configuration_updated_timestamp`
+: The time stamp of the last update to the alarm configuration.
+
+`alarm_description`
+: The description of the alarm.
+
+`alarm_name`
+: The name of the alarm.
+
+`alarm_rule`
+: The rule that this alarm uses to evaluate its alarm state.
+
+`insufficient_data_actions`
+: The actions to execute when this alarm transitions to the INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+
+`ok_actions`
+: The actions to execute when this alarm transitions to the OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+
+`state_reason`
+: An explanation for the alarm state, in text format.
+
+`state_reason_data`
+: An explanation for the alarm state, in JSON format.
+
+`state_updated_timestamp`
+: The time stamp of the last update to the alarm state.
+
+`state_value`
+: The state value for the alarm.
 
 ## Examples
 

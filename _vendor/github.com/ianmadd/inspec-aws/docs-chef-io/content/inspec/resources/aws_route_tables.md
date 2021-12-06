@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route_tables.md">aws_route_tables.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route_tables.md">aws_route_tables.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route_tables.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_route_tables.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route_tables.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_route_tables.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_route_tables` InSpec audit resource to test the properties of all route tables or a group of route tables, and all routes or a group of routes. A route table contains a set of rules, called routes, that are used to determine where network traffic is directed.

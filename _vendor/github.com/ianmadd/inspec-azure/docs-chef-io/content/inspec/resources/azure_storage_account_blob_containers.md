@@ -11,13 +11,12 @@ parent = "inspec/resources/azure"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_storage_account_blob_containers.md">azure_storage_account_blob_containers.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_storage_account_blob_containers.md">azure_storage_account_blob_containers.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_storage_account_blob_containers.md">https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_storage_account_blob_containers.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_storage_account_blob_containers.md">https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_storage_account_blob_containers.md</a></p>
 </div>
 </div>
-
 
 
 Use the `azure_storage_account_blob_containers` InSpec audit resource to test properties and configuration of Blob Containers within an Azure Storage Account.

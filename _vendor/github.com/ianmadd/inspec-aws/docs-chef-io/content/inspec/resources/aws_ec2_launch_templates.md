@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_launch_templates.md">aws_ec2_launch_templates.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_launch_templates.md">aws_ec2_launch_templates.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_launch_templates.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_ec2_launch_templates.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_launch_templates.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_ec2_launch_templates.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_ec2_launch_templates` InSpec audit resource to test properties of a all the AWS Launch templates.
@@ -34,13 +33,12 @@ describe aws_ec2_launch_templates do
 it { should exist }
 end
 
+## Parameters
 
-### launch_templates_id
+`launch_templates_id`
 
-The ID of the EC2 launch_templates. This is in the format of `lt-` followed by 8 or 17 hexadecimal characters.
-This can be passed either as a string or as an `launch_templates_id: 'value'` key-value entry in a hash.
-
-
+: The ID of the EC2 launch_templates. This is in the format of `lt-` followed by 8 or 17 hexadecimal characters.
+  This can be passed either as a string or as an `launch_templates_id: 'value'` key-value entry in a hash.
 
 ## Properties
 
@@ -91,5 +89,3 @@ There are also additional properties available. For a comprehensive list, see [t
 ## Matchers
 
 For a full list of available matchers, please visit our [Universal Matchers page](https://www.inspec.io/docs/reference/matchers/).
-
-

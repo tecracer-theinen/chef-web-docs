@@ -53,7 +53,7 @@
 [[imports]]
   disable = false
   ignoreConfig = false
-  path = "github.com/inspec/inspec/docs-chef-io"
+  path = "github.com/ianmadd/inspec/docs-chef-io"
 
 [[imports.mounts]]
   source = "content/inspec"

@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_efs_file_systems.md">aws_efs_file_systems.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_efs_file_systems.md">aws_efs_file_systems.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_efs_file_systems.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_efs_file_systems.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_efs_file_systems.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_efs_file_systems.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_efs_file_systems` InSpec audit resource to test the properties of some or all AWS EFS file systems. To audit a single EFS file system, use `aws_efs_file_ststem` (singular). 

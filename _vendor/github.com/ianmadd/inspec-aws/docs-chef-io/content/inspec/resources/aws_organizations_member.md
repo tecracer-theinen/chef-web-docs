@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_organizations_member.md">aws_organizations_member.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_organizations_member.md">aws_organizations_member.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_organizations_member.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_organizations_member.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_organizations_member.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_organizations_member.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_organizations_member` InSpec audit resource to test the current AWS Account being used within an organization.
@@ -30,7 +29,7 @@ Use the `aws_organizations_member` InSpec audit resource to test the current AWS
 
 An `aws_organizations_member` resource block tests if the current AWS Account is the Master Account.
 
-The `master` matcher will return `true` or `false` accordingly. 
+The `master` matcher will return `true` or `false` accordingly.
 You may also verify that the `master_account_id` and `master_account_arn` properties match known values.
 
 If the current AWS Account _**is**_ the Master Account, you may also access properties of that account.
@@ -47,8 +46,6 @@ This resource does not expect any parameters.
 
 **Note:** This resource must target AWS Region `us-east-1`. If another region is specified in your configuration, it will be overwritten at runtime.
 
-
-
 ## Properties
 
 `master_account_id`
@@ -57,7 +54,7 @@ This resource does not expect any parameters.
 `master_account_arn`
 : The ARN of the AWS Organizations Master Account.
 
-_**If the current Account is the Master Account, the following properties are also available:**_ 
+_**If the current Account is the Master Account, the following properties are also available:**_
 
 |Property             | Description|
 | ---                 | --- |
@@ -105,3 +102,4 @@ The control will pass if the describe returns at least one result.
 
 ```ruby
 it { should exist }
+```

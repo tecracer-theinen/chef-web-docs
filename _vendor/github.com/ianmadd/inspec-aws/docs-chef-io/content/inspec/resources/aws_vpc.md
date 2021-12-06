@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc.md">aws_vpc.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc.md">aws_vpc.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_vpc.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_vpc.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_vpc` InSpec audit resource to test the properties of a single AWS Virtual Private Cloud (VPC) and the CIDR Block that is used within the VPC.
@@ -309,6 +308,6 @@ end
 
 ## AWS Permissions
 
-To set the permission for the [Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal), you need the `EC2:Client:DescribeVpcsResult` action with effect set to `Allow`.
+{{% aws_permissions_principal action="EC2:Client:DescribeVpcsResult" %}}
 
 You can find the detailed documentation at [Actions, Resources, and Condition Keys for Amazon EC2](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonec2.html).

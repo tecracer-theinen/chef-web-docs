@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_amplify_branches.md">aws_amplify_branches.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_amplify_branches.md">aws_amplify_branches.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_amplify_branches.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_amplify_branches.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_amplify_branches.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_amplify_branches.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_amplify_branches` InSpec audit resource to test the properties of multiple AWS Amplify branches.
@@ -116,7 +115,9 @@ end
 
 : **Field**: `enable_basic_auth`
 
-### Ensure a branch ID is available.
+## Examples
+
+**Ensure a branch ID is available.**
 
 ```ruby
 describe aws_amplify_branches(app_id: 'APP_ID') do
@@ -124,7 +125,7 @@ describe aws_amplify_branches(app_id: 'APP_ID') do
 end
 ```
 
-### Ensure a branch name is available.
+**Ensure a branch name is available.**
 
 ```ruby
 describe aws_amplify_branches(app_id: 'APP_ID') do

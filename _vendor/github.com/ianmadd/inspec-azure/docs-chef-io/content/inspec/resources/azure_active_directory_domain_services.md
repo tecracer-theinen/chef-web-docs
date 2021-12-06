@@ -11,13 +11,12 @@ parent = "inspec/resources/azure"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_active_directory_domain_services.md">azure_active_directory_domain_services.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_active_directory_domain_services.md">azure_active_directory_domain_services.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_active_directory_domain_services.md">https://github.com/inspec/inspec-azure/blob/main/docs/resources/azure_active_directory_domain_services.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_active_directory_domain_services.md">https://github.com/ianmadd/inspec-azure/blob/im/hugo/docs-chef-io/content/inspec/resources/azure_active_directory_domain_services.md</a></p>
 </div>
 </div>
-
 
 
 Use the `azure_active_directory_domain_services` InSpec audit resource to test properties of some or all Azure Active Directory domains within a tenant.

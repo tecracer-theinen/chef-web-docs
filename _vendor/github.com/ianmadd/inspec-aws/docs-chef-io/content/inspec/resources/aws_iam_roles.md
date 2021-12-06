@@ -11,13 +11,12 @@ parent = "inspec/resources/aws"
 +++
 
 <div class="admonition-note">
-<p class="admonition-note-title">Audit Section</p>
+<p class="admonition-note-title">Migration Links for Review</p>
 <div class="admonition-note-text">
-<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_roles.md">aws_iam_roles.md</a></p>
-<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_roles.md">aws_iam_roles.md</a></p>
+<p>Source page: <a href="https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_roles.md">https://github.com/inspec/inspec-aws/blob/main/docs/resources/aws_iam_roles.md</a></p>
+<p>Edited page: <a href="https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_roles.md">https://github.com/ianmadd/inspec-aws/blob/im/hugo/docs-chef-io/content/inspec/resources/aws_iam_roles.md</a></p>
 </div>
 </div>
-
 
 
 Use the `aws_iam_roles` InSpec audit resource to test properties of a collection of AWS IAM Roles.
@@ -42,21 +41,40 @@ end
 
 This resource does not expect any parameters.
 
-`Properties` 
+## Properties
 
-: |Property                       | Description|
-  | ---                           | --- |
-  |paths                          | The path to the role. |
-  |role_names                    | The name of the role. |
-  |role_ids                      | The id of the role. |
-  |arns                           | The Amazon Resource Name (ARN) specifying the role. |
-  |create_date                   | The date and time, in ISO 8601 date-time format , when the role was created. |
-  |assume_role_policy_document | The policy that grants an entity permission to assume the role. |
-  |description                    | The description of the role. |
-  |max_session_duration         | The maximum session duration (in seconds) for the specified role. Anyone who uses the AWS CLI, or API to assume the role can specify the duration using the optional DurationSeconds API parameter or duration-seconds CLI parameter. |
-  |permissions_boundary_type    | The permissions boundary usage type that indicates what type of IAM resource is used as the permissions boundary for an entity. This data type can only have a value of Policy . |
-  |permissions_boundary_arn     | The ARN of the policy used to set the permissions boundary for the user or role. |
-  |entries                        | Provides access to the raw results of the query, which can be treated as an array of hashes. |
+`paths`
+: The path to the role.
+
+`role_names`
+: The name of the role.
+
+`role_ids`
+: The ID of the role.
+
+`arns`
+: The Amazon Resource Name (ARN) specifying the role.
+
+`create_date`
+: The date and time, in ISO 8601 date-time format, when the role was created.
+
+`assume_role_policy_document`
+: The policy that grants an entity permission to assume the role.
+
+`description`
+: The description of the role.
+
+`max_session_duration`
+: The maximum session duration (in seconds) for the specified role. Anyone who uses the AWS CLI, or API to assume the role can specify the duration using the optional DurationSeconds API parameter or duration-seconds CLI parameter.
+
+`permissions_boundary_type`
+: The permissions boundary usage type that indicates what type of IAM resource is used as the permissions boundary for an entity. This data type can only have a value of Policy.
+
+`permissions_boundary_arn`
+: The ARN of the policy used to set the permissions boundary for the user or role.
+
+`entries`
+: Provides access to the raw results of the query, which can be treated as an array of hashes.
 
 ## Examples
 
@@ -97,4 +115,3 @@ You may also use `it { should_not exist }`.
 {{% aws_permissions_principal action="IAM:Client:ListRolesResponse" %}}
 
 You can find detailed documentation at [Actions, Resources, and Condition Keys for Amazon EC2](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonec2.html).
-
