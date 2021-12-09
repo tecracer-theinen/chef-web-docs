@@ -37,9 +37,7 @@ end
 
 ## Parameters
 
-This resource does not expect any parameters.
-
-See also the [AWS documentation on DynamoDB](https://docs.aws.amazon.com/dynamodb/?id=docs_gateway).
+This resource does not require any parameters.
 
 ## Properties
 

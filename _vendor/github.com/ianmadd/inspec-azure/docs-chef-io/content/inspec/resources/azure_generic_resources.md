@@ -45,52 +45,52 @@ All of them are optional.
 `resource_group`
 : Azure resource group that the targeted resources have been created in.
 
-: **Field**: `MyResourceGroup`
+: **Example**: `MyResourceGroup`
 
 `substring_of_resource_group`
 : Substring of an Azure resource group name that the targeted resources have been created in.
 
-: **Field**: `My`
+: **Example**: `My`
 
 `name`
 : Name of the Azure resources to test.
 
-: **Field**: `MyVM`
+: **Example**: `MyVM`
 
 `substring_of_name`
 : Substring of a name of the Azure resources to test.
 
-: **Field**: `My  `
+: **Example**: `My  `
 
 `resource_provider`
 : Azure resource provider of the resources to be tested.
 
-: **Field**: `Microsoft.Compute/virtualMachines`
+: **Example**: `Microsoft.Compute/virtualMachines`
 
 `tag_name<superscript>*</superscript>`
 : Tag name defined on the Azure resources.
 
-: **Field**: `name`
+: **Example**: `name`
 
 `tag_value`
 : Tag value of the tag defined with the `tag_name`.
 
-: **Field**: `external_linux`
+: **Example**: `external_linux`
 
 `resource_uri`
 : Azure REST API URI of the resources to be tested. This parameter should be used when resources do not reside in resource groups. It requires `add_subscription_id` parameter to be provided together.
 
-: **Field**: `/providers/Microsoft.Authorization/policyDefinitions/`
+: **Example**: `/providers/Microsoft.Authorization/policyDefinitions/`
 
 `add_subscription_id`
 : Indicates whether the `resource_uri` contains the subscription id.
 
-: **Field**: `true` or `false`
+: **Example**: `true` or `false`
 
 `filter_free_text`
 : Filter expression for the endpoints supporting `$filter` parameter, eg. [Azure role assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-rest). This can only be used with the `resource_uri` parameter.
 
-: **Field**: `"atScope()"`
+: **Example**: `"atScope()"`
 <superscript>*</superscript> When resources are filtered by a tag name and value, the tags for each resource are not returned in the results.
 
 Either one of the parameter sets can be provided for a valid query:
@@ -153,7 +153,7 @@ It is advised to use these parameter sets to narrow down the targeted resources 
 
 : **Field**: `provisioning_state`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 <superscript>**</superscript> These properties are not available when `resource_uri` is used.
 

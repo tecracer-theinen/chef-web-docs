@@ -66,7 +66,7 @@ This resource does not require any parameters.
 : **Field**: `properties`
 
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 See [Azure's documentation](https://docs.microsoft.com/en-us/rest/api/resourcehealth/emerging-issues/get) for other available properties.
 

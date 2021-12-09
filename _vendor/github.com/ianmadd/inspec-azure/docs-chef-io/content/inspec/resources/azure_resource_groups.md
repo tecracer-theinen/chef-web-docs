@@ -32,6 +32,7 @@ Use the `azure_resource_groups` InSpec audit resource to test properties and con
 ## Syntax
 
 An `azure_resource_groups` resource block returns all resource groups within a subscription.
+
 ```ruby
 describe azure_resource_groups do
   it { should exist }
@@ -40,7 +41,7 @@ end
 
 ## Parameters
 
-- None required.
+This resource does not require any parameters.
 
 ## Properties
 
@@ -64,17 +65,18 @@ end
 
 : **Field**: `location`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 
-**Check a Specific Resource Group is Present.**
+**Check if a specific resource group is present.**
 
 ```ruby
 describe azure_resource_groups do
   its('names')  { should include 'my-resource-group' }
 end
 ```
+
 **Filters the Results to Include Only Those Resource Groups which Include the Given Name.**
 
 ```ruby
@@ -82,6 +84,7 @@ describe azure_resource_groups.where{ name.include?('my-resource-group') } do
   it { should exist }
 end
 ```
+
 **Filters the Results to Include Only The Resource Groups that Have Certain Tag.**
 
 ```ruby
@@ -89,7 +92,7 @@ describe azure_resource_groups.where{ tags.has_key?('owner') && tags['owner'] ==
   it { should exist }
   its('count') { should be 15 }
 end
-```    
+```
 
 ## Matchers
 
@@ -98,6 +101,7 @@ This InSpec audit resource has the following special matchers. For a full list o
 ### exists
 
 The control will pass if the filter returns at least one result. Use `should_not` if you expect zero matches.
+
 ```ruby
 describe azure_resource_groups do
   it { should exist }

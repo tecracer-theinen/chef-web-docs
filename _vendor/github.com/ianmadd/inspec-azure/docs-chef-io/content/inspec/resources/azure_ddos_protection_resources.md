@@ -77,7 +77,7 @@ end
 : **Field**: `resource_guid`
 
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 Also, refer to the [Azure documentation](https://docs.microsoft.com/en-us/rest/api/virtualnetwork/ddos-protection-plans/list) for all available properties.
 Access any attribute in the response by separating the key names with a period (`.`).

@@ -39,9 +39,7 @@ end
 
 ## Parameters
 
-This resource does not expect any parameters.
-
-Also see the [AWS Redshift cluster documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html).
+This resource does not require any parameters.
 
 ## Properties
 

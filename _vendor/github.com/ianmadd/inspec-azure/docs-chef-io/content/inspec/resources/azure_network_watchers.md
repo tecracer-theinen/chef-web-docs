@@ -32,12 +32,15 @@ Use the `azure_network_watchers` InSpec audit resource to test properties and co
 ## Syntax
 
 An `azure_network_watchers` resource block returns all network watchers, either within a Resource Group (if provided), or within an entire Subscription.
+
 ```ruby
 describe azure_network_watchers do
   #...
 end
 ```
+
 or
+
 ```ruby
 describe azure_network_watchers(resource_group: 'my-rg') do
   #...
@@ -46,7 +49,9 @@ end
 
 ## Parameters
 
-- `resource_group` (Optional)
+`resource_group` _(optional)_
+
+: The name of the resource group.
 
 ## Properties
 
@@ -70,7 +75,7 @@ end
 
 : **Field**: `tags`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 
@@ -89,6 +94,7 @@ This InSpec audit resource has the following special matchers. For a full list o
 ### exists
 
 The control will pass if the filter returns at least one result. Use `should_not` if you expect zero matches.
+
 ```ruby
 # If we expect 'ExampleGroup' Resource Group to have Network Watchers
 describe azure_network_watchers(resource_group: 'ExampleGroup') do

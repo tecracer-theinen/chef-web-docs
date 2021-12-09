@@ -41,7 +41,7 @@ end
 
 ## Parameters
 
-This resource does not expect any parameters.
+This resource does not require any parameters.
 
 ## Properties
 

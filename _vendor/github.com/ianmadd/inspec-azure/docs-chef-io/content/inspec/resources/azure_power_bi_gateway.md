@@ -47,13 +47,20 @@ end
 
 ## Properties
 
-| Property                            | Description                                                      |
-|-------------------------------------|------------------------------------------------------------------|
-| id                                  | The gateway ID.                                                  |
-| name                                | The gateway name.                                                |
-| type                                | The gateway type.                                                |
-| publicKey.exponent                  | The public key exponent.                                         |
-| publicKey.modulus                   | The public key modulus.
+`id`
+: The gateway ID.
+
+`name`
+: The gateway name.
+
+`type`
+: The gateway type.
+
+`publicKey.exponent`
+: The public key exponent.
+
+`publicKey.modulus`
+: The public key modulus.
 
 For properties applicable to all resources, such as `type`, `name`, `id`, and `properties`, refer to [`azure_generic_resource`]({{< relref "azure_generic_resource.md#properties" >}}).
 

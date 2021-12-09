@@ -38,10 +38,7 @@ end
 
 ## Parameters
 
-This resource does not expect any parameters.
-
-Also, see the [AWS Shield Subscriptions documentation](https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html).
-
+This resource does not require any parameters.
 
 ## Properties
 

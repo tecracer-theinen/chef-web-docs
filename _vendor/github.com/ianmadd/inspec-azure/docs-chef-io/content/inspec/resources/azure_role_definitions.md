@@ -40,7 +40,7 @@ end
 
 ## Parameters
 
-- This resource does not require any parameters.
+This resource does not require any parameters.
 
 ## Properties
 
@@ -69,7 +69,7 @@ end
 
 : **Field**: `properties`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 

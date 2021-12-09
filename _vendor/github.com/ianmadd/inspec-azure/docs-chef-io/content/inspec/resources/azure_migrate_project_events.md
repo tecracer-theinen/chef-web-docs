@@ -113,7 +113,7 @@ The parameter set should be provided for a valid query:
 
 : **Field**: `clientRequestId`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 For more details on the available properties, refer to [Azure documentation](https://docs.microsoft.com/en-us/rest/api/migrate/projects/events/enumerate-events).
 
@@ -156,4 +156,4 @@ end
 
 ## Azure Permissions
 
-Your [Service Principal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal) must be set up with a `contributor` role on the subscription you wish to test.
+{{% azure_permissions_service_principal_contributor %}}

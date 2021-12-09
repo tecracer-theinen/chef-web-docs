@@ -39,7 +39,7 @@ For additional information, see the [AWS documentation on AWS MQ configuration](
 
 ## Parameters
 
-This resource does not expect any parameters.
+This resource does not require any parameters.
 
 ## Properties
 

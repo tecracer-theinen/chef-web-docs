@@ -41,8 +41,6 @@ end
 
 This resource does not require any parameters.
 
-For additional information, see the [AWS documentation on AWS CloudFront cache policy.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cache policy.html).
-
 ## Properties
 
 `types`

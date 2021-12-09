@@ -43,7 +43,7 @@ An `aws_ec2_transit_gateway_attachments` resource block uses an optional filter 
 
 ## Parameters
 
-This resource does not expect any parameters.
+This resource does not require any parameters.
 
 ## Properties
 

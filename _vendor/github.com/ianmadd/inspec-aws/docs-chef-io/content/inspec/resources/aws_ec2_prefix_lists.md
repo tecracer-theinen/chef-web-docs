@@ -46,54 +46,34 @@ This resource does not require any parameters.
 ## Properties
 
 `prefix_list_ids`
-: The ID of the prefix list.
-
-: **Field**: `prefix_list_id`
+: prefix_list_id.
 
 `address_families`
-: The IP address version.
-
-: **Field**: `address_family`
+: address_family.
 
 `states`
-: The state of the prefix list.
-
-: **Field**: `state`
+: state.
 
 `state_messages`
-: The state message.
-
-: **Field**: `state_message`
+: state_message.
 
 `prefix_list_arns`
-: The Amazon Resource Name (ARN) for the prefix list.
-
-: **Field**: `prefix_list_arn`
+: prefix_list_arn.
 
 `prefix_list_names`
-: The name of the prefix list.
-
-: **Field**: `prefix_list_name`
+: prefix_list_name.
 
 `max_entries`
-: The maximum number of entries for the prefix list.
-
-: **Field**: `max_entries`
+: max_entries.
 
 `versions`
-: The version of the prefix list.
-
-: **Field**: `version`
+: version.
 
 `tags`
-: The tags for the prefix list.
-
-: **Field**: `tags`
+: tags.
 
 `owner_ids`
-: The ID of the owner of the prefix list.
-
-: **Field**: `owner_id`
+: owner_id.
 
 ## Examples
 

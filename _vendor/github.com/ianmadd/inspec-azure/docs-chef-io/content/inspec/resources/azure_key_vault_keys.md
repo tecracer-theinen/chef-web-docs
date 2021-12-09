@@ -32,6 +32,7 @@ Use the `azure_key_vault_keys` InSpec audit resource to test properties and conf
 ## Syntax
 
 An `azure_key_vault_keys` resource block returns all keys within a vault.
+
 ```ruby
 describe azure_key_vault_keys(vault_name: 'example_vault') do
   #...
@@ -40,7 +41,9 @@ end
 
 ## Parameters
 
-- `vault_name`: The name of the vault.
+`vault_name`
+
+: The name of the vault.
 
 ## Properties
 
@@ -64,7 +67,7 @@ end
 
 : **Field**: `tags`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 

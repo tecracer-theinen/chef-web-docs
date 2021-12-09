@@ -41,39 +41,27 @@ end
 
 ## Parameters
 
-The resource does not require any parameters.
+This resource does not require any parameters.
 
 ## Properties
 
 `global_network_ids`
-: The ID of the global network.
-
-: **Field**: `global_network_id`
+: global_network_id.
 
 `global_network_arns`
-: The Amazon Resource Name (ARN) of the global network.
-
-: **Field**: `global_network_arn`
+: global_network_arn.
 
 `descriptions`
-: The description of the global network.
-
-: **Field**: `description`
+: description.
 
 `created_at`
-: The date and time that the global network was created.
-
-: **Field**: `created_at`
+: created_at.
 
 `states`
-: The state of the global network.
-
-: **Field**: `state`
+: state.
 
 `tags`
-: The tags for the global network.
-
-: **Field**: `tags`
+: tags.
 
 ## Examples
 

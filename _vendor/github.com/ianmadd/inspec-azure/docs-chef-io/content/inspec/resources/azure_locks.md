@@ -93,7 +93,7 @@ Either one of the parameter sets can be provided for a valid query:
 
 : **Field**: `properties`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 

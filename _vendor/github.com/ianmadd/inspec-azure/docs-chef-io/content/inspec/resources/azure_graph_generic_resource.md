@@ -19,7 +19,7 @@ parent = "inspec/resources/azure"
 </div>
 
 
-Use the `azure_graph_generic_resource` Inspec audit resource to test any valid Azure resource available through Microsoft Azure Graph API. 
+Use the `azure_graph_generic_resource` Inspec audit resource to test any valid Azure resource available through Microsoft Azure Graph API.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
 
@@ -36,10 +36,11 @@ describe azure_graph_generic_resource(resource: 'resource', id: 'GUID', select: 
   its('property') { should eq 'value' }
 end
 ```
-where
+
+where:
 
 - Resource parameters are used to query Azure Graph API endpoint for the resource to be tested.
-- `property` - This generic resource dynamically creates the properties on the fly based on the property names provided with the `select` parameter. 
+- `property` - This generic resource dynamically creates the properties on the fly based on the property names provided with the `select` parameter.
 - `value` is the expected output from the chosen property.
 
 ## Parameters
@@ -47,24 +48,16 @@ where
 The following parameters can be passed for targeting a specific Azure resource.
 
 `resource`
-: Azure resource type that the targeted resource belongs to.
-
-: **Field**: `users`
+: Azure resource type that the targeted resource belongs to. For example, `users`.
 
 `id`
-: Globally unique ID of the targeted resource.
-
-: **Field**: `jdoe@contoso.com`
+: Globally unique ID of the targeted resource. For example, `jdoe@example.com`.
 
 `select`
-: The list of query parameters defining which attributes that the resource will expose. If not provided then the predefined attributes will be returned from the API.
-
-: **Field**: `['givenName', 'surname', 'department']`
+: The list of query parameters defining which attributes that the resource will expose. If not provided then the predefined attributes will be returned from the API. For example, `['givenName', 'surname', 'department']`.
 
 `api_version`
-: API version of the GRAPH API to use when interrogating the resource. If not set then the predefined stable version will be used.
-
-: **Field**: `v1.0`, `beta`
+: API version of the GRAPH API to use when interrogating the resource. If not set, then the predefined stable version will be used. For example, `v1.0` or `beta`.
 
 ## Properties
 
@@ -72,7 +65,7 @@ The properties that can be tested are entirely dependent on the Azure Resource t
 
 ## Examples
 
-**Test Properties of a User Account.**
+**Test properties of a user account.**
 
 ```ruby
 describe azure_graph_generic_resource(resource: 'users', id: 'jdoe@contoso.com', select: %w{ surname givenName }) do

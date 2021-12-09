@@ -42,9 +42,7 @@ end
 
 ## Parameters
 
-This resource does not expect any parameters.
-
-**Note:** This resource must target AWS Region `us-east-1`. If another region is specified in your configuration, it will be overwritten at runtime.
+This resource does not require any parameters.
 
 ## Properties
 

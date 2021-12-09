@@ -37,6 +37,10 @@ describe azure_policy_assignments do
 end
 ```
 
+## Parameters
+
+This resource does not require any parameters.
+
 ## Properties
 
 Please review the [Azure documentation](https://docs.microsoft.com/en-us/rest/api/policy/policyassignments/list#policyassignment) for a full description of the available properties.
@@ -44,102 +48,102 @@ Please review the [Azure documentation](https://docs.microsoft.com/en-us/rest/ap
 `ids`
 : The ID of this policy assignment.
 
-: **Field**: `id`
+: **Filter**: id
 
 `types`
 : The Azure resource type.
 
-: **Field**: `type`
+: **Filter**: type
 
 `names`
 : The names of the policy assignments.
 
-: **Field**: `name`
+: **Filter**: name
 
 `locations`
 : The locations of the policy assignments.
 
-: **Field**: `location`
+: **Filter**: location
 
 `tags`
 : The tags of the policy assignments.
 
-: **Field**: `tags`
+: **Filter**: tags
 
 `displayNames`
 : The display names of the policy assignments.
 
-: **Field**: `displayName`
+: **Filter**: displayName
 
 `policyDefinitionIds`
 : The IDs of the policies being assigned by these policy assignments.
 
-: **Field**: `policyDefinitionId`
+: **Filter**: policyDefinitionId
 
 `scopes`
 : The scope of the policy assignments (which resources they are being attached to).
 
-: **Field**: `scope`
+: **Filter**: scope
 
 `notScopes`
 : The scopes which are excluded from these policy assignments (blocks inheritance).
 
-: **Field**: `notScopes`
+: **Filter**: notScopes
 
 `parameters`
 : The override parameters passed to the base policy by this assignment.
 
-: **Field**: `parameters`
+: **Filter**: parameters
 
 `enforcementMode`
 : The enforcement modes of these policy assignments.
 
-: **Field**: `enforcementModes`
+: **Filter**: enforcementModes
 
 `assignedBys`
 : The IDs that assigned these policies.
 
-: **Field**: `assignedBy`
+: **Filter**: assignedBy
 
 `parameterScopes`
 : Unknown - no data observed in this field in the wild.
 
-: **Field**: `parameterScopes`
+: **Filter**: parameterScopes
 
 `created_bys`
 : The IDs that created these policy assignments.
 
-: **Field**: `created_by`
+: **Filter**: created_by
 
 `createdOns`
 : The dates these policy assignments were created (as a Ruby Time object).
 
-: **Field**: `createdOn`
+: **Filter**: createdOn
 
 `updatedBys`
 : The IDs that updated these policy assignments.
 
-: **Field**: `updatedBy`
+: **Filter**: updatedBy
 
 `updatedOns`
 : The dates these policy assignments were updated (as a Ruby Time object).
 
-: **Field**: `updatedOn`
+: **Filter**: updatedOn
 
 `identityPrincipalIds`
 : The principal IDs of the associated managed identities.
 
-: **Field**: `identityPrincipalId`
+: **Filter**: identityPrincipalId
 
 `identityTenantIds`
 : The tenant IDs of the associated managed identities.
 
-: **Field**: `identityTenantId`
+: **Filter**: identityTenantId
 
 `identityTypes`
 : The identity types of the associated managed identities.
 
-: **Field**: `identityType`
+: **Filter**: identityType
 
 ## Examples
 

@@ -44,7 +44,7 @@ Either one of the following parameters is mandatory.
 `id`
 : Domain ID.
 
-: **Field**: `example.com`
+: **Example**: `example.com`
 
 ## Properties
 

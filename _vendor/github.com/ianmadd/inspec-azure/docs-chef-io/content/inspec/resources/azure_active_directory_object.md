@@ -44,7 +44,7 @@ parameter `id` is mandatory.
 `id`
 : The Active Directory object ID.
 
-: **Field**: `0bf29229-50d7-433c-b08e-2a5d8b293cb5`
+: **Example**: `0bf29229-50d7-433c-b08e-2a5d8b293cb5`
 
 ## Properties
 

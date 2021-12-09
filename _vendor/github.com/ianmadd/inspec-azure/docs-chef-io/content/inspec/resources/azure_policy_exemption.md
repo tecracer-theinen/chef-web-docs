@@ -31,9 +31,8 @@ Use the `azure_policy_exemption` InSpec audit resource to test properties relate
 
 ## Syntax
 
-`name` must be given as a parameter and `resource_group` could be provided as an optional parameter
 ```ruby
-describe azure_policy_exemption(resource_group: 'MyResourceGroup', name: '3b8b3f3bbec24cd6af583694') do
+describe azure_policy_exemption(resource_group: 'RESOURCE_GROUP', name: 'POLICY_EXEMPTION_NAME') do
   it                                      { should exist }
   its('name')                             { should cmp '3b8b3f3bbec24cd6af583694' }
   its('type')                             { should cmp 'Microsoft.Authorization/policyExemptions' }
@@ -42,23 +41,22 @@ describe azure_policy_exemption(resource_group: 'MyResourceGroup', name: '3b8b3f
   its('systemData.createdByType')         { should cmp 'User' }
 end
 ```
+
 ```ruby
-describe azure_policy_exemption(name: '3b8b3f3bbec24cd6af583694') do
+describe azure_policy_exemption(name: 'POLICY_EXEMPTION_NAME') do
   it  { should exist }
 end
 ```
 
 ## Parameters
 
-`name`
-: Name of the Azure Policy Exemption to test.
+`name` _(required)_
 
-`resource_group`
-: This is an optional parameter. Azure resource group that the targeted resource resides in. `MyResourceGroup`.
+: The name of the Azure Policy Exemption to test.
 
-The parameter set should be provided for a valid query:
-- `name`
-- `resource_group` (optional) and `name` 
+`resource_group` _(optional)_
+
+: The name of the resource group.
 
 ## Properties
 
@@ -96,18 +94,19 @@ Any attribute in the response may be accessed with the key names separated by do
 
 ## Examples
 
-**Test <>.**
+**Test that the policy exemption category is `Waiver`.**
 
 ```ruby
-describe azure_policy_exemption(name: '3b8b3f3bbec24cd6af583694') do
+describe azure_policy_exemption(name: 'POLICY_EXEMPTION_NAME') do
   its('properties.exemptionCategory') { should eq 'Waiver' }
 end
 ```
-**Test <>.**
+
+**Test that the definition reference ID list includes a particular reference ID.**
 
 ```ruby
-describe azure_policy_exemption(resource_group: 'MyResourceGroup', name: '3b8b3f3bbec24cd6af583694') do
-  its('properties.policyDefinitionReferenceIds') { should include 'Limit_Skus' }
+describe azure_policy_exemption(resource_group: 'RESOURCE_GROUP', name: 'POLICY_EXEMPTION_NAME') do
+  its('properties.policyDefinitionReferenceIds') { should include 'POLICY_DEFINITION_REFERENCE_ID' }
 end
 ```
 
@@ -120,7 +119,7 @@ This InSpec audit resource has the following special matchers. For a full list o
 ```ruby
 # If a policy exemption is found it will exist
 
-describe azure_policy_exemption(name: '3b8b3f3bbec24cd6af583694') do
+describe azure_policy_exemption(name: 'POLICY_EXEMPTION_NAME') do
   it { should exist }
 end
 

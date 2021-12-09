@@ -32,12 +32,15 @@ Use the `azure_db_migration_services` InSpec audit resource to test properties r
 ## Syntax
 
 An `azure_db_migration_services` resource block returns all Azure DB Migration Services within a Resource Group.
+
 ```ruby
 describe azure_db_migration_services(resource_group: 'my-rg') do
   #...
 end
 ```
+
 or
+
 ```ruby
 describe azure_db_migration_services(resource_group: 'my-rg') do
   #...
@@ -46,7 +49,9 @@ end
 
 ## Parameters
 
-- `resource_group`
+`resource_group`
+
+: The name of the resource group.
 
 ## Properties
 
@@ -115,26 +120,27 @@ end
 
 : **Field**: `virtual_subnet_id`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 
-**Loop through DB Migration Services by Their Names.**
+**Loop through DB Migration Services by their names.**
 
 ```ruby
 azure_db_migration_services(resource_group: 'my-rg').names.each do |name|
   describe azure_db_migration_service(service_name: name) do
     it { should exist }
   end
-end  
-```     
-**Test that There are DB migration services that Includes a Certain String in their Names (Client Side Filtering).**
+end
+```
+
+**Test that there are DB Migration Services that includes a certain string in their names (Client Side Filtering).**
 
 ```ruby
 describe azure_db_migration_services(resource_group: 'my-rg').where { name.include?('UAT') } do
   it { should exist }
 end
-```    
+```
 
 ## Matchers
 

@@ -44,17 +44,17 @@ Either one of the following parameters is mandatory.
 `user_principal_name`
 : The user principal name.
 
-: **Field**: `jdoe@contoso.com`
+: **Example**: `jdoe@contoso.com`
 
 `id`
 : Globally unique identifier.
 
-: **Field**: `abcd-1234-efabc-5678`
+: **Example**: `abcd-1234-efabc-5678`
 
 `user_id`
 : Globally unique identifier. (For backward compatibility.).
 
-: **Field**: `abcd-1234-efabc-5678`
+: **Example**: `abcd-1234-efabc-5678`
 ## Properties
 
 `id`

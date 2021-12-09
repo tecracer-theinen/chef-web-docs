@@ -19,7 +19,7 @@ parent = "inspec/resources/azure"
 </div>
 
 
-Use the `azure_monitor_activity_log_alerts` InSpec audit resource to test properties and configuration of multiple Activity Log Alerts.
+Use the `azure_monitor_activity_log_alerts` InSpec audit resource to test properties and configuration of multiple Azure Monitor activity log alerts.
 
 ## Azure REST API Version, Endpoint, and HTTP Client Parameters
 
@@ -31,13 +31,16 @@ Use the `azure_monitor_activity_log_alerts` InSpec audit resource to test proper
 
 ## Syntax
 
-An `azure_monitor_activity_log_alerts` resource block returns all Activity Log Alerts, either within a Resource Group (if provided), or within an entire Subscription.
+An `azure_monitor_activity_log_alerts` resource block returns all activity log alerts, either within a Resource Group (if provided), or within an entire Subscription.
+
 ```ruby
 describe azure_monitor_activity_log_alerts do
   it { should exist }
 end
 ```
+
 or
+
 ```ruby
 describe azure_monitor_activity_log_alerts(resource_group: 'my-rg') do
   it { should exist }
@@ -46,7 +49,9 @@ end
 
 ## Parameters
 
-- `resource_group` (Optional)
+`resource_group` _(optional)_
+
+: The name of the resource group.
 
 ## Properties
 
@@ -80,18 +85,19 @@ end
 
 : **Field**: `resource_group`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 
-**Test that a Subscription Has the Named Activity Log Alert.**
+**Test that a subscription has the named activity log alert.**
 
 ```ruby
 describe azure_monitor_activity_log_alerts do
   its('names') { should include('ExampleLogAlert') }
 end
 ```
-**Loop through All Resources with `resource_id`.**
+
+**Loop through all resources with `resource_id`.**
 
 ```ruby
 azure_monitor_activity_log_alerts.ids.each do |id|
@@ -108,13 +114,14 @@ This InSpec audit resource has the following special matchers. For a full list o
 ### exists
 
 The control will pass if the filter returns at least one result. Use `should_not` if you expect zero matches.
+
 ```ruby
-# If we expect 'ExampleGroup' Resource Group to have Activity Log Alerts
+# If we expect 'ExampleGroup' Resource Group to have activity log alerts
 describe azure_monitor_activity_log_alerts(resource_group: 'ExampleGroup') do
   it { should exist }
 end
 
-# If we expect 'EmptyExampleGroup' Resource Group to not have Activity Log Alerts
+# If we expect 'EmptyExampleGroup' Resource Group to not have activity log alerts
 describe azure_monitor_activity_log_alerts(resource_group: 'ExampleGroup') do
   it { should_not exist }
 end

@@ -32,12 +32,15 @@ Use the `azure_web_app_functions` InSpec audit resource to test properties relat
 ## Syntax
 
 An `azure_web_app_functions` resource block returns all Azure functions, either within a Resource Group (if provided), or within an entire Subscription.
+
 ```ruby
 describe azure_web_app_functions(resource_group: 'my-rg', site_name: 'function-app-http') do
   #...
 end
 ```
+
 or
+
 ```ruby
 describe azure_web_app_functions(resource_group: 'my-rg', site_name: 'function-app-http') do
   #...
@@ -46,8 +49,13 @@ end
 
 ## Parameters
 
-- `resource_group` 
-- `site_name`: Name of the function App 
+`resource_group`
+
+: The name of the resource group.
+
+`site_name`
+
+: The name of the function App.
 
 ## Properties
 
@@ -76,26 +84,27 @@ end
 
 : **Field**: `properties`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 
-**Loop through functions by Their Ids.**
+**Loop through functions by their IDs.**
 
 ```ruby
 azure_web_app_functions(resource_group: 'my-rg', site_name: 'function-app-http').ids.each do |id|
   describe azure_web_app_function(resource_id: id) do
     it { should exist }
   end
-end  
-```     
-**Test that There are functions that Includes a Certain String in their Names (Client Side Filtering).**
+end
+```
+
+**Test that there are functions that includes a certain string in their names (Client Side Filtering).**
 
 ```ruby
 describe azure_web_app_functions(resource_group: 'my-rg', site_name: 'function-app-http').where { name.include?('queue') } do
   it { should exist }
 end
-```    
+```
 
 ## Matchers
 

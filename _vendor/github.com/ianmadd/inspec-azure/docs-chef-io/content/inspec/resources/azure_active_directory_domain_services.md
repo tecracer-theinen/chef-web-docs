@@ -46,12 +46,12 @@ The following parameters can be passed for targeting specific domains.
 `filter`
 : A hash containing the filtering options and their values. The `starts_with_` operator can be used for fuzzy string matching. Parameter names are in snake case.
 
-: **Field**: `{ starts_with_given_name: 'J', starts_with_department: 'Core', country: 'United Kingdom', given_name: John}`
+: **Example**: `{ starts_with_given_name: 'J', starts_with_department: 'Core', country: 'United Kingdom', given_name: John}`
 
 `filter_free_text`
 : [OData](https://www.odata.org/getting-started/basic-tutorial/) query string in double quotes, `"`. Property names are in camel case, refer to [Microsoft's query parameters documentation](https://docs.microsoft.com/en-us/graph/query-parameters#filter-parameter) for more information.
 
-: **Field**: `"startswith(displayName,'J') and surname eq 'Doe'"` or `"userType eq 'Guest'"`
+: **Example**: `"startswith(displayName,'J') and surname eq 'Doe'"` or `"userType eq 'Guest'"`
 
 It is advised to use these parameters to narrow down the targeted resources at the server side, Azure Graph API, for a more efficient test.
 
@@ -117,7 +117,7 @@ It is advised to use these parameters to narrow down the targeted resources at t
 
 : **Field**: `state`
 
-<superscript>*</superscript> For information on how to use filter criteria on plural resources refer to [FilterTable usage](https://github.com/inspec/inspec/blob/master/dev-docs/filtertable-usage.md).
+{{% inspec_filter_table %}}
 
 ## Examples
 

@@ -45,7 +45,7 @@ An `aws_vpc_endpoints` resource block uses an optional filter to select a group 
 
 ## Parameters
 
-This resource does not expect any parameters.
+This resource does not require any parameters.
 
 ## Properties
 

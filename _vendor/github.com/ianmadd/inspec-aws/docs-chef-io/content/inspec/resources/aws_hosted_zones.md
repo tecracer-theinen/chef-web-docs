@@ -35,8 +35,7 @@ Use the `aws_hosted_zones` resource to test the hosted zones configuration.
 
 ## Parameters
 
-This resource does not expect any parameters.
-
+This resource does not require any parameters.
 
 ## Properties
 

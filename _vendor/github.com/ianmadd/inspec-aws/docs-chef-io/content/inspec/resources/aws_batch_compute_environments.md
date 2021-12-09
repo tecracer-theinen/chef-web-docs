@@ -39,7 +39,7 @@ end
 
 ## Parameters
 
-This resource does not accept any parameters.
+This resource does not require any parameters.
 
 ## Properties
 

@@ -39,7 +39,7 @@ See also the [AWS VPC endpoint connection notification documentation](https://do
 
 ## Parameters
 
-This resource does not expect any parameters.
+This resource does not require any parameters.
 
 ## Properties
 

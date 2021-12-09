@@ -39,10 +39,10 @@ github.com/google/go-cmp v0.4.0/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/
 github.com/google/go-cmp v0.5.0/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/habitat-sh/habitat/components/docs-chef-io v0.0.0-20211101172130-6c067fabcc72 h1:d27TDFiqrYgpjfknSOJP7zD4Uc1chlZ9uDDLUnZm8aU=
 github.com/habitat-sh/habitat/components/docs-chef-io v0.0.0-20211101172130-6c067fabcc72/go.mod h1:luAy42opPrAM/T6hsqDyW3CNBaAMgy+a6l0+oi8sw8U=
-github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211206222900-8a01747cf68b h1:szwOhWAc1iVUQfsoaand6xVSbhXOCtwOmT9Qc1PJHnw=
-github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211206222900-8a01747cf68b/go.mod h1:3hkNyL/r/vbh4DUeDDsHnBdI4D0pWJQzwXBgsOZrNAU=
-github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211206222811-163a533b48d0 h1:Zt4JCo3wYgmJ5ih6wqVHs10KIt3tXWqRORv+JO9LeX8=
-github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211206222811-163a533b48d0/go.mod h1:N+98qucUAj+gXWL0mbPQQOp9qeEYqzij863T0Ph/wGQ=
+github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211209222820-420ded0298a3 h1:zuJZy61w48I1lvbniK61BBSG30dE+O5S8VJQZJ6Z8MM=
+github.com/ianmadd/inspec-aws/docs-chef-io v0.0.0-20211209222820-420ded0298a3/go.mod h1:3hkNyL/r/vbh4DUeDDsHnBdI4D0pWJQzwXBgsOZrNAU=
+github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211209222749-21517d004636 h1:IJuzLOM7Nu+Qb55BSDDBmrQ6PlhZuKpoWqOZQ25fqrI=
+github.com/ianmadd/inspec-azure/docs-chef-io v0.0.0-20211209222749-21517d004636/go.mod h1:N+98qucUAj+gXWL0mbPQQOp9qeEYqzij863T0Ph/wGQ=
 github.com/ianmadd/inspec/docs-chef-io v0.0.0-20211206155433-a4d13fc5337a h1:Tdv6cw/oNtkekptpiEKLT3nlc9PYysUCfyT2IGAPIJk=
 github.com/ianmadd/inspec/docs-chef-io v0.0.0-20211206155433-a4d13fc5337a/go.mod h1:XxC56jOKDyqSgbYPdyLQvHZmDjro8ljxH/8x24Kzgi4=
 github.com/inspec/inspec-aws/docs-chef-io v0.0.0-20211206144923-22d2aa7d684c h1:EhtEhzjDuC3FsX+R82y936Ihyq5A4Y2ewKFt5T0wAgw=

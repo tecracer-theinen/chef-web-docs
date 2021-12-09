@@ -43,7 +43,7 @@ An `aws_eips` resource block uses an optional filter to select a group of Elasti
 
 ## Parameters
 
-This resource does not expect any parameters.
+This resource does not require any parameters.
 
 ## Properties
 

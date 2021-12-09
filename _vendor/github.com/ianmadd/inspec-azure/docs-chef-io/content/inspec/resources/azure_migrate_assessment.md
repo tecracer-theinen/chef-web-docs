@@ -128,4 +128,4 @@ end
 
 ## Azure Permissions
 
-Your [Service Principal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal) must be set up with a `contributor` role on the subscription you wish to test.
+{{% azure_permissions_service_principal_contributor %}}
