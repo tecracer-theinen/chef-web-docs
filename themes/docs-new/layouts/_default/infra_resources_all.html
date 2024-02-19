@@ -529,6 +529,43 @@
 
             {{ end }}
 
+            <!-------------- Target Mode ------------------->
+
+            {{ with index $yaml_file "target_mode" }}
+            <br>
+            <h2 id = "target_mode">Target Mode</h2>
+            <hr>
+
+            <p>The <strong>{{ index $yaml_file "resource" }}</strong> resource has <strong>{{ .support_level }}</strong> support for Target Mode</p>
+
+            {{ if ne .support_level "no" }}
+              <p>Supported platforms:</p>
+
+              <ul>
+                {{ range $key := .support_platforms }}
+                <li>{{ $key }}</li>
+                {{ end }}
+              </ul>
+
+              {{ .description }}
+
+              <p>
+                {{ if and (.support_enhanced_in) (ne .support_enhanced_in nil) }}
+                Support was initially added in Chef Infra {{ .support_new_in }} and extended later in {{ .support_enhanced_in }}.
+                {{ else }}
+                Support was initially added in Chef Infra {{ .support_new_in }}.
+                {{ end }}
+              </p>
+
+              {{ if and (.requirements) (ne .requirements nil) }}
+                <p>
+                  {{ .requirements }}
+                </p>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+
             <!------------------ Unit File Verification ---------------------->
 
             {{ with index $yaml_file "unit_file_verification" }}
