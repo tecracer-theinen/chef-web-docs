@@ -111,6 +111,8 @@ properties_list:
   new_in: '17.7'
   description_list:
   - markdown: The username to use when authenticating against the source
+target_mode:
+  support_level: "no"
 examples: |
   **Add a Chocolatey source**
 

@@ -120,6 +120,8 @@ properties_list:
   required: false
   description_list:
   - markdown: The path to the yum binary.
+target_mode:
+  support_level: "no"
 examples: |
   **Install an exact version**:
 

@@ -170,6 +170,8 @@ properties_list:
   description_list:
   - markdown: The day of the week on which Chef Infra Client is to run (0-7, mon-sun,
       or *), where Sunday is both 0 and 7.
+target_mode:
+  support_level: "no"
 examples: |
   **Setup Chef Infra Client to run using the default 30 minute cadence**:
 

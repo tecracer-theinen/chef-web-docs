@@ -233,6 +233,8 @@ properties_list:
   default_value: The localized SYSTEM user for the node.
   description_list:
   - markdown: The user to run the task as.
+target_mode:
+  support_level: "no"
 examples: |
   **Create a scheduled task to run every 15 minutes as the Administrator user**:
 

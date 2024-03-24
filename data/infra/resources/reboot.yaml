@@ -45,6 +45,9 @@ properties_list:
   default_value: Reboot by Chef Infra Client
   description_list:
   - markdown: A string that describes the reboot action.
+target_mode:
+  support_level: full
+  support_new_in: 18.9
 examples: |
   **Reboot a node immediately**
 

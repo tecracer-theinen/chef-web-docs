@@ -57,6 +57,8 @@ properties_list:
   description_list:
   - markdown: An optional property to set the privilege for the specified users. Use
       only with `:set` action.
+target_mode:
+  support_level: "no"
 examples: |
   **Set the SeNetworkLogonRight privilege for the Builtin Administrators and Authenticated Users groups**:
 

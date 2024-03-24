@@ -44,6 +44,8 @@ properties_list:
   required: true
   description_list:
   - markdown: The text of the certificate file including the BEGIN/END comment lines.
+target_mode:
+  support_level: "no"
 examples: |
   **Trust a self signed certificate**:
 

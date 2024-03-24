@@ -65,7 +65,7 @@ syntax_full_code_block: |-
     working_directory                  String
     action                             Symbol # defaults to :create if not specified
   end
-syntax_properties_list: 
+syntax_properties_list:
 syntax_full_properties_list:
 - "`launchd` is the resource."
 - "`name` is the name given to the resource block."
@@ -406,6 +406,8 @@ properties_list:
   required: false
   description_list:
   - markdown: "`chdir` to this directory, and then run the job."
+target_mode:
+  support_level: "no"
 examples: "
   Create a Launch Daemon from a cookbook file\n\n  ```ruby\n  launchd\
   \ 'com.chef.every15' do\n    source 'com.chef.every15.plist'\n  end\n  ```\n\n \

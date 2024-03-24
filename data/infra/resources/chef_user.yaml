@@ -138,4 +138,5 @@ properties_list:
 resources_common_properties: false
 resources_common_notification: false
 resources_common_guards: false
-
+target_mode:
+  support_level: "no"

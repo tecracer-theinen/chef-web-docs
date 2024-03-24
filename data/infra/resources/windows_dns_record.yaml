@@ -63,4 +63,6 @@ properties_list:
   required: true
   description_list:
   - markdown: The zone to create the record in.
+target_mode:
+  support_level: "no"
 examples:

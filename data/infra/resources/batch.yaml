@@ -137,6 +137,8 @@ properties_list:
       against the domain in which the system running Chef Infra Client is joined, or if that system is not joined to a domain it
       will resolve the user as a local account on that system. An alternative way to specify the domain is
       to leave this property unspecified and specify the domain as part of the `user` property.'
+target_mode:
+  support_level: "no"
 examples: "
   Unzip a file, and then move it\n\n  To run a batch file that unzips\
   \ and then moves Ruby, do something like:\n\n  ```ruby\n  batch 'unzip_and_move_ruby'\

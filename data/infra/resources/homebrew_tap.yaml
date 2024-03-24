@@ -55,4 +55,6 @@ properties_list:
   required: false
   description_list:
   - markdown: The URL of the tap.
+target_mode:
+  support_level: "no"
 examples:

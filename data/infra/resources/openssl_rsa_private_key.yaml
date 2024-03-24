@@ -86,6 +86,8 @@ properties_list:
   description_list:
   - markdown: An optional property for specifying the path to write the file to if
       it differs from the resource block's name.
+target_mode:
+  support_level: "no"
 examples: |
   Generate new 2048bit key with the default des3 cipher
 

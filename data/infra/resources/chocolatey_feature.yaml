@@ -39,6 +39,8 @@ properties_list:
   default_value: The resource block's name
   description_list:
   - markdown: The name of the Chocolatey feature to enable or disable.
+target_mode:
+  support_level: "no"
 examples: |
   **Enable the checksumFiles Chocolatey feature**
 

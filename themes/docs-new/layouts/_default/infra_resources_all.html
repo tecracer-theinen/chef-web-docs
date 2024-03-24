@@ -538,14 +538,24 @@
 
             <p>The <strong>{{ index $yaml_file "resource" }}</strong> resource has <strong>{{ .support_level }}</strong> support for Target Mode</p>
 
-            {{ if ne .support_level "no" }}
+            {{ if ne .support_level false }}
               <p>Supported platforms:</p>
 
+              {{ if and (.support_platforms) (ne .support_platforms nil) }}
               <ul>
                 {{ range $key := .support_platforms }}
                 <li>{{ $key }}</li>
                 {{ end }}
               </ul>
+              <!-- default platforms -->
+              {{ else }}
+              <ul>
+                <li>aix</li>
+                <li>bsd</li>
+                <li>linux</li>
+                <li>solaris</li>
+               </ul>
+              {{ end }}
 
               {{ .description }}
 

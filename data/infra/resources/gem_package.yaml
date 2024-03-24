@@ -98,6 +98,8 @@ properties_list:
   required: false
   description_list:
   - markdown: The version of a package to be installed or upgraded.
+target_mode:
+  support_level: "no"
 examples: |
   The following examples demonstrate various approaches for using the **gem_package** resource in recipes:
 

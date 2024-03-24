@@ -12,6 +12,8 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
+				"editor.renderFinalNewline": "on",
+				"editor.trimAutoWhitespace": true,
 				"html.format.templating": true
 			},
 

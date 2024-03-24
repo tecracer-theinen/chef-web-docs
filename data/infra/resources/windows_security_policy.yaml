@@ -44,6 +44,8 @@ properties_list:
   required: true
   description_list:
   - markdown: Policy value to be set for policy name.
+target_mode:
+  support_level: "no"
 examples: |
   **Set Administrator Account to Enabled**:
 

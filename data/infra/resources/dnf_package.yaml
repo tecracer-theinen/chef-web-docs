@@ -130,6 +130,8 @@ properties_list:
   - markdown: 'The version of a package to be installed or upgraded. This property
 
       is ignored when using the `:upgrade` action.'
+target_mode:
+  support_level: "no"
 examples: "
   Install an exact version\n\n  ```ruby\n  dnf_package 'netpbm = 10.35.58-8.el5'\n\
   \  ```\n\n  Install a minimum version\n\n  ```ruby\n  dnf_package 'netpbm >= 10.35.58-8.el5'\n\

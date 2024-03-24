@@ -17,7 +17,7 @@ syntax_full_code_block: |-
     policy                String
     action                Symbol # defaults to :enforcing if not specified
   end
-syntax_properties_list: 
+syntax_properties_list:
 syntax_full_properties_list:
 - "`selinux_state` is the resource."
 - "`name` is the name given to the resource block."
@@ -61,6 +61,9 @@ properties_list:
   allowed_values: '"default", "minimum", "mls", "src", "strict", "targeted"'
   description_list:
   - markdown: SELinux policy type.
+target_mode:
+  support_level: full
+  support_new_in: 18.9
 examples: |
   **Set SELinux state to permissive**:
 

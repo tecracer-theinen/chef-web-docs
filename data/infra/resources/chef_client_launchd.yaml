@@ -123,6 +123,8 @@ properties_list:
   default_value: "/var/root"
   description_list:
   - markdown: The working directory to run the Chef Infra Client from.
+target_mode:
+  support_level: "no"
 examples: |
   **Set the Chef Infra Client to run on a schedule**:
 

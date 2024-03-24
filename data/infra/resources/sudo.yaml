@@ -156,6 +156,9 @@ properties_list:
   default_value: "/usr/sbin/visudo"
   description_list:
   - markdown: The path to visudo for configuration verification.
+target_mode:
+  support_level: full
+  support_new_in: 18.9
 examples: |
   **Grant a user sudo privileges for any command**
 

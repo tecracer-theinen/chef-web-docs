@@ -55,6 +55,8 @@ properties_list:
   allowed_values: ":machine, :user"
   description_list:
   - markdown: The registry root key to put the entry under.
+target_mode:
+  support_level: "no"
 examples: |
   **Run BGInfo at login**
 

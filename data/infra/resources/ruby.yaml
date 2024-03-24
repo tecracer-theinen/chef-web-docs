@@ -127,4 +127,6 @@ properties_list:
   description_list:
   - markdown: 'The user name or user ID that should be changed before running a
       command.'
+target_mode:
+  support_level: "no"
 examples:

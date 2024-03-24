@@ -194,6 +194,14 @@ properties_list:
 resources_common_properties: true
 resources_common_notification: true
 resources_common_guards: true
+target_mode:
+  support_level: full
+  support_new_in: 18.9
+  support_platforms:
+  - aix
+  - bsd
+  - linux
+  - solaris
 examples: "
   Create a system user\n\n  ```ruby\n  user 'systemguy' do\n    comment\
   \ 'system guy'\n    system true\n    shell '/bin/false'\n  end\n  ```\n\n  Create\

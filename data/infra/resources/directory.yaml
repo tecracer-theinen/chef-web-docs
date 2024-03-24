@@ -179,6 +179,14 @@ properties_list:
       specifies the rights granted to the principal, `<principal>` is the
       group or user name, and `<options>` is a Hash with one (or more)
       advanced rights options.'
+target_mode:
+  support_level: full
+  support_new_in: 18.9
+  support_platforms:
+  - aix
+  - bsd
+  - linux
+  - solaris
 examples: |
   Create a directory
 

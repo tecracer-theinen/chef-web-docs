@@ -279,6 +279,8 @@ properties_list:
   - markdown: 'The amount of time (in seconds) a command is to wait before timing
 
       out.'
+target_mode:
+  support_level: "no"
 examples: "
   Open a Zip file\n\n  ```ruby\n  dsc_resource 'example' do\n    \
   \ resource :archive\n     property :ensure, 'Present'\n     property :path, 'C:\\\

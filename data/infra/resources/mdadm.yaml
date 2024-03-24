@@ -85,6 +85,8 @@ properties_list:
   description_list:
   - markdown: An optional property to specify the name of the RAID device if it differs
       from the resource block's name.
+target_mode:
+  support_level: "no"
 examples: |
   **Create and assemble a RAID 0 array**
 

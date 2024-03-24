@@ -32,7 +32,7 @@ syntax_full_code_block: |-
     version                    String, Array
     action                     Symbol # defaults to :install if not specified
   end
-syntax_properties_list: 
+syntax_properties_list:
 syntax_full_properties_list:
 - "`apt_package` is the resource."
 - "`name` is the name given to the resource block."
@@ -117,6 +117,9 @@ properties_list:
   required: false
   description_list:
   - markdown: The version of a package to be installed or upgraded.
+target_mode:
+  support_level: full
+  support_new_in: 18.9
 examples: |
   **Install a package using package manager**:
 

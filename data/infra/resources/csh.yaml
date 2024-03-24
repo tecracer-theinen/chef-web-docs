@@ -103,4 +103,7 @@ properties_list:
   required: false
   description_list:
   - markdown: The file mode creation mask, or umask.
+target_mode:
+  support_level: full
+  support_new_in: 18.9
 examples:

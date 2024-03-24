@@ -84,6 +84,8 @@ properties_list:
   - markdown: If `true`, this resource uses built-in Windows decompression tools instead of 7zip when
       unpacking the downloaded NuPkg file. This parameter is ignored in PowerShell 5+ in favour of using
       the `Expand-Archive` built-in PowerShell cmdlet directly.
+target_mode:
+  support_level: "no"
 examples: "**Install Chocolatey**\n\n```ruby\nchocolatey_installer 'latest' do\n  action
   :install\nend\n```\n\n**Uninstall Chocolatey**\n\n```ruby\nchocolatey_installer
   'Some random verbiage' do\n  action :uninstall\nend\n```\n\n**Install Chocolatey

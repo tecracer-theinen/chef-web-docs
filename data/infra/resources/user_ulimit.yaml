@@ -265,6 +265,9 @@ properties_list:
   required: false
   description_list:
   - markdown:
+target_mode:
+  support_level: full
+  support_new_in: 18.9
 examples: |
   **Set filehandle limit for the tomcat user**:
 

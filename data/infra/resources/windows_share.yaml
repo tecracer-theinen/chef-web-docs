@@ -117,6 +117,8 @@ properties_list:
   description_list:
   - markdown: The lifetime of the new SMB share. A temporary share does not persist
       beyond the next restart of the computer.
+target_mode:
+  support_level: "no"
 examples: |
   **Create a share**:
 

@@ -63,15 +63,8 @@ properties_list:
   description_list:
   - markdown: The priority of the alternative.
 target_mode:
-  support_level: partial
+  support_level: full
   support_new_in: 18.9
-  support_platforms:
-  - linux
-  - bsd
-  - macos_x
-  - solaris
-  - aix
-  description: Only tested on Linux
 examples: |
   **Install an alternative**:
 

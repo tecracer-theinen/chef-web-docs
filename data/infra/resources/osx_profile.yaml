@@ -51,6 +51,8 @@ properties_list:
   description_list:
   - markdown: Use to specify the name of the profile, if different from the name of
       the resource block.
+target_mode:
+  support_level: "no"
 examples: |
   **Install a profile from a cookbook file**
 

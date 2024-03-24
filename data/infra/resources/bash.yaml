@@ -32,7 +32,7 @@ syntax_full_code_block: |-
     user             String, Integer
     action           Symbol # defaults to :run if not specified
   end
-syntax_properties_list: 
+syntax_properties_list:
 syntax_full_properties_list:
 - "`bash` is the resource."
 - "`name` is the name given to the resource block."
@@ -173,6 +173,9 @@ properties_list:
       also be specified without a domain simply as user if the domain is instead specified
       using the domain property. On Windows only, if this property is specified, the
       password property must be specified.
+target_mode:
+  support_level: full
+  support_new_in: 18.9
 examples: |
   **Compile an application**
 

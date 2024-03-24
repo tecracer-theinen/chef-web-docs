@@ -25,7 +25,7 @@ syntax_full_code_block: |-
     options            String, Array # default value: []
     action             Symbol # defaults to :add if not specified
   end
-syntax_properties_list: 
+syntax_properties_list:
 syntax_full_properties_list:
 - "`apt_repository` is the resource."
 - "`name` is the name given to the resource block."
@@ -125,6 +125,8 @@ properties_list:
   required: false
   description_list:
   - markdown: The base of the Debian distribution.
+target_mode:
+  support_level: "no"
 examples: |
   **Add repository with basic settings**:
 

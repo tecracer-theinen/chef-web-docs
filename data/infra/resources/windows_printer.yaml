@@ -102,6 +102,8 @@ properties_list:
   default_value: 'false'
   description_list:
   - markdown: Determines whether or not the printer is shared.
+target_mode:
+  support_level: "no"
 examples: |
   **Create a printer**:
 

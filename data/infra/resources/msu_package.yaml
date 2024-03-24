@@ -57,6 +57,8 @@ properties_list:
   default_value: '3600'
   description_list:
   - markdown: The amount of time (in seconds) to wait before timing out.
+target_mode:
+  support_level: "no"
 examples: "
   Using local path in source\n\n  ```ruby\n  msu_package 'Install\
   \ Windows 2012R2 Update KB2959977' do\n    source 'C:\\Users\\xyz\\AppData\\Local\\\

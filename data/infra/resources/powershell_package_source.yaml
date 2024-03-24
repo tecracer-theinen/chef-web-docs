@@ -109,6 +109,8 @@ properties_list:
   description_list:
   - markdown: A username that, as part of a credential object, is used to register
       a repository or other package source with.
+target_mode:
+  support_level: "no"
 examples: |
   **Add a new PowerShell repository that is not trusted and which requires credentials to connect to**:
 

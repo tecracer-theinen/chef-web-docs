@@ -81,6 +81,8 @@ properties_list:
   default_value: '{"report"=>true, "exception"=>true}'
   description_list:
   - markdown: The type of handler to register as, i.e. :report, :exception or both.
+target_mode:
+  support_level: "no"
 examples: |
   **Enable the 'MyHandler' handler**
 

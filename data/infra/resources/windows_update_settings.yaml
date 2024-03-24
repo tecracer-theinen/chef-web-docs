@@ -132,6 +132,8 @@ properties_list:
   required: false
   description_list:
   - markdown: The URL of your WSUS server if you use one.
+target_mode:
+  support_level: "no"
 examples: |
   **Set Windows Update settings**:
 

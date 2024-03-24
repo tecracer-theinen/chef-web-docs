@@ -169,4 +169,6 @@ properties_list:
   new_in: '12.21'
   description_list:
   - markdown: 'systemd only: A username to run the service under.'
+target_mode:
+  support_level: "no"
 examples:

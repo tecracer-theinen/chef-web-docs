@@ -27,7 +27,7 @@ syntax_full_code_block: |-
     username                   String
     action                     Symbol # defaults to :register if not specified
   end
-syntax_properties_list: 
+syntax_properties_list:
 syntax_full_properties_list:
 - "`rhsm_register` is the resource."
 - "`name` is the name given to the resource block."
@@ -153,6 +153,9 @@ properties_list:
   - markdown: The username to use when registering. This property is not applicable
       if using an activation key. If specified, password and environment properties
       are also required.
+target_mode:
+  support_level: full
+  support_new_in: 18.9
 examples: |
   **Register a node with RHSM**
 

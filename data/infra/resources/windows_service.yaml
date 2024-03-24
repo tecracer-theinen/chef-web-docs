@@ -224,6 +224,8 @@ properties_list:
   default_value: '60'
   description_list:
   - markdown: The amount of time (in seconds) to wait before timing out.
+target_mode:
+  support_level: "no"
 examples: |
   **Starting Services**
 

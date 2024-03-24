@@ -62,4 +62,6 @@ properties_list:
   default_value: Calculated default username
   description_list:
   - markdown: The owner of the Homebrew installation.
+target_mode:
+  support_level: "no"
 examples:

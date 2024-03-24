@@ -47,6 +47,8 @@ properties_list:
   - markdown: 'The name of the Ruby block. Default value: the `name` of the
 
       resource block. See "Syntax" section above for more information.'
+target_mode:
+  support_level: "no"
 examples: |
   **Reload Chef Infra Client configuration data**
 

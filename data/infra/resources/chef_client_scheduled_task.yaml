@@ -155,6 +155,8 @@ properties_list:
   default_value: System
   description_list:
   - markdown: The name of the user that Chef Infra Client runs as.
+target_mode:
+  support_level: "no"
 examples: |
   **Setup Chef Infra Client to run using the default 30 minute cadence**:
 

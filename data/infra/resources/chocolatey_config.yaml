@@ -46,6 +46,8 @@ properties_list:
   required: false
   description_list:
   - markdown: The value to set.
+target_mode:
+  support_level: "no"
 examples: |
   **Set the Chocolatey cacheLocation config**:
 

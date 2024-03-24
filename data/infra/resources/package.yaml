@@ -253,6 +253,15 @@ resources_common_properties: false
 resources_common_notification: false
 resources_common_guards: false
 common_resource_functionality_multiple_packages: null
+target_mode:
+  support_level: partial
+  support_new_in: 18.9
+  support_platforms:
+  - aix
+  - bsd
+  - linux
+  - solaris
+  description: See details on Target Mode support in the documentation of the underlying resources
 examples: |
   **Install a gems file for use in recipes**
 
