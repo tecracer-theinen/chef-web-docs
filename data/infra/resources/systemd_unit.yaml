@@ -108,7 +108,8 @@ properties_list:
       not to verify the unit.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "15.1"
+  support_enhanced_in: "19.0"
 examples: |
   **Create systemd service unit file from a Hash**
 

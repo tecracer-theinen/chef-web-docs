@@ -37,7 +37,7 @@ properties_list:
       from the resource block's name.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
 examples: |
   **Enable an RHSM repository**
 

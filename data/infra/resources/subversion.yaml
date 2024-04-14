@@ -125,7 +125,7 @@ properties_list:
   - markdown: The system user that will own the checked-out code.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
   support_platforms:
   - aix
   - bsd

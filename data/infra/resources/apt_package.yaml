@@ -119,7 +119,8 @@ properties_list:
   - markdown: The version of a package to be installed or upgraded.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "15.1"
+  support_enhanced_in: "19.0"
 examples: |
   **Install a package using package manager**:
 

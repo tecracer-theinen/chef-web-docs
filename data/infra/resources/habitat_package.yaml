@@ -8,6 +8,9 @@ resource_description_list:
 - markdown: Use the **habitat_package** to install or remove Chef Habitat packages
     from Habitat Builder.
 resource_new_in: '17.3'
+target_mode:
+  support_level: full
+  support_new_in: "19.0"
 syntax_full_code_block: |-
   habitat_package 'name' do
     auth_token        String

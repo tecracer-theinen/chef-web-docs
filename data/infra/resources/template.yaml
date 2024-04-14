@@ -274,7 +274,7 @@ ruby_style_basics_chef_log: false
 debug_recipes_chef_shell: false
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
   support_platforms:
   - aix
   - bsd

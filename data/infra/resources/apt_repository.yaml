@@ -126,7 +126,8 @@ properties_list:
   description_list:
   - markdown: The base of the Debian distribution.
 target_mode:
-  support_level: "no"
+  support_level: full
+  support_new_in: "19.0"
 examples: |
   **Add repository with basic settings**:
 

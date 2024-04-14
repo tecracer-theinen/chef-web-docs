@@ -58,7 +58,7 @@ properties_list:
   - markdown: SELinux context to assign.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
 examples: |
   **Allow http servers (e.g. nginx/apache) to modify Moodle files**:
 

@@ -19,6 +19,7 @@ actions_list:
     markdown: "(default)"
 target_mode:
   support_level: full
+  support_new_in: "15.1"
 examples: "
   Set default logging level\n\n  ```ruby\n  log 'a string to log'\n\
   \  ```\n\n  Set debug logging level\n\n  ```ruby\n  log 'a debug string' do\n \

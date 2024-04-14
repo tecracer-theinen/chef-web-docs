@@ -38,7 +38,7 @@ properties_list:
       install if it differs from the resource block's name.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
 examples: |
   **Specify an errata level that differs from the resource name**
 

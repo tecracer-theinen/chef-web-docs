@@ -59,7 +59,7 @@ properties_list:
       for more details.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
 examples: |
   **Pin libmysqlclient16 to a version 5.1.49-3**:
 

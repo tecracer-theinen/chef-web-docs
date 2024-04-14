@@ -196,7 +196,7 @@ resources_common_notification: true
 resources_common_guards: true
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
   support_platforms:
   - aix
   - bsd

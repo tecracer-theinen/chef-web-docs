@@ -192,7 +192,7 @@ properties_list:
       `monday-sunday`, or `*`), where Sunday is both `0` and `7`.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
 examples: |
   **Run a program on the fifth hour of the day**
 

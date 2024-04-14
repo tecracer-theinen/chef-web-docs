@@ -105,5 +105,5 @@ properties_list:
   - markdown: The file mode creation mask, or umask.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
 examples:

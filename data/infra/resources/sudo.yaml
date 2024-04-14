@@ -158,7 +158,7 @@ properties_list:
   - markdown: The path to visudo for configuration verification.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
 examples: |
   **Grant a user sudo privileges for any command**
 

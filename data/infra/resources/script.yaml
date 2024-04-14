@@ -172,7 +172,7 @@ properties_list:
       password property must be specified.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
   description: Ensure existing interpreter on target node.
 examples: "
   Use a named provider to run a script\n\n  ```ruby\n  bash 'install_something'\

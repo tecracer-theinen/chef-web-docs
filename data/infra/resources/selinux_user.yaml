@@ -59,7 +59,7 @@ properties_list:
       the resource block's name.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
 examples: |
   **Set an SELinux user with a level and range of `s0` and roles `sysadm_r` and `staff_r`**:
 

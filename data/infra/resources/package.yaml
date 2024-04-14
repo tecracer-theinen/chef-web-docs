@@ -255,7 +255,7 @@ resources_common_guards: false
 common_resource_functionality_multiple_packages: null
 target_mode:
   support_level: partial
-  support_new_in: 18.9
+  support_new_in: "19.0"
   support_platforms:
   - aix
   - bsd

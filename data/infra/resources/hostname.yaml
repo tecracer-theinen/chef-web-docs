@@ -88,7 +88,7 @@ properties_list:
       hostname, as this is required for the change to take effect.
 target_mode:
   support_level: full
-  support_new_in: 18.9
+  support_new_in: "19.0"
   support_platforms:
   - aix
   - bsd
