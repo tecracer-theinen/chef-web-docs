@@ -152,6 +152,7 @@ properties_list:
   - markdown: The actual file to which the link is to be created.
 target_mode:
   support_level: full
+  support_new_in: "19.0"
   description: Includes Windows support
 examples: |
   **Create symbolic links**

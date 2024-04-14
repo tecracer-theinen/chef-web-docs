@@ -41,6 +41,7 @@ properties_list:
       'VALUE' })`.
 target_mode:
   support_level: full
+  support_new_in: "19.0"
 examples: |
   Set the lang to 'en_US.UTF-8'
 

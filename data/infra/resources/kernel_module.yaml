@@ -71,6 +71,7 @@ properties_list:
   - markdown: The modprobe.d directory.
 target_mode:
   support_level: full
+  support_new_in: "19.0"
 examples: |
   Install and load a kernel module, and ensure it loads on reboot.
 
