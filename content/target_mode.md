@@ -39,6 +39,7 @@ product = ["client"]
 
 - AIX/BSD/Linux/Solaris-only, Mac OS X and Windows later
 - problems with FFI, 3rd Party Gems, certain architectural patterns (e.g. local Python Helper), Windows DLL usage
+- `only_if`/`not_if` only works with Ruby blocks, if you use the `TargetIO::` prefix and only supported functions
 
 ## Write Custom Resources for Target Mode
 

@@ -90,6 +90,7 @@ properties_list:
 target_mode:
   support_level: full
   support_new_in: "19.0"
+  description: Does not support the `response_file` property.
 examples: "
   Install a package\n\n  ```ruby\n  dpkg_package 'wget_1.13.4-2ubuntu1.4_amd64.deb'\
   \ do\n    source '/foo/bar/wget_1.13.4-2ubuntu1.4_amd64.deb'\n    action :install\n\

@@ -121,6 +121,7 @@ target_mode:
   support_level: full
   support_new_in: "15.1"
   support_enhanced_in: "19.0"
+  description: Does not support the `response_file` property.
 examples: |
   **Install a package using package manager**:
 
