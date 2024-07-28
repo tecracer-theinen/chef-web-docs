@@ -17,7 +17,7 @@ syntax_full_code_block: |-
     system_managed         true, false
     action                 Symbol # defaults to :set if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_pagefile` is the resource."
 - "`name` is the name given to the resource block."
@@ -61,8 +61,7 @@ properties_list:
   required: false
   description_list:
   - markdown: Configures whether the system manages the pagefile size.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Set the system to manage pagefiles**:
 

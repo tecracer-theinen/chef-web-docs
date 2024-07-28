@@ -42,7 +42,7 @@ syntax_full_code_block: |-
     subject_alt_name         Array # default value: []
     action                   Symbol # defaults to :create if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`openssl_x509_certificate` is the resource."
 - "`name` is the name given to the resource block."
@@ -208,8 +208,7 @@ properties_list:
   description_list:
   - markdown: Array of Subject Alternative Name entries, in format `DNS:example.com`
       or `IP:1.2.3.4`.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   Create a simple self-signed certificate file
 

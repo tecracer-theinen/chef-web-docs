@@ -31,7 +31,7 @@ syntax_full_code_block: |-
     version             String, Array
     action              Symbol # defaults to :install if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`chocolatey_package` is the resource."
 - "`name` is the name given to the resource block."
@@ -53,13 +53,19 @@ actions_list:
   :purge:
     markdown: Purge a package. This action typically removes the configuration files
       as well as the package.
+  :reconfig:
+    markdown: 
+  :lock:
+    markdown: 
+  :unlock:
+    markdown: 
 properties_list:
 - property: bulk_query
   ruby_type: true, false
   required: false
   default_value: 'false'
   description_list:
-  - markdown: Whether to bulk query the Chocolatey server. This makes the provider list
+  - markdown: Bulk query the chocolatey server?  This will cause the provider to list
       all packages instead of doing individual queries.
 - property: list_options
   ruby_type: String
@@ -107,8 +113,9 @@ properties_list:
   required: false
   default_value: 'false'
   description_list:
-  - markdown: Whether to use `choco list` for getting locally installed packages instead of querying for NuGet package files.
-      This defaults to `false` since reading the package data is faster.
+  - markdown: Use choco list for getting the locally installed packages, rather than
+      reading the nupkg database directly?  This defaults to false, since reading
+      the package data is faster.
 - property: user
   ruby_type: String
   required: false
@@ -120,8 +127,7 @@ properties_list:
   required: false
   description_list:
   - markdown: The version of a package to be installed or upgraded.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Install a Chocolatey package**:
 

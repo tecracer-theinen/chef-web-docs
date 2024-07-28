@@ -17,7 +17,7 @@ syntax_full_code_block: |-
     owner              String, Integer # default value: "Calculated default username"
     action             Symbol # defaults to :install if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`homebrew_cask` is the resource."
 - "`name` is the name given to the resource block."
@@ -44,7 +44,7 @@ properties_list:
   ruby_type: String
   required: false
   description_list:
-  - markdown: The path to the homebrew binary.
+  - markdown: The path to the Homebrew binary.
 - property: install_cask
   ruby_type: true, false
   required: false
@@ -62,6 +62,5 @@ properties_list:
   default_value: Calculated default username
   description_list:
   - markdown: The owner of the Homebrew installation.
-target_mode:
-  support_level: "no"
-examples:
+target_mode: 
+examples: 

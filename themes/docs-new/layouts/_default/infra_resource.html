@@ -537,14 +537,14 @@
           <h2 id = "target_mode">Target Mode</h2>
           <hr>
 
-          <p>The <strong>{{ index $yaml_file "resource" }}</strong> resource has <strong>{{ .support_level }}</strong> support for Target Mode</p>
+          <p>The <strong>{{ index $yaml_file "resource" }}</strong> resource has <strong>{{ .support }}</strong> support for Target Mode</p>
 
-          {{ if ne .support_level "no" }}
+          {{ if .support }}
             <p>Supported platforms:</p>
 
-            {{ if and (.support_platforms) (ne .support_platforms nil) }}
+            {{ if and (.platforms) (ne .platforms nil) }}
             <ul>
-              {{ range $key := .support_platforms }}
+              {{ range $key := .platforms }}
               <li>{{ $key }}</li>
               {{ end }}
             </ul>
@@ -561,10 +561,10 @@
             {{ .description }}
 
             <p>
-              {{ if and (.support_enhanced_in) (ne .support_enhanced_in nil) }}
-              Support was initially added in Chef Infra {{ .support_new_in }} and extended later in {{ .support_enhanced_in }}.
+              {{ if and (.updated) (ne .updated nil) }}
+              Support was initially added in Chef Infra {{ .introduced }} and updated later in {{ .updated }}.
               {{ else }}
-              Support was initially added in Chef Infra {{ .support_new_in }}.
+              Support was initially added in Chef Infra {{ default .introduced "19.0" }}.
               {{ end }}
             </p>
 

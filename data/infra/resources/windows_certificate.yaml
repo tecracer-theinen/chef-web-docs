@@ -22,7 +22,7 @@ syntax_full_code_block: |-
     user_store           true, false # default value: false
     action               Symbol # defaults to :create if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_certificate` is the resource."
 - "`name` is the name given to the resource block."
@@ -95,8 +95,7 @@ properties_list:
   - markdown: Use the `CurrentUser` store instead of the default `LocalMachine` store.
   - note:
       markdown: Prior to chef-client. 16.10 this property was ignored.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Add PFX cert to local machine personal store and grant accounts read-only access to private key**
 

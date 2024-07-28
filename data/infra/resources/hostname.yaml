@@ -21,7 +21,7 @@ syntax_full_code_block: |-
     windows_reboot       true, false # default value: true
     action               Symbol # defaults to :set if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`hostname` is the resource."
 - "`name` is the name given to the resource block."
@@ -87,9 +87,8 @@ properties_list:
   - markdown: Determines whether or not Windows should be reboot after changing the
       hostname, as this is required for the change to take effect.
 target_mode:
-  support_level: full
-  support_new_in: "19.0"
-  support_platforms:
+  support: full
+  platforms:
   - aix
   - bsd
   - linux

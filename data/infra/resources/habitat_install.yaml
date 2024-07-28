@@ -17,7 +17,7 @@ syntax_full_code_block: |-
     tmp_dir          String
     action           Symbol # defaults to :install if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`habitat_install` is the resource."
 - "`name` is the name given to the resource block."
@@ -70,8 +70,7 @@ properties_list:
   - note:
       markdown: This is required if `/tmp` and `/var/tmp` are mounted `noexec`.
 target_mode:
-  support_level: full
-  support_new_in: "19.0"
+  support: full
 examples: |
   **Installation Without a Resource Name**
 

@@ -13,7 +13,7 @@ syntax_full_code_block: |-
     path      String # default value: 'name' unless specified
     action    Symbol # defaults to :add if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_path` is the resource."
 - "`name` is the name given to the resource block."
@@ -35,8 +35,7 @@ properties_list:
   description_list:
   - markdown: An optional property to set the path value if it differs from the resource
       block's name.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Add Sysinternals to the system path**:
 

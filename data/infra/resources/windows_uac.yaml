@@ -18,7 +18,7 @@ syntax_full_code_block: |-
     require_signed_binaries       true, false # default value: false
     action                        Symbol # defaults to :configure if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_uac` is the resource."
 - "`name` is the name given to the resource block."
@@ -74,8 +74,7 @@ properties_list:
   default_value: 'false'
   description_list:
   - markdown: Only elevate executables that are signed and validated. Sets HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA\ValidateAdminCodeSignatures.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Disable UAC prompts for the admin**:
 

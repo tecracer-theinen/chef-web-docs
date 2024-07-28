@@ -15,7 +15,7 @@ syntax_full_code_block: |-
     hint_name         String # default value: 'name' unless specified
     action            Symbol # defaults to :create if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`ohai_hint` is the resource."
 - "`name` is the name given to the resource block."
@@ -51,13 +51,7 @@ properties_list:
   - markdown: An optional property to set the hint name if it differs from the resource
       block's name.
 target_mode:
-  support_level: full
-  support_new_in: "19.0"
-  support_platforms:
-  - aix
-  - bsd
-  - linux
-  - solaris
+  support: full
 examples: |
   **Create a hint file**
 

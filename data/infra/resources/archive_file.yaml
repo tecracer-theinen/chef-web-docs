@@ -94,7 +94,6 @@ properties_list:
       fewer elements will be silently skipped. This behaves similarly to tar's --strip-components
       command line argument.
 target_mode:
-  support_level: "no"
 examples: |
   **Extract a zip file to a specified directory**:
 

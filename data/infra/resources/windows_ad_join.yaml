@@ -20,7 +20,7 @@ syntax_full_code_block: |-
     workgroup_name       String
     action               Symbol # defaults to :join if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_ad_join` is the resource."
 - "`name` is the name given to the resource block."
@@ -89,8 +89,7 @@ properties_list:
   - markdown: Specifies the name of a workgroup to which the computer is added to
       when it is removed from the domain. The default value is WORKGROUP. This property
       is only applicable to the :leave action.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Join a domain**
 

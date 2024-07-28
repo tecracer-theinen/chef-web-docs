@@ -15,7 +15,7 @@ syntax_full_code_block: |-
     source         String
     action         Symbol # defaults to :install if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_font` is the resource."
 - "`name` is the name given to the resource block."
@@ -40,8 +40,7 @@ properties_list:
   required: false
   description_list:
   - markdown: A local filesystem path or URI that is used to source the font file.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Install a font from a https source**:
 

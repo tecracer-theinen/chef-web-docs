@@ -32,7 +32,7 @@ syntax_full_code_block: |-
     user             String, Integer
     action           Symbol # defaults to :run if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`bash` is the resource."
 - "`name` is the name given to the resource block."
@@ -78,8 +78,8 @@ properties_list:
   default_value: 'false'
   new_in: '14.2'
   description_list:
-  - markdown: When `true` this enables ENV magic to add path_sanity to the PATH and
-      force the locale to English+UTF-8 for parsing output.
+  - markdown: When true this enables ENV magic to add path_sanity to the PATH and
+      force the locale to English+UTF-8 for parsing output
 - property: domain
   ruby_type: String
   required: false
@@ -126,6 +126,11 @@ properties_list:
   new_in: '16.2'
   description_list:
   - markdown: An optional property to set the input sent to the command as STDIN.
+- property: interpreter
+  ruby_type: String
+  required: false
+  description_list:
+  - markdown: 
 - property: live_stream
   ruby_type: true, false
   required: false
@@ -174,8 +179,7 @@ properties_list:
       using the domain property. On Windows only, if this property is specified, the
       password property must be specified.
 target_mode:
-  support_level: full
-  support_new_in: "19.0"
+  support: full
 examples: |
   **Compile an application**
 

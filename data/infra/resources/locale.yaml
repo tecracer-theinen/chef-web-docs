@@ -14,7 +14,7 @@ syntax_full_code_block: |-
     lc_env      Hash # default value: {}
     action      Symbol # defaults to :update if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`locale` is the resource."
 - "`name` is the name given to the resource block."
@@ -40,8 +40,7 @@ properties_list:
   - markdown: A Hash of LC_* env variables in the form of `({ 'LC_ENV_VARIABLE' =>
       'VALUE' })`.
 target_mode:
-  support_level: full
-  support_new_in: "19.0"
+  support: full
 examples: |
   Set the lang to 'en_US.UTF-8'
 

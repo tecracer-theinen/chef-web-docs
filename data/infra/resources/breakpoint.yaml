@@ -14,7 +14,7 @@ syntax_full_code_block: |-
   breakpoint 'name' do
     action      Symbol # defaults to :break if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`breakpoint` is the resource."
 - "`name` is the name given to the resource block."
@@ -27,8 +27,8 @@ actions_list:
     markdown: Add a breakpoint for use with chef-shell (default)
 properties_list: []
 target_mode:
-  support_level: full
-  support_new_in: "15.1"
+  support: full
+  introduced: '15.1'
 examples: |
   **A recipe without a breakpoint**
 

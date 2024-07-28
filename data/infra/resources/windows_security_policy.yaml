@@ -14,7 +14,7 @@ syntax_full_code_block: |-
     secvalue       String
     action         Symbol # defaults to :set if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_security_policy` is the resource."
 - "`name` is the name given to the resource block."
@@ -44,8 +44,7 @@ properties_list:
   required: true
   description_list:
   - markdown: Policy value to be set for policy name.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Set Administrator Account to Enabled**:
 

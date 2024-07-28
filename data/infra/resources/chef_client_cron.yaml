@@ -32,7 +32,7 @@ syntax_full_code_block: |-
     weekday                  Integer, String # default value: "*"
     action                   Symbol # defaults to :add if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`chef_client_cron` is the resource."
 - "`name` is the name given to the resource block."
@@ -170,8 +170,7 @@ properties_list:
   description_list:
   - markdown: The day of the week on which Chef Infra Client is to run (0-7, mon-sun,
       or *), where Sunday is both 0 and 7.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Setup Chef Infra Client to run using the default 30 minute cadence**:
 

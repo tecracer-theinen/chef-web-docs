@@ -19,7 +19,7 @@ syntax_full_code_block: |-
     private_key_path         String
     action                   Symbol # defaults to :create if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`openssl_ec_public_key` is the resource."
 - "`name` is the name given to the resource block."
@@ -73,8 +73,7 @@ properties_list:
   required: false
   description_list:
   - markdown: The path to the private key file.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Generate new EC public key from a private key on disk**
 

@@ -27,7 +27,7 @@ syntax_full_code_block: |-
     username                String
     action                  Symbol # defaults to :add if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`chocolatey_source` is the resource."
 - "`name` is the name given to the resource block."
@@ -111,8 +111,7 @@ properties_list:
   new_in: '17.7'
   description_list:
   - markdown: The username to use when authenticating against the source
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Add a Chocolatey source**
 

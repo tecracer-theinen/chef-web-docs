@@ -18,7 +18,7 @@ syntax_full_code_block: |-
     feature_name      String # default value: 'name' unless specified
     action            Symbol # defaults to :enable if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`chocolatey_feature` is the resource."
 - "`name` is the name given to the resource block."
@@ -39,8 +39,7 @@ properties_list:
   default_value: The resource block's name
   description_list:
   - markdown: The name of the Chocolatey feature to enable or disable.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Enable the checksumFiles Chocolatey feature**
 

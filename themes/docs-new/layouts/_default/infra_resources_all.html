@@ -532,49 +532,48 @@
             <!-------------- Target Mode ------------------->
 
             {{ with index $yaml_file "target_mode" }}
-            <br>
-            <h2 id = "target_mode">Target Mode</h2>
-            <hr>
+              <br>
+              <h2 id = "target_mode">Target Mode</h2>
+              <hr>
 
-            <p>The <strong>{{ index $yaml_file "resource" }}</strong> resource has <strong>{{ .support_level }}</strong> support for Target Mode</p>
+              <p>The <strong>{{ index $yaml_file "resource" }}</strong> resource has <strong>{{ .support }}</strong> support for Target Mode</p>
 
-            {{ if ne .support_level false }}
-              <p>Supported platforms:</p>
+              {{ if .support }}
+                <p>Supported platforms:</p>
 
-              {{ if and (.support_platforms) (ne .support_platforms nil) }}
-              <ul>
-                {{ range $key := .support_platforms }}
-                <li>{{ $key }}</li>
-                {{ end }}
-              </ul>
-              <!-- default platforms -->
-              {{ else }}
-              <ul>
-                <li>aix</li>
-                <li>bsd</li>
-                <li>linux</li>
-                <li>solaris</li>
-               </ul>
-              {{ end }}
-
-              {{ .description }}
-
-              <p>
-                {{ if and (.support_enhanced_in) (ne .support_enhanced_in nil) }}
-                Support was initially added in Chef Infra {{ .support_new_in }} and extended later in {{ .support_enhanced_in }}.
+                {{ if and (.platforms) (ne .platforms nil) }}
+                <ul>
+                  {{ range $key := .platforms }}
+                  <li>{{ $key }}</li>
+                  {{ end }}
+                </ul>
+                <!-- default platforms -->
                 {{ else }}
-                Support was initially added in Chef Infra {{ .support_new_in }}.
+                <ul>
+                  <li>aix</li>
+                  <li>bsd</li>
+                  <li>linux</li>
+                  <li>solaris</li>
+                </ul>
                 {{ end }}
-              </p>
 
-              {{ if and (.requirements) (ne .requirements nil) }}
+                {{ .description }}
+
                 <p>
-                  {{ .requirements }}
+                  {{ if and (.updated) (ne .updated nil) }}
+                  Support was initially added in Chef Infra {{ .introduced }} and updated later in {{ .updated }}.
+                  {{ else }}
+                  Support was initially added in Chef Infra {{ default .introduced "19.0" }}.
+                  {{ end }}
                 </p>
+
+                {{ if and (.requirements) (ne .requirements nil) }}
+                  <p>
+                    {{ .requirements }}
+                  </p>
+                {{ end }}
               {{ end }}
             {{ end }}
-          {{ end }}
-
 
             <!------------------ Unit File Verification ---------------------->
 

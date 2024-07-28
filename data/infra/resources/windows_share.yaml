@@ -24,7 +24,7 @@ syntax_full_code_block: |-
     temporary                   true, false # default value: false
     action                      Symbol # defaults to :create if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_share` is the resource."
 - "`name` is the name given to the resource block."
@@ -117,8 +117,7 @@ properties_list:
   description_list:
   - markdown: The lifetime of the new SMB share. A temporary share does not persist
       beyond the next restart of the computer.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Create a share**:
 

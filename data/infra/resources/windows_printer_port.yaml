@@ -17,7 +17,7 @@ syntax_full_code_block: |-
     snmp_enabled       true, false # default value: false
     action             Symbol # defaults to :create if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_printer_port` is the resource."
 - "`name` is the name given to the resource block."
@@ -65,8 +65,7 @@ properties_list:
   default_value: 'false'
   description_list:
   - markdown: Determines if SNMP is enabled on the port.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Delete a printer port**
 

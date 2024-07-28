@@ -16,7 +16,7 @@ syntax_full_code_block: |-
     url                String
     action             Symbol # defaults to :tap if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`homebrew_tap` is the resource."
 - "`name` is the name given to the resource block."
@@ -55,6 +55,5 @@ properties_list:
   required: false
   description_list:
   - markdown: The URL of the tap.
-target_mode:
-  support_level: "no"
-examples:
+target_mode: 
+examples: 

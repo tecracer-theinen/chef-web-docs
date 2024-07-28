@@ -21,7 +21,7 @@ syntax_full_code_block: |-
     success                      true, false
     action                       Symbol # defaults to :set if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`windows_audit_policy` is the resource."
 - "`name` is the name given to the resource block."
@@ -97,8 +97,7 @@ properties_list:
   - markdown: Specify success auditing. By setting this property to true the resource
       will enable success for the category or sub category. Success is the default
       and is applied if neither success nor failure are specified.
-target_mode:
-  support_level: "no"
+target_mode: 
 examples: |
   **Set Logon and Logoff policy to "Success and Failure"**:
 

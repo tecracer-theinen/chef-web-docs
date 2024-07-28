@@ -19,7 +19,7 @@ syntax_full_code_block: |-
     value       Integer, Float, String, true, false, Hash, Array
     action      Symbol # defaults to :write if not specified
   end
-syntax_properties_list:
+syntax_properties_list: 
 syntax_full_properties_list:
 - "`macos_userdefaults` is the resource."
 - "`name` is the name given to the resource block."
@@ -70,9 +70,8 @@ properties_list:
       markdown: 'With the `type` property set to `bool`, `String` forms of Boolean
         true/false values that Apple accepts in the defaults command will be coerced:
         0/1, ''TRUE''/''FALSE,'' ''true''/false'', ''YES''/''NO'', or ''yes''/''no''.'
-target_mode:
-  support_level: "no"
-examples: |
+target_mode: 
+examples: |+
   **Specify a global domain value**
 
   ```ruby
@@ -102,3 +101,4 @@ examples: |
     host :current
   end
   ```
+
