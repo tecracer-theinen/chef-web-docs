@@ -1,0 +1,33 @@
+{
+	"name": "Hugo (Community)",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "hugo_extended",
+			"VERSION": "latest",
+			"NODE_VERSION": "14"
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.renderFinalNewline": "on",
+				"editor.trimAutoWhitespace": true,
+				"html.format.templating": true
+			},
+
+			"extensions": [
+				"davidanson.vscode-markdownlint",
+				"editorconfig.editorconfig",
+				"tamasfe.even-better-toml"
+			]
+		}
+	},
+
+	"forwardPorts": [
+		1313
+	],
+
+	"remoteUser": "node"
+}
