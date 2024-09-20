@@ -2,12 +2,23 @@
 ####
 ## Main Menu ##
 ####
+[[main]]
+title = "CHEFCONF"
+identifier = "chefconf"
+url = "https://www.chef.io/chefconf"
+weight = 5
 
 [[main]]
-title = "chef.io"
+title = "Chef.io"
 identifier = "chef"
 url = "https://www.chef.io/"
 weight = 10
+
+[[main]]
+title = "Learn Chef"
+identifier = "learn chef"
+url = "https://learn.chef.io/"
+weight = 20
 
 [[main]]
 title = "Blog"
@@ -58,23 +69,17 @@ weight = 20
     parent = "overview/licensing"
     weight = 999
 
-    [[overview]]
-    title = "Enterprise Chef"
-    identifier = "overview/enterprise"
-    parent = "overview"
-    weight = 30
-
   [[overview]]
   title = "Community"
   identifier = "overview/community"
   parent = "overview"
-  weight = 40
+  weight = 30
 
   [[overview]]
   title = "Packages & Platforms"
   identifier = "overview/packages_&_platforms"
   parent = "overview"
-  weight = 50
+  weight = 40
 
     [[overview]]
     title = "Download"
@@ -86,7 +91,7 @@ weight = 20
   title = "Style Guide"
   identifier = "overview/style"
   parent = "overview"
-  weight = 100
+  weight = 90
 
     [[overview]]
     title = "Formatting"
@@ -102,19 +107,6 @@ weight = 20
 
 ####
 # End Overview Menu
-####
-
-####
-# Chef 360 Menu
-####
-
-[[360]]
-title = "Chef 360 Platform"
-identifier = "360/1.0"
-url = "/360/1.0/"
-
-####
-# Chef 360 Menu
 ####
 
 ####
@@ -443,6 +435,7 @@ identifier = "server"
 # Chef Infra Menu
 ####
 
+
 [[infra]]
 title = "Chef Infra"
 identifier = "chef_infra"
@@ -476,6 +469,24 @@ identifier = "chef_infra"
     identifier = "chef_infra/features/ohai"
     parent = "chef_infra/features"
     weight = 20
+
+
+  [[infra]]
+  title = "Target Mode"
+  identifier = "chef_infra/target_mode"
+  parent = "chef_infra"
+  weight = 75
+
+  [[infra]]
+  title = "Integrations"
+  identifier = "chef_infra/integrations"
+  parent = "chef_infra"
+  weight = 80
+
+    [[infra]]
+    title = "Microsoft Azure"
+    identifier = "chef_infra/integrations/azure"
+    parent = "chef_infra/integrations"
 
   [[infra]]
   title = "Integrations"
@@ -660,18 +671,6 @@ identifier = "chef_infra"
 
 ####
 # End Chef Infra Menu
-####
-
-####
-# Chef SaaS Menu
-####
-
-[[saas]]
-title = "Chef SaaS"
-identifier = "chef_saas"
-
-####
-# End Chef SaaS Menu
 ####
 
 ####
